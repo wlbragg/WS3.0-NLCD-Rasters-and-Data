@@ -1,0 +1,143 @@
+Arizona
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Arizona/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Arizona/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Arizona/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W110.hgt -b -110 31 -109 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n31/ws_w110n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W110.hgt -b -110 32 -109 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n32/ws_w110n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W110.hgt -b -110 33 -109 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n33/ws_w110n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W110.hgt -b -110 34 -109 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n34/ws_w110n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W110.hgt -b -110 35 -109 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n35/ws_w110n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W110.hgt -b -110 36 -109 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n36/ws_w110n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W111.hgt -b -111 31 -110 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n31/ws_w111n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W111.hgt -b -111 32 -110 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n32/ws_w111n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W111.hgt -b -111 33 -110 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n33/ws_w111n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W111.hgt -b -111 34 -110 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n34/ws_w111n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W111.hgt -b -111 35 -110 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n35/ws_w111n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W111.hgt -b -111 36 -110 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n36/ws_w111n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W112.hgt -b -112 31 -111 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n31/ws_w112n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W112.hgt -b -112 32 -111 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n32/ws_w112n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W112.hgt -b -112 33 -111 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n33/ws_w112n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W112.hgt -b -112 34 -111 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n34/ws_w112n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W112.hgt -b -112 35 -111 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n35/ws_w112n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W112.hgt -b -112 36 -111 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n36/ws_w112n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W113.hgt -b -113 31 -112 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n31/ws_w113n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W113.hgt -b -113 32 -112 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n32/ws_w113n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W113.hgt -b -113 33 -112 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n33/ws_w113n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W113.hgt -b -113 34 -112 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n34/ws_w113n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W113.hgt -b -113 35 -112 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n35/ws_w113n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W113.hgt -b -113 36 -112 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n36/ws_w113n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W114.hgt -b -114 31 -113 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n31/ws_w114n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W114.hgt -b -114 32 -113 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n32/ws_w114n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W114.hgt -b -114 33 -113 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n33/ws_w114n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W114.hgt -b -114 34 -113 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n34/ws_w114n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W114.hgt -b -114 35 -113 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n35/ws_w114n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W114.hgt -b -114 36 -113 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n36/ws_w114n36.osgb
+
+(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+Entire block
+./scripts/genVPB.py -125 45 34 -117 43 ./data/Arizona_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -118 42 -117 43 ./data/Arizona_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -110 31 -109 32
+./scripts/genroads.py ./output/Terrain -110 32 -109 33
+./scripts/genroads.py ./output/Terrain -110 33 -109 34
+./scripts/genroads.py ./output/Terrain -110 34 -109 35
+./scripts/genroads.py ./output/Terrain -110 35 -109 36
+./scripts/genroads.py ./output/Terrain -110 36 -109 37
+./scripts/genroads.py ./output/Terrain -111 31 -110 32
+./scripts/genroads.py ./output/Terrain -111 32 -110 33
+./scripts/genroads.py ./output/Terrain -111 33 -110 34
+./scripts/genroads.py ./output/Terrain -111 34 -110 35
+./scripts/genroads.py ./output/Terrain -111 35 -110 36
+./scripts/genroads.py ./output/Terrain -111 36 -110 37
+./scripts/genroads.py ./output/Terrain -112 31 -111 32
+./scripts/genroads.py ./output/Terrain -112 32 -111 33
+./scripts/genroads.py ./output/Terrain -112 33 -111 34
+./scripts/genroads.py ./output/Terrain -112 34 -111 35
+./scripts/genroads.py ./output/Terrain -112 35 -111 36
+./scripts/genroads.py ./output/Terrain -112 36 -111 37
+./scripts/genroads.py ./output/Terrain -113 31 -112 32
+./scripts/genroads.py ./output/Terrain -113 32 -112 33
+./scripts/genroads.py ./output/Terrain -113 33 -112 34
+./scripts/genroads.py ./output/Terrain -113 34 -112 35
+./scripts/genroads.py ./output/Terrain -113 35 -112 36
+./scripts/genroads.py ./output/Terrain -113 36 -112 37
+./scripts/genroads.py ./output/Terrain -114 31 -113 32
+./scripts/genroads.py ./output/Terrain -114 32 -113 33
+./scripts/genroads.py ./output/Terrain -114 33 -113 34
+./scripts/genroads.py ./output/Terrain -114 34 -113 35
+./scripts/genroads.py ./output/Terrain -114 35 -113 36
+./scripts/genroads.py ./output/Terrain -114 36 -113 37
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Arizona\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Arizona_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_Arizona.tiff = Arizona_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Arizona_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Arizona@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Arizona@1" != 255) * "NLCD_2016_Tree_Canopy_Arizona@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Arizona_deciduous.tiff
+("Arizona_deciduous-coast-clipped@1" != 0) * 41
+
+Warp Arizona_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_4326-84.tiff
+Warp Arizona_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Arizona_deciduous_4326-84@1" + "Arizona_4326-84@1" = Arizona_adjusted.tiff
+("Arizona_deciduous_4326-84@1" < 1) * "Arizona_4326-84@1" + ("Arizona_deciduous_4326-84@1" != 0) * "Arizona_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Arizona_reclass-grass.tiff
+("Arizona_adjusted@1" = 11) * 41 + ("Arizona_adjusted@1" = 12) * 34 + ("Arizona_adjusted@1" = 21) * 26 + ("Arizona_adjusted@1" = 22) * 26 + ("Arizona_adjusted@1" = 23) * 26 + ("Arizona_adjusted@1" = 24) * 26 + ("Arizona_adjusted@1" = 31) * 27 + ("Arizona_adjusted@1" = 41) * 26 + ("Arizona_adjusted@1" = 42) * 24 + ("Arizona_adjusted@1" = 43) * 25 + ("Arizona_adjusted@1" = 51) * 30 + ("Arizona_adjusted@1" = 52) * 29 + ("Arizona_adjusted@1" = 71) * 26 + ("Arizona_adjusted@1" = 72) * 32 + ("Arizona_adjusted@1" = 73) * 31 + ("Arizona_adjusted@1" = 74) * 31 + ("Arizona_adjusted@1" = 75) * 32 + ("Arizona_adjusted@1" = 81) * 18 + ("Arizona_adjusted@1" = 82) * 19 + ("Arizona_adjusted@1" = 90) * 25 + ("Arizona_adjusted@1" = 95) * 35
+
+Make Urban layer = Arizona_urban.tiff
+("Arizona_adjusted@1" = 21) * 10 + ("Arizona_adjusted@1" = 22) * 1 + ("Arizona_adjusted@1" = 23) * 1 + ("Arizona_adjusted@1" = 24) * 2
+
+Remove the road clutter = Arizona_urban-only.tiff
+r.neighbor, "median", size=7 Arizona_urban.tiff
+
+Combine "Arizona_reclass-urban@1" + "Arizona_reclass-grass@1" = Arizona_adjusted-combined.tiff
+("Arizona_urban-only@1" < 1) * "Arizona_reclass-grass@1" + ("Arizona_urban-only@1" != 0) * "Arizona_urban-only@1"
+
+Up sample = Arizona_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Arizona_4326-84-hd.tiff
+r.neighbor, "median", size=7 Arizona_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Arizona_4326-84-hd-corrected.tiff
+("Arizona_4326-84-hd@1" = 0) * 44 + ("Arizona_4326-84-hd@1" != 0) * "Arizona_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Arizona_4326-84-hd-nowater.tiff
+Arizona_4326-84-hd-corrected@1 * (Arizona_4326-84-hd-corrected@1 != 41) + 26 * (Arizona_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Arizona_4326-84-hd-nowater.tiff
+Arizona_4326-84-hd-corrected@1 * (Arizona_4326-84-hd-corrected@1 != 41) + 26 * (Arizona_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Arizona_4326-84-hd-nowater.tiff
+Arizona_4326-84-hd-corrected@1 * (Arizona_4326-84-hd-corrected@1 != 41) + 26 * (Arizona_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Arizona_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Arizona_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Arizona_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Arizona_4326-84-hd-water@1" and "Arizona_4326-84-hd-nowater@1" = Arizona_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Arizona_4326-84-hd-nowater@1" and Arizona_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Arizona_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
