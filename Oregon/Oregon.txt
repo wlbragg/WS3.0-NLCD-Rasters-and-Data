@@ -121,10 +121,6 @@ Reclass index 0 to 44, leave the rest the same = Oregon_4326-84-hd-corrected.tif
 HD Water Option 
 Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
 Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
-Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
-Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
-Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
-Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
 
 Obtain and load vector layer = Oregon_water_4326-84.gpkg.
 Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.

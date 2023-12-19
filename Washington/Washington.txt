@@ -105,10 +105,6 @@ Reclass index 0 to 44, leave the rest the same = Washington_4326-84-hd-corrected
 HD Water Option 
 Reclass water to grass = Washington_4326-84-hd-nowater.tiff
 Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
-Reclass water to grass = Washington_4326-84-hd-nowater.tiff
-Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
-Reclass water to grass = Washington_4326-84-hd-nowater.tiff
-Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
 
 Obtain and load vector layer = Washington_water_4326-84.gpkg.
 Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
