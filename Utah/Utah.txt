@@ -1,0 +1,129 @@
+Utah
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Utah/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Utah/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Utah/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W110.hgt -b -110 37 -109 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n37/ws_w110n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W110.hgt -b -110 38 -109 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n38/ws_w110n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W110.hgt -b -110 39 -109 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w110n39/ws_w110n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W111.hgt -b -111 37 -110 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n37/ws_w111n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W111.hgt -b -111 38 -110 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n38/ws_w111n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W111.hgt -b -111 39 -110 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w111n39/ws_w111n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W112.hgt -b -112 37 -111 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n37/ws_w112n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W112.hgt -b -112 38 -111 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n38/ws_w112n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W112.hgt -b -112 39 -111 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w112n39/ws_w112n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W113.hgt -b -113 37 -112 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n37/ws_w113n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W113.hgt -b -113 38 -112 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n38/ws_w113n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W113.hgt -b -113 39 -112 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w113n39/ws_w113n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W114.hgt -b -114 37 -113 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n37/ws_w114n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W114.hgt -b -114 38 -113 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n38/ws_w114n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W114.hgt -b -114 39 -113 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n39/ws_w114n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W110.hgt -b -110 40 -109 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n40/ws_w110n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W111.hgt -b -111 40 -110 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n40/ws_w111n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W112.hgt -b -112 40 -111 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n40/ws_w112n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W112.hgt -b -112 41 -111 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n41/ws_w112n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W113.hgt -b -113 40 -112 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n40/ws_w113n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W113.hgt -b -113 41 -112 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n41/ws_w113n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W114.hgt -b -114 40 -113 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n40/ws_w114n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W114.hgt -b -114 41 -113 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n41/ws_w114n41.osgb
+
+(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+Entire block
+./scripts/genVPB.py -125 45 34 -117 43 ./data/Utah_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -118 42 -117 43 ./data/Utah_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -110 37 -109 38
+./scripts/genroads.py ./output/Terrain -110 38 -109 39
+./scripts/genroads.py ./output/Terrain -110 39 -109 40
+./scripts/genroads.py ./output/Terrain -110 40 -109 41
+./scripts/genroads.py ./output/Terrain -111 37 -110 38
+./scripts/genroads.py ./output/Terrain -111 38 -110 39
+./scripts/genroads.py ./output/Terrain -111 39 -110 40
+./scripts/genroads.py ./output/Terrain -111 40 -110 41
+./scripts/genroads.py ./output/Terrain -112 37 -111 38
+./scripts/genroads.py ./output/Terrain -112 38 -111 39
+./scripts/genroads.py ./output/Terrain -112 39 -111 40
+./scripts/genroads.py ./output/Terrain -112 40 -111 41
+./scripts/genroads.py ./output/Terrain -112 41 -111 42
+./scripts/genroads.py ./output/Terrain -113 37 -112 38
+./scripts/genroads.py ./output/Terrain -113 38 -112 39
+./scripts/genroads.py ./output/Terrain -113 39 -112 40
+./scripts/genroads.py ./output/Terrain -113 40 -112 41
+./scripts/genroads.py ./output/Terrain -113 41 -112 42
+./scripts/genroads.py ./output/Terrain -114 37 -113 38
+./scripts/genroads.py ./output/Terrain -114 38 -113 39
+./scripts/genroads.py ./output/Terrain -114 39 -113 40
+./scripts/genroads.py ./output/Terrain -114 40 -113 41
+./scripts/genroads.py ./output/Terrain -114 41 -113 42
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Utah\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Utah_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_Utah.tiff = Utah_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Utah_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Utah@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Utah@1" != 255) * "NLCD_2016_Tree_Canopy_Utah@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Utah_deciduous.tiff
+("Utah_deciduous-coast-clipped@1" != 0) * 43
+
+Warp Utah_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_4326-84.tiff
+Warp Utah_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Utah_deciduous_4326-84@1" + "Utah_4326-84@1" = Utah_adjusted.tiff
+("Utah_deciduous_4326-84@1" < 1) * "Utah_4326-84@1" + ("Utah_deciduous_4326-84@1" != 0) * "Utah_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Utah_reclass-grass.tiff
+("Utah_adjusted@1" = 11) * 41 + ("Utah_adjusted@1" = 12) * 34 + ("Utah_adjusted@1" = 21) * 26 + ("Utah_adjusted@1" = 22) * 26 + ("Utah_adjusted@1" = 23) * 26 + ("Utah_adjusted@1" = 24) * 26 + ("Utah_adjusted@1" = 31) * 27 + ("Utah_adjusted@1" = 41) * 26 + ("Utah_adjusted@1" = 42) * 24 + ("Utah_adjusted@1" = 43) * 25 + ("Utah_adjusted@1" = 51) * 30 + ("Utah_adjusted@1" = 52) * 29 + ("Utah_adjusted@1" = 71) * 26 + ("Utah_adjusted@1" = 72) * 32 + ("Utah_adjusted@1" = 73) * 31 + ("Utah_adjusted@1" = 74) * 31 + ("Utah_adjusted@1" = 75) * 32 + ("Utah_adjusted@1" = 81) * 18 + ("Utah_adjusted@1" = 82) * 19 + ("Utah_adjusted@1" = 90) * 25 + ("Utah_adjusted@1" = 95) * 35
+
+Make Urban layer = Utah_urban.tiff
+("Utah_adjusted@1" = 21) * 10 + ("Utah_adjusted@1" = 22) * 1 + ("Utah_adjusted@1" = 23) * 1 + ("Utah_adjusted@1" = 24) * 2
+
+Remove the road clutter = Utah_urban-only.tiff
+r.neighbor, "median", size=7 Utah_urban.tiff
+
+Combine "Utah_reclass-urban@1" + "Utah_reclass-grass@1" = Utah_adjusted-combined.tiff
+("Utah_urban-only@1" < 1) * "Utah_reclass-grass@1" + ("Utah_urban-only@1" != 0) * "Utah_urban-only@1"
+
+Up sample = Utah_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Utah_4326-84-hd.tiff
+r.neighbor, "median", size=7 Utah_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Utah_4326-84-hd-corrected.tiff
+("Utah_4326-84-hd@1" = 0) * 44 + ("Utah_4326-84-hd@1" != 0) * "Utah_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Utah_4326-84-hd-nowater.tiff
+Utah_4326-84-hd-corrected@1 * (Utah_4326-84-hd-corrected@1 != 41) + 26 * (Utah_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Utah_4326-84-hd-nowater.tiff
+Utah_4326-84-hd-corrected@1 * (Utah_4326-84-hd-corrected@1 != 41) + 26 * (Utah_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Utah_4326-84-hd-nowater.tiff
+Utah_4326-84-hd-corrected@1 * (Utah_4326-84-hd-corrected@1 != 41) + 26 * (Utah_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Utah_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Utah_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Utah_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Utah_4326-84-hd-water@1" and "Utah_4326-84-hd-nowater@1" = Utah_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Utah_4326-84-hd-nowater@1" and Utah_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Utah_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
