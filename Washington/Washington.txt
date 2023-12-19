@@ -27,7 +27,7 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W125.hgt -b -125 47 -124 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n47/ws_w125n47.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W125.hgt -b -125 48 -124 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n48/ws_w125n48.osgb
 
-(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+(Paths above in "docker run" requires having srtm in the local Washington data folder)
 Entire block
 ./scripts/genVPB.py -125 45 34 -117 43 ./data/Washington_4326-84-hd-corrected.tiff 
 Single 1X bucket

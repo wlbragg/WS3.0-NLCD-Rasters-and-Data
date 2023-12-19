@@ -26,9 +26,9 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W114.hgt -b -114 40 -113 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n40/ws_w114n40.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Utah_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W114.hgt -b -114 41 -113 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n41/ws_w114n41.osgb
 
-(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+(Paths above in "docker run" requires having srtm in the local Utah data folder)
 Entire block
-./scripts/genVPB.py -125 45 -117 43 ./data/Utah_4326-84-hd-corrected.tiff
+./scripts/genVPB.py -125 45 -117 43 ./data/Utah_4326-84-hd-corrected.tiff 
 Single 1X bucket
 ./scripts/genVPB.py -118 42 -117 43 ./data/Utah_4326-84-hd-corrected.tiff
 
