@@ -28,7 +28,7 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 
 (Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
 Entire block
-./scripts/genVPB.py -125 45 34 -117 43 ./data/Utah_4326-84-hd-corrected.tiff 
+./scripts/genVPB.py -125 45 -117 43 ./data/Utah_4326-84-hd-corrected.tiff
 Single 1X bucket
 ./scripts/genVPB.py -118 42 -117 43 ./data/Utah_4326-84-hd-corrected.tiff
 
