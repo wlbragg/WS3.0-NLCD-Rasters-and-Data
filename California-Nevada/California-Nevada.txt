@@ -229,7 +229,7 @@ GIMP NLCD_2019_Land_Cover_California-Southern.tiff = California-Southern_coast-c
 GIMP NLCD_2019_Land_Cover_California-Central.tiff = California-Central_coast-clipped.tiff
 GIMP NLCD_2019_Land_Cover_California-Northern.tiff = California-Northern_coast-clipped.tiff
 GIMP NLCD_2019_Land_Cover_Nevada-Southern.tiff = Nevada-Southern_coast-clipped.tiff
-GIMP NLCD_2019_Land_Cover_Nevada-Southern.tiff = Nevada-Northern_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_Nevada-Northern.tiff = Nevada-Northern_coast-clipped.tiff
 
 Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = California-Southern_deciduous-coast-clipped.tiff
 ("NLCD_2016_Tree_Canopy_California-Southern@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_California-Southern@1" != 255) * "NLCD_2016_Tree_Canopy_California-Southern@1"

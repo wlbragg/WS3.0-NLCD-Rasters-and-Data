@@ -56,20 +56,10 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -114 40 -113 41
 ./scripts/genroads.py ./output/Terrain -114 41 -113 42
 
-Optional coast smoothing.
-gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
-gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Utah\data\lines -cl multipolygons <input> <output>
-
-Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Utah_coast-clipped.tiff
-GIMP NLCD_2019_Land_Cover_Utah.tiff = Utah_coast-clipped.tiff
-
-Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Utah_deciduous-coast-clipped.tiff
-("NLCD_2016_Tree_Canopy_Utah@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Utah@1" != 255) * "NLCD_2016_Tree_Canopy_Utah@1"
-
 Make Decidious Layer EPSG:5070 - NAD83 = Utah_deciduous.tiff
-("Utah_deciduous-coast-clipped@1" != 0) * 43
+("NLCD_2016_Tree_Canopy_Utah@1" != 0) * 43
 
-Warp Utah_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Utah.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_4326-84.tiff
 Warp Utah_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84

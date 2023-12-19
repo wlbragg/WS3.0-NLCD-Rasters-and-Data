@@ -35,9 +35,9 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 
 (Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
 Entire block
-./scripts/genVPB.py -125 45 34 -117 43 ./data/Arizona_4326-84-hd-corrected.tiff 
+./scripts/genVPB.py -114 36 -109 32 ./data/Arizona_4326-84-hd-corrected.tiff 
 Single 1X bucket
-./scripts/genVPB.py -118 42 -117 43 ./data/Arizona_4326-84-hd-corrected.tiff
+./scripts/genVPB.py -110 31 -109 32 ./data/Arizona_4326-84-hd-corrected.tiff
 
 ./scripts/genroads.py ./output/Terrain -110 31 -109 32
 ./scripts/genroads.py ./output/Terrain -110 32 -109 33
@@ -70,20 +70,10 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -114 35 -113 36
 ./scripts/genroads.py ./output/Terrain -114 36 -113 37
 
-Optional coast smoothing.
-gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
-gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Arizona\data\lines -cl multipolygons <input> <output>
-
-Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Arizona_coast-clipped.tiff
-GIMP NLCD_2019_Land_Cover_Arizona.tiff = Arizona_coast-clipped.tiff
-
-Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Arizona_deciduous-coast-clipped.tiff
-("NLCD_2016_Tree_Canopy_Arizona@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Arizona@1" != 255) * "NLCD_2016_Tree_Canopy_Arizona@1"
-
 Make Decidious Layer EPSG:5070 - NAD83 = Arizona_deciduous.tiff
-("Arizona_deciduous-coast-clipped@1" != 0) * 41
+("NLCD_2016_Tree_Canopy_Arizona@1" != 0) * 41
 
-Warp Arizona_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Arizona.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_4326-84.tiff
 Warp Arizona_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
