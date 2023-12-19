@@ -1,0 +1,147 @@
+Oregon
+
+docker run --rm --mount "type=bind,source=g:/Scenery/ws3.0/Oregon/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/Oregon/output,target=/home/flightgear/output" --mount "type=bind,source=g:/Scenery/ws3.0/Oregon/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W118.hgt -b -118 42 -117 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n42/ws_w118n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W118.hgt -b -118 43 -117 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n43/ws_w118n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W118.hgt -b -118 44 -117 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n44/ws_w118n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W118.hgt -b -118 45 -117 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n45/ws_w118n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W119.hgt -b -119 42 -118 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n42/ws_w119n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W119.hgt -b -119 43 -118 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n43/ws_w119n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W119.hgt -b -119 44 -118 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n44/ws_w119n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W119.hgt -b -119 45 -118 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n45/ws_w119n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W120.hgt -b -120 42 -119 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n42/ws_w120n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W120.hgt -b -120 43 -119 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n43/ws_w120n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W120.hgt -b -120 44 -119 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n44/ws_w120n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W120.hgt -b -120 45 -119 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n45/ws_w120n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W121.hgt -b -121 42 -120 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n42/ws_w121n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W121.hgt -b -121 43 -120 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n43/ws_w121n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W121.hgt -b -121 44 -120 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n44/ws_w121n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W121.hgt -b -121 45 -120 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n45/ws_w121n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W122.hgt -b -122 42 -121 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n42/ws_w122n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W122.hgt -b -122 43 -121 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n43/ws_w122n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W122.hgt -b -122 44 -121 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n44/ws_w122n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W122.hgt -b -122 45 -121 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n45/ws_w122n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W123.hgt -b -123 42 -122 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n42/ws_w123n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W123.hgt -b -123 43 -122 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n43/ws_w123n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W123.hgt -b -123 44 -122 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n44/ws_w123n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W123.hgt -b -123 45 -122 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n45/ws_w123n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W124.hgt -b -124 42 -123 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n42/ws_w124n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W124.hgt -b -124 43 -123 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n43/ws_w124n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W124.hgt -b -124 44 -123 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n44/ws_w124n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W124.hgt -b -124 45 -123 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n45/ws_w124n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W125.hgt -b -125 42 -124 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n42/ws_w125n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W125.hgt -b -125 43 -124 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n43/ws_w125n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W125.hgt -b -125 44 -124 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n44/ws_w125n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W125.hgt -b -125 45 -124 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n45/ws_w125n45.osgb
+
+(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+Entire block
+./scripts/genVPB.py -125 45 34 -117 43 ./data/Oregon_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -118 42 -117 43 ./data/Oregon_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -118 42 -117 43
+./scripts/genroads.py ./output/Terrain -118 43 -117 44
+./scripts/genroads.py ./output/Terrain -118 44 -117 45
+./scripts/genroads.py ./output/Terrain -118 45 -117 46
+./scripts/genroads.py ./output/Terrain -119 42 -118 43
+./scripts/genroads.py ./output/Terrain -119 43 -118 44
+./scripts/genroads.py ./output/Terrain -119 44 -118 45
+./scripts/genroads.py ./output/Terrain -119 45 -118 46
+./scripts/genroads.py ./output/Terrain -120 42 -119 43
+./scripts/genroads.py ./output/Terrain -120 43 -119 44
+./scripts/genroads.py ./output/Terrain -120 44 -119 45
+./scripts/genroads.py ./output/Terrain -120 45 -119 46
+./scripts/genroads.py ./output/Terrain -121 42 -120 43
+./scripts/genroads.py ./output/Terrain -121 43 -120 44
+./scripts/genroads.py ./output/Terrain -121 44 -120 45
+./scripts/genroads.py ./output/Terrain -121 45 -120 46
+./scripts/genroads.py ./output/Terrain -122 42 -121 43
+./scripts/genroads.py ./output/Terrain -122 43 -121 44
+./scripts/genroads.py ./output/Terrain -122 44 -121 45
+./scripts/genroads.py ./output/Terrain -122 45 -121 46
+./scripts/genroads.py ./output/Terrain -123 42 -122 43
+./scripts/genroads.py ./output/Terrain -123 43 -122 44
+./scripts/genroads.py ./output/Terrain -123 44 -122 45
+./scripts/genroads.py ./output/Terrain -123 45 -122 46
+./scripts/genroads.py ./output/Terrain -124 42 -123 43
+./scripts/genroads.py ./output/Terrain -124 43 -123 44
+./scripts/genroads.py ./output/Terrain -124 44 -123 45
+./scripts/genroads.py ./output/Terrain -124 45 -123 46
+./scripts/genroads.py ./output/Terrain -125 42 -124 43
+./scripts/genroads.py ./output/Terrain -125 43 -124 44
+./scripts/genroads.py ./output/Terrain -125 44 -124 45
+./scripts/genroads.py ./output/Terrain -125 45 -124 46
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Oregon\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Oregon_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_Oregon.tiff = Oregon_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Oregon_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Oregon@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Oregon@1" != 255) * "NLCD_2016_Tree_Canopy_Oregon@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Oregon_deciduous.tiff
+("Oregon_deciduous-coast-clipped@1" != 0) * 42
+
+Warp Oregon_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Oregon_4326-84.tiff
+Warp Oregon_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Oregon_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Oregon_deciduous_4326-84@1" + "Oregon_4326-84@1" = Oregon_adjusted.tiff
+("Oregon_deciduous_4326-84@1" < 1) * "Oregon_4326-84@1" + ("Oregon_deciduous_4326-84@1" != 0) * "Oregon_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Oregon_reclass-grass.tiff
+("Oregon_adjusted@1" = 11) * 41 + ("Oregon_adjusted@1" = 12) * 34 + ("Oregon_adjusted@1" = 21) * 26 + ("Oregon_adjusted@1" = 22) * 26 + ("Oregon_adjusted@1" = 23) * 26 + ("Oregon_adjusted@1" = 24) * 26 + ("Oregon_adjusted@1" = 31) * 27 + ("Oregon_adjusted@1" = 41) * 26 + ("Oregon_adjusted@1" = 42) * 24 + ("Oregon_adjusted@1" = 43) * 25 + ("Oregon_adjusted@1" = 51) * 30 + ("Oregon_adjusted@1" = 52) * 29 + ("Oregon_adjusted@1" = 71) * 26 + ("Oregon_adjusted@1" = 72) * 32 + ("Oregon_adjusted@1" = 73) * 31 + ("Oregon_adjusted@1" = 74) * 31 + ("Oregon_adjusted@1" = 75) * 32 + ("Oregon_adjusted@1" = 81) * 18 + ("Oregon_adjusted@1" = 82) * 19 + ("Oregon_adjusted@1" = 90) * 25 + ("Oregon_adjusted@1" = 95) * 35
+
+Make Urban layer = Oregon_urban.tiff
+("Oregon_adjusted@1" = 21) * 10 + ("Oregon_adjusted@1" = 22) * 1 + ("Oregon_adjusted@1" = 23) * 1 + ("Oregon_adjusted@1" = 24) * 2
+
+Remove the road clutter = Oregon_urban-only.tiff
+r.neighbor, "median", size=7 Oregon_urban.tiff
+
+Combine "Oregon_reclass-urban@1" + "Oregon_reclass-grass@1" = Oregon_adjusted-combined.tiff
+("Oregon_urban-only@1" < 1) * "Oregon_reclass-grass@1" + ("Oregon_urban-only@1" != 0) * "Oregon_urban-only@1"
+
+Up sample = Oregon_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Oregon_4326-84-hd.tiff
+r.neighbor, "median", size=7 Oregon_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Oregon_4326-84-hd-corrected.tiff
+("Oregon_4326-84-hd@1" = 0) * 44 + ("Oregon_4326-84-hd@1" != 0) * "Oregon_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
+Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
+Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
+Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Oregon_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Oregon_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Oregon_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Oregon_4326-84-hd-water@1" and "Oregon_4326-84-hd-nowater@1" = Oregon_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Oregon_4326-84-hd-nowater@1" and Oregon_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Oregon_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

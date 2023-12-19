@@ -268,7 +268,7 @@ Target CRS = EPSG:4326 - WGS 84
 Resampling method to use = Nearest Neighbour
 Output data type = byte
 
-Combine "California-Southern_deciduous_4326-84.@1" + "California-Southern_4326-84@1" = California-Southern_adjusted.tiff
+Combine "California-Southern_deciduous_4326-84@1" + "California-Southern_4326-84@1" = California-Southern_adjusted.tiff
 ("California-Southern_deciduous_4326-84@1" < 1) * "California-Southern_4326-84@1" + ("California-Southern_deciduous_4326-84@1" != 0) * "California-Southern_deciduous_4326-84@1"
 Combine "California-Central_deciduous_4326-84.@1" + "California-Central_4326-84@1" = California-Central_adjusted.tiff
 ("California-Central_deciduous_4326-84@1" < 1) * "California-Central_4326-84@1" + ("California-Central_deciduous_4326-84@1" != 0) * "California-Central_deciduous_4326-84@1"

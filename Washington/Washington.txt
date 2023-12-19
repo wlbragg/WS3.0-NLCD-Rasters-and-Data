@@ -1,0 +1,131 @@
+Washington
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Washington/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Washington/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Washington/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W118.hgt -b -118 46 -117 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n46/ws_w118n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W118.hgt -b -118 47 -117 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n47/ws_w118n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W118.hgt -b -118 48 -117 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n48/ws_w118n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W119.hgt -b -119 46 -118 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n46/ws_w119n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W119.hgt -b -119 47 -118 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n47/ws_w119n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W119.hgt -b -119 48 -118 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n48/ws_w119n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W120.hgt -b -120 46 -119 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n46/ws_w120n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W120.hgt -b -120 47 -119 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n47/ws_w120n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W120.hgt -b -120 48 -119 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n48/ws_w120n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W121.hgt -b -121 46 -120 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n46/ws_w121n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W121.hgt -b -121 47 -120 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n47/ws_w121n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W121.hgt -b -121 48 -120 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n48/ws_w121n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W122.hgt -b -122 46 -121 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n46/ws_w122n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W122.hgt -b -122 47 -121 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n47/ws_w122n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W122.hgt -b -122 48 -121 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n48/ws_w122n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W123.hgt -b -123 46 -122 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n46/ws_w123n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W123.hgt -b -123 47 -122 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n47/ws_w123n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W123.hgt -b -123 48 -122 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n48/ws_w123n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W124.hgt -b -124 46 -123 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n46/ws_w124n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W124.hgt -b -124 47 -123 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n47/ws_w124n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W124.hgt -b -124 48 -123 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n48/ws_w124n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W125.hgt -b -125 46 -124 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n46/ws_w125n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W125.hgt -b -125 47 -124 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n47/ws_w125n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Washington_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W125.hgt -b -125 48 -124 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n48/ws_w125n48.osgb
+
+(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+Entire block
+./scripts/genVPB.py -125 45 34 -117 43 ./data/Washington_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -118 42 -117 43 ./data/Washington_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -118 46 -117 47
+./scripts/genroads.py ./output/Terrain -118 47 -117 48
+./scripts/genroads.py ./output/Terrain -118 48 -117 49
+./scripts/genroads.py ./output/Terrain -119 46 -118 47
+./scripts/genroads.py ./output/Terrain -119 47 -118 48
+./scripts/genroads.py ./output/Terrain -119 48 -118 49
+./scripts/genroads.py ./output/Terrain -120 46 -119 47
+./scripts/genroads.py ./output/Terrain -120 47 -119 48
+./scripts/genroads.py ./output/Terrain -120 48 -119 49
+./scripts/genroads.py ./output/Terrain -121 46 -120 47
+./scripts/genroads.py ./output/Terrain -121 47 -120 48
+./scripts/genroads.py ./output/Terrain -121 48 -120 49
+./scripts/genroads.py ./output/Terrain -122 46 -121 47
+./scripts/genroads.py ./output/Terrain -122 47 -121 48
+./scripts/genroads.py ./output/Terrain -122 48 -121 49
+./scripts/genroads.py ./output/Terrain -123 46 -122 47
+./scripts/genroads.py ./output/Terrain -123 47 -122 48
+./scripts/genroads.py ./output/Terrain -123 48 -122 49
+./scripts/genroads.py ./output/Terrain -124 46 -123 47
+./scripts/genroads.py ./output/Terrain -124 47 -123 48
+./scripts/genroads.py ./output/Terrain -124 48 -123 49
+./scripts/genroads.py ./output/Terrain -125 46 -124 47
+./scripts/genroads.py ./output/Terrain -125 47 -124 48
+./scripts/genroads.py ./output/Terrain -125 48 -124 49
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Washington\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Washington_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_Washington.tiff = Washington_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Washington_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Washington@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Washington@1" != 255) * "NLCD_2016_Tree_Canopy_Washington@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Washington_deciduous.tiff
+("Washington_deciduous-coast-clipped@1" != 0) * 42
+
+Warp Washington_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Washington_4326-84.tiff
+Warp Washington_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Washington_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Washington_deciduous_4326-84@1" + "Washington_4326-84@1" = Washington_adjusted.tiff
+("Washington_deciduous_4326-84@1" < 1) * "Washington_4326-84@1" + ("Washington_deciduous_4326-84@1" != 0) * "Washington_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Washington_reclass-grass.tiff
+("Washington_adjusted@1" = 11) * 41 + ("Washington_adjusted@1" = 12) * 34 + ("Washington_adjusted@1" = 21) * 26 + ("Washington_adjusted@1" = 22) * 26 + ("Washington_adjusted@1" = 23) * 26 + ("Washington_adjusted@1" = 24) * 26 + ("Washington_adjusted@1" = 31) * 27 + ("Washington_adjusted@1" = 41) * 26 + ("Washington_adjusted@1" = 42) * 24 + ("Washington_adjusted@1" = 43) * 25 + ("Washington_adjusted@1" = 51) * 30 + ("Washington_adjusted@1" = 52) * 29 + ("Washington_adjusted@1" = 71) * 26 + ("Washington_adjusted@1" = 72) * 32 + ("Washington_adjusted@1" = 73) * 31 + ("Washington_adjusted@1" = 74) * 31 + ("Washington_adjusted@1" = 75) * 32 + ("Washington_adjusted@1" = 81) * 18 + ("Washington_adjusted@1" = 82) * 19 + ("Washington_adjusted@1" = 90) * 25 + ("Washington_adjusted@1" = 95) * 35
+
+Make Urban layer = Washington_urban.tiff
+("Washington_adjusted@1" = 21) * 10 + ("Washington_adjusted@1" = 22) * 1 + ("Washington_adjusted@1" = 23) * 1 + ("Washington_adjusted@1" = 24) * 2
+
+Remove the road clutter = Washington_urban-only.tiff
+r.neighbor, "median", size=7 Washington_urban.tiff
+
+Combine "Washington_reclass-urban@1" + "Washington_reclass-grass@1" = Washington_adjusted-combined.tiff
+("Washington_urban-only@1" < 1) * "Washington_reclass-grass@1" + ("Washington_urban-only@1" != 0) * "Washington_urban-only@1"
+
+Up sample = Washington_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Washington_4326-84-hd.tiff
+r.neighbor, "median", size=7 Washington_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Washington_4326-84-hd-corrected.tiff
+("Washington_4326-84-hd@1" = 0) * 44 + ("Washington_4326-84-hd@1" != 0) * "Washington_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Washington_4326-84-hd-nowater.tiff
+Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Washington_4326-84-hd-nowater.tiff
+Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Washington_4326-84-hd-nowater.tiff
+Washington_4326-84-hd-corrected@1 * (Washington_4326-84-hd-corrected@1 != 41) + 26 * (Washington_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Washington_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Washington_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Washington_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Washington_4326-84-hd-water@1" and "Washington_4326-84-hd-nowater@1" = Washington_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Washington_4326-84-hd-nowater@1" and Washington_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Washington_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
