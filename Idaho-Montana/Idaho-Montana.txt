@@ -1,0 +1,268 @@
+Idaho-Montana
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Idaho-Montana/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Idaho-Montana/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Idaho-Montana/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Idaho-Montana
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W112.hgt -b -112 45 -111 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n45/ws_w112n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W112.hgt -b -112 46 -111 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n46/ws_w112n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W112.hgt -b -112 47 -111 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n47/ws_w112n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W112.hgt -b -112 48 -111 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n48/ws_w112n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W113.hgt -b -113 45 -112 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n45/ws_w113n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W113.hgt -b -113 46 -112 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n46/ws_w113n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W113.hgt -b -113 47 -112 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n47/ws_w113n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W113.hgt -b -113 48 -112 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n48/ws_w113n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W114.hgt -b -114 45 -113 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n45/ws_w114n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W114.hgt -b -114 46 -113 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n46/ws_w114n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W114.hgt -b -114 47 -113 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n47/ws_w114n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W114.hgt -b -114 48 -113 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n48/ws_w114n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W115.hgt -b -115 45 -114 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n45/ws_w115n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W115.hgt -b -115 46 -114 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n46/ws_w115n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W115.hgt -b -115 47 -114 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n47/ws_w115n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W115.hgt -b -115 48 -114 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n48/ws_w115n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W116.hgt -b -116 45 -115 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n45/ws_w116n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W116.hgt -b -116 46 -115 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n46/ws_w116n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W116.hgt -b -116 47 -115 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n47/ws_w116n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W116.hgt -b -116 48 -115 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n48/ws_w116n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W117.hgt -b -117 45 -116 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n45/ws_w117n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W117.hgt -b -117 46 -116 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n46/ws_w117n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W117.hgt -b -117 47 -116 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n47/ws_w117n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W117.hgt -b -117 48 -116 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n48/ws_w117n48.osgb
+
+(Paths above in "docker run" requires having srtm in the local Idaho-Montana data folder)
+Entire block
+./scripts/genVPB.py -117 48 -111 46 ./data/Idaho_Montana_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -112 45 -111 46 ./data/Idaho_Montana_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -112 45 -111 46
+./scripts/genroads.py ./output/Terrain -112 46 -111 47
+./scripts/genroads.py ./output/Terrain -112 47 -111 48
+./scripts/genroads.py ./output/Terrain -112 48 -111 49
+./scripts/genroads.py ./output/Terrain -113 45 -112 46
+./scripts/genroads.py ./output/Terrain -113 46 -112 47
+./scripts/genroads.py ./output/Terrain -113 47 -112 48
+./scripts/genroads.py ./output/Terrain -113 48 -112 49
+./scripts/genroads.py ./output/Terrain -114 45 -113 46
+./scripts/genroads.py ./output/Terrain -114 46 -113 47
+./scripts/genroads.py ./output/Terrain -114 47 -113 48
+./scripts/genroads.py ./output/Terrain -114 48 -113 49
+./scripts/genroads.py ./output/Terrain -115 45 -114 46
+./scripts/genroads.py ./output/Terrain -115 46 -114 47
+./scripts/genroads.py ./output/Terrain -115 47 -114 48
+./scripts/genroads.py ./output/Terrain -115 48 -114 49
+./scripts/genroads.py ./output/Terrain -116 45 -115 46
+./scripts/genroads.py ./output/Terrain -116 46 -115 47
+./scripts/genroads.py ./output/Terrain -116 47 -115 48
+./scripts/genroads.py ./output/Terrain -116 48 -115 49
+./scripts/genroads.py ./output/Terrain -117 45 -116 46
+./scripts/genroads.py ./output/Terrain -117 46 -116 47
+./scripts/genroads.py ./output/Terrain -117 47 -116 48
+./scripts/genroads.py ./output/Terrain -117 48 -116 49
+
+Montana
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W105.hgt -b -105 45 -104 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n45/ws_w105n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W105.hgt -b -105 46 -104 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n46/ws_w105n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W105.hgt -b -105 47 -104 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n47/ws_w105n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W105.hgt -b -105 48 -104 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n48/ws_w105n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W106.hgt -b -106 45 -105 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n45/ws_w106n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W106.hgt -b -106 46 -105 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n46/ws_w106n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W106.hgt -b -106 47 -105 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n47/ws_w106n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W106.hgt -b -106 48 -105 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n48/ws_w106n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W107.hgt -b -107 45 -106 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n45/ws_w107n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W107.hgt -b -107 46 -106 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n46/ws_w107n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W107.hgt -b -107 47 -106 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n47/ws_w107n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W107.hgt -b -107 48 -106 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n48/ws_w107n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W108.hgt -b -108 45 -107 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n45/ws_w108n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W108.hgt -b -108 46 -107 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n46/ws_w108n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W108.hgt -b -108 47 -107 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n47/ws_w108n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W108.hgt -b -108 48 -107 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n48/ws_w108n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W109.hgt -b -109 45 -108 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n45/ws_w109n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W109.hgt -b -109 46 -108 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n46/ws_w109n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W109.hgt -b -109 47 -108 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n47/ws_w109n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W109.hgt -b -109 48 -108 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n48/ws_w109n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W110.hgt -b -110 45 -109 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n45/ws_w110n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W110.hgt -b -110 46 -109 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n46/ws_w110n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W110.hgt -b -110 47 -109 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n47/ws_w110n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W110.hgt -b -110 48 -109 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n48/ws_w110n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W111.hgt -b -111 45 -110 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n45/ws_w111n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W111.hgt -b -111 46 -110 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n46/ws_w111n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W111.hgt -b -111 47 -110 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n47/ws_w111n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W111.hgt -b -111 48 -110 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n48/ws_w111n48.osgb
+
+(Paths above in "docker run" requires having srtm in the local Idaho-Montana data folder)
+Entire block
+./scripts/genVPB.py -111 48 -104 46 ./data/Idaho_Montana_4326-84-hd-corrected.tiff  
+
+./scripts/genroads.py ./output/Terrain -105 45 -104 46
+./scripts/genroads.py ./output/Terrain -105 46 -104 47
+./scripts/genroads.py ./output/Terrain -105 47 -104 48
+./scripts/genroads.py ./output/Terrain -105 48 -104 49
+./scripts/genroads.py ./output/Terrain -106 45 -105 46
+./scripts/genroads.py ./output/Terrain -106 46 -105 47
+./scripts/genroads.py ./output/Terrain -106 47 -105 48
+./scripts/genroads.py ./output/Terrain -106 48 -105 49
+./scripts/genroads.py ./output/Terrain -107 45 -106 46
+./scripts/genroads.py ./output/Terrain -107 46 -106 47
+./scripts/genroads.py ./output/Terrain -107 47 -106 48
+./scripts/genroads.py ./output/Terrain -107 48 -106 49
+./scripts/genroads.py ./output/Terrain -108 45 -107 46
+./scripts/genroads.py ./output/Terrain -108 46 -107 47
+./scripts/genroads.py ./output/Terrain -108 47 -107 48
+./scripts/genroads.py ./output/Terrain -108 48 -107 49
+./scripts/genroads.py ./output/Terrain -109 45 -108 46
+./scripts/genroads.py ./output/Terrain -109 46 -108 47
+./scripts/genroads.py ./output/Terrain -109 47 -108 48
+./scripts/genroads.py ./output/Terrain -109 48 -108 49
+./scripts/genroads.py ./output/Terrain -110 45 -109 46
+./scripts/genroads.py ./output/Terrain -110 46 -109 47
+./scripts/genroads.py ./output/Terrain -110 47 -109 48
+./scripts/genroads.py ./output/Terrain -110 48 -109 49
+./scripts/genroads.py ./output/Terrain -111 45 -110 46
+./scripts/genroads.py ./output/Terrain -111 46 -110 47
+./scripts/genroads.py ./output/Terrain -111 47 -110 48
+./scripts/genroads.py ./output/Terrain -111 48 -110 49
+
+Idaho
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W112.hgt -b -112 42 -111 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n42/ws_w112n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W112.hgt -b -112 43 -111 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n43/ws_w112n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W112.hgt -b -112 44 -111 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n44/ws_w112n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W113.hgt -b -113 42 -112 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n42/ws_w113n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W113.hgt -b -113 43 -112 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n43/ws_w113n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W113.hgt -b -113 44 -112 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n44/ws_w113n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W114.hgt -b -114 42 -113 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n42/ws_w114n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W114.hgt -b -114 43 -113 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n43/ws_w114n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W114.hgt -b -114 44 -113 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n44/ws_w114n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W115.hgt -b -115 42 -114 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n42/ws_w115n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W115.hgt -b -115 43 -114 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n43/ws_w115n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W115.hgt -b -115 44 -114 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n44/ws_w115n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W116.hgt -b -116 42 -115 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n42/ws_w116n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W116.hgt -b -116 43 -115 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n43/ws_w116n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W116.hgt -b -116 44 -115 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n44/ws_w116n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W117.hgt -b -117 42 -116 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n42/ws_w117n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W117.hgt -b -117 43 -116 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n43/ws_w117n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W117.hgt -b -117 44 -116 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n44/ws_w117n44.osgb
+
+(Paths above in "docker run" requires having srtm in the local Idaho-Montana data folder)
+Entire block
+./scripts/genVPB.py -117 44 -111 43 ./data/Idaho_Montana_4326-84-hd-corrected.tiff 
+
+./scripts/genroads.py ./output/Terrain -112 42 -111 43
+./scripts/genroads.py ./output/Terrain -112 43 -111 44
+./scripts/genroads.py ./output/Terrain -112 44 -111 45
+./scripts/genroads.py ./output/Terrain -113 42 -112 43
+./scripts/genroads.py ./output/Terrain -113 43 -112 44
+./scripts/genroads.py ./output/Terrain -113 44 -112 45
+./scripts/genroads.py ./output/Terrain -114 42 -113 43
+./scripts/genroads.py ./output/Terrain -114 43 -113 44
+./scripts/genroads.py ./output/Terrain -114 44 -113 45
+./scripts/genroads.py ./output/Terrain -115 42 -114 43
+./scripts/genroads.py ./output/Terrain -115 43 -114 44
+./scripts/genroads.py ./output/Terrain -115 44 -114 45
+./scripts/genroads.py ./output/Terrain -116 42 -115 43
+./scripts/genroads.py ./output/Terrain -116 43 -115 44
+./scripts/genroads.py ./output/Terrain -116 44 -115 45
+./scripts/genroads.py ./output/Terrain -117 42 -116 43
+./scripts/genroads.py ./output/Terrain -117 43 -116 44
+./scripts/genroads.py ./output/Terrain -117 44 -116 45
+
+Make Decidious Layer EPSG:5070 - NAD83 = Montana_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Montana@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Idaho-Montana_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Idaho-Montana@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Idaho_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Idaho@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_Montana.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana_4326-84.tiff
+Warp Montana_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana_deciduous_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Idaho-Montana.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Montana_4326-84.tiff
+Warp Idaho-Montana_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Montana_deciduous_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Idaho.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho_4326-84.tiff
+Warp Idaho_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Montana_deciduous_4326-84@1" + "Montana_4326-84@1" = Montana_adjusted.tiff
+("Montana_deciduous_4326-84@1" < 1) * "Montana_4326-84@1" + ("Montana_deciduous_4326-84@1" != 0) * "Montana_deciduous_4326-84@1"
+Combine "Idaho-Montana_deciduous_4326-84@1" + "Idaho-Montana_4326-84@1" = Idaho-Montana_adjusted.tiff
+("Idaho-Montana_deciduous_4326-84@1" < 1) * "Idaho-Montana_4326-84@1" + ("Idaho-Montana_deciduous_4326-84@1" != 0) * "Idaho-Montana_deciduous_4326-84@1"
+Combine "Idaho_deciduous_4326-84@1" + "Idaho_4326-84@1" = Idaho_adjusted.tiff
+("Idaho_deciduous_4326-84@1" < 1) * "Idaho_4326-84@1" + ("Idaho_deciduous_4326-84@1" != 0) * "Idaho_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Montana_reclass-grass.tiff
+("Montana_adjusted@1" = 11) * 41 + ("Montana_adjusted@1" = 12) * 34 + ("Montana_adjusted@1" = 21) * 26 + ("Montana_adjusted@1" = 22) * 26 + ("Montana_adjusted@1" = 23) * 26 + ("Montana_adjusted@1" = 24) * 26 + ("Montana_adjusted@1" = 31) * 27 + ("Montana_adjusted@1" = 41) * 26 + ("Montana_adjusted@1" = 42) * 24 + ("Montana_adjusted@1" = 43) * 25 + ("Montana_adjusted@1" = 51) * 30 + ("Montana_adjusted@1" = 52) * 29 + ("Montana_adjusted@1" = 71) * 26 + ("Montana_adjusted@1" = 72) * 32 + ("Montana_adjusted@1" = 73) * 31 + ("Montana_adjusted@1" = 74) * 31 + ("Montana_adjusted@1" = 75) * 32 + ("Montana_adjusted@1" = 81) * 18 + ("Montana_adjusted@1" = 82) * 19 + ("Montana_adjusted@1" = 90) * 25 + ("Montana_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Idaho-Montana_reclass-grass.tiff
+("Idaho-Montana_adjusted@1" = 11) * 41 + ("Idaho-Montana_adjusted@1" = 12) * 34 + ("Idaho-Montana_adjusted@1" = 21) * 26 + ("Idaho-Montana_adjusted@1" = 22) * 26 + ("Idaho-Montana_adjusted@1" = 23) * 26 + ("Idaho-Montana_adjusted@1" = 24) * 26 + ("Idaho-Montana_adjusted@1" = 31) * 27 + ("Idaho-Montana_adjusted@1" = 41) * 26 + ("Idaho-Montana_adjusted@1" = 42) * 24 + ("Idaho-Montana_adjusted@1" = 43) * 25 + ("Idaho-Montana_adjusted@1" = 51) * 30 + ("Idaho-Montana_adjusted@1" = 52) * 29 + ("Idaho-Montana_adjusted@1" = 71) * 26 + ("Idaho-Montana_adjusted@1" = 72) * 32 + ("Idaho-Montana_adjusted@1" = 73) * 31 + ("Idaho-Montana_adjusted@1" = 74) * 31 + ("Idaho-Montana_adjusted@1" = 75) * 32 + ("Idaho-Montana_adjusted@1" = 81) * 18 + ("Idaho-Montana_adjusted@1" = 82) * 19 + ("Idaho-Montana_adjusted@1" = 90) * 25 + ("Idaho-Montana_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Idaho_reclass-grass.tiff
+("Idaho_adjusted@1" = 11) * 41 + ("Idaho_adjusted@1" = 12) * 34 + ("Idaho_adjusted@1" = 21) * 26 + ("Idaho_adjusted@1" = 22) * 26 + ("Idaho_adjusted@1" = 23) * 26 + ("Idaho_adjusted@1" = 24) * 26 + ("Idaho_adjusted@1" = 31) * 27 + ("Idaho_adjusted@1" = 41) * 26 + ("Idaho_adjusted@1" = 42) * 24 + ("Idaho_adjusted@1" = 43) * 25 + ("Idaho_adjusted@1" = 51) * 30 + ("Idaho_adjusted@1" = 52) * 29 + ("Idaho_adjusted@1" = 71) * 26 + ("Idaho_adjusted@1" = 72) * 32 + ("Idaho_adjusted@1" = 73) * 31 + ("Idaho_adjusted@1" = 74) * 31 + ("Idaho_adjusted@1" = 75) * 32 + ("Idaho_adjusted@1" = 81) * 18 + ("Idaho_adjusted@1" = 82) * 19 + ("Idaho_adjusted@1" = 90) * 25 + ("Idaho_adjusted@1" = 95) * 35
+
+Make Urban layer = Montana_urban.tiff
+("Montana_adjusted@1" = 21) * 10 + ("Montana_adjusted@1" = 22) * 1 + ("Montana_adjusted@1" = 23) * 1 + ("Montana_adjusted@1" = 24) * 2
+Make Urban layer = Idaho-Montana_urban.tiff
+("Idaho-Montana_adjusted@1" = 21) * 10 + ("Idaho-Montana_adjusted@1" = 22) * 1 + ("Idaho-Montana_adjusted@1" = 23) * 1 + ("Idaho-Montana_adjusted@1" = 24) * 2
+Make Urban layer = Idaho_urban.tiff
+("Idaho_adjusted@1" = 21) * 10 + ("Idaho_adjusted@1" = 22) * 1 + ("Idaho_adjusted@1" = 23) * 1 + ("Idaho_adjusted@1" = 24) * 2
+
+Remove the road clutter = Montana_urban-only.tiff
+r.neighbor, "median", size=7 Montana_urban.tiff
+Remove the road clutter = Idaho-Montana_urban-only.tiff
+r.neighbor, "median", size=7 Idaho-Montana_urban.tiff
+Remove the road clutter = Idaho_urban-only.tiff
+r.neighbor, "median", size=7 Idaho_urban.tiff
+
+Combine "Montana_reclass-urban@1" + "Montana_reclass-grass@1" = Montana_adjusted-combined.tiff
+("Montana_urban-only@1" < 1) * "Montana_reclass-grass@1" + ("Montana_urban-only@1" != 0) * "Montana_urban-only@1"
+Combine "Idaho-Montana_reclass-urban@1" + "Idaho-Montana_reclass-grass@1" = Idaho-Montana_adjusted-combined.tiff
+("Idaho-Montana_urban-only@1" < 1) * "Idaho-Montana_reclass-grass@1" + ("Idaho-Montana_urban-only@1" != 0) * "Idaho-Montana_urban-only@1"
+Combine "Idaho_reclass-urban@1" + "Idaho_reclass-grass@1" = Idaho_adjusted-combined.tiff
+("Idaho_urban-only@1" < 1) * "Idaho_reclass-grass@1" + ("Idaho_urban-only@1" != 0) * "Idaho_urban-only@1"
+
+Up sample = Montana_final-prep-4x.tiff
+Up sample = Idaho-Montana_final-prep-4x.tiff
+Up sample = Idaho_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Montana_4326-84-hd.tiff
+r.neighbor, "median", size=7 Montana_4326-84-hd.tiff
+Simplify Idaho-Montana_4326-84-hd.tiff
+r.neighbor, "median", size=7 Idaho-Montana_4326-84-hd.tiff
+Simplify Idaho_4326-84-hd.tiff
+r.neighbor, "median", size=7 Idaho_4326-84-hd.tiff
+
+Reclass index 0 to 44, leave the rest the same = Montana_4326-84-hd-corrected.tiff
+("Montana_4326-84-hd@1" = 0) * 44 + ("Montana_4326-84-hd@1" != 0) * "Montana_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Idaho-Montana_4326-84-hd-corrected.tiff
+("Idaho-Montana_4326-84-hd@1" = 0) * 44 + ("Idaho-Montana_4326-84-hd@1" != 0) * "Idaho-Montana_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Idaho_4326-84-hd-corrected.tiff
+("Idaho_4326-84-hd@1" = 0) * 44 + ("Idaho_4326-84-hd@1" != 0) * "Idaho_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Montana_4326-84-hd-nowater.tiff
+Montana_4326-84-hd-corrected@1 * (Montana_4326-84-hd-corrected@1 != 41) + 26 * (Montana_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Idaho-Montana_4326-84-hd-nowater.tiff
+Idaho-Montana_4326-84-hd-corrected@1 * (Idaho-Montana_4326-84-hd-corrected@1 != 41) + 26 * (Idaho-Montana_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Idaho_4326-84-hd-nowater.tiff
+Idaho_4326-84-hd-corrected@1 * (Idaho_4326-84-hd-corrected@1 != 41) + 26 * (Idaho_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Montana_water_4326-84.gpkg.
+Obtain and load vector layer = Idaho-Montana_water_4326-84.gpkg.
+Obtain and load vector layer = Idaho_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Idaho-Montana_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Idaho-Montana_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Idaho-Montana_4326-84-hd-water@1" and "Idaho-Montana_4326-84-hd-nowater@1" = Idaho-Montana_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Idaho-Montana_4326-84-hd-nowater@1" and Idaho-Montana_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Idaho-Montana_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
