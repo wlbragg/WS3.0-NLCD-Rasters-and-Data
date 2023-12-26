@@ -1,0 +1,171 @@
+Nevada
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Nevada/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Nevada/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Nevada/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Nevada-Southern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W115.hgt -b -115 35 -114 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n35/ws_w115n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W115.hgt -b -115 36 -114 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n36/ws_w115n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W115.hgt -b -115 37 -114 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n37/ws_w115n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W115.hgt -b -115 38 -114 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n38/ws_w115n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W116.hgt -b -116 35 -115 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n35/ws_w116n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W116.hgt -b -116 36 -115 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n36/ws_w116n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W116.hgt -b -116 37 -115 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n37/ws_w116n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W116.hgt -b -116 38 -115 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n38/ws_w116n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W117.hgt -b -117 36 -116 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n36/ws_w117n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W117.hgt -b -117 37 -116 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n37/ws_w117n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W117.hgt -b -117 38 -116 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n38/ws_w117n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W118.hgt -b -118 36 -117 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n36/ws_w118n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W118.hgt -b -118 37 -117 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n37/ws_w118n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W118.hgt -b -118 38 -117 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n38/ws_w118n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W119.hgt -b -119 37 -118 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n37/ws_w119n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W119.hgt -b -119 38 -118 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n38/ws_w119n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W120.hgt -b -120 38 -119 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n38/ws_w120n38.osgb
+
+(Paths above in "docker run" requires having srtm in the local Nevada data folder)
+Entire block
+./scripts/genVPB.py -120 38 -114 36 ./data/Nevada-Southern_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -115 35 -114 36 ./data/Nevada-Southern_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -115 35 -114 36
+./scripts/genroads.py ./output/Terrain -115 36 -114 37
+./scripts/genroads.py ./output/Terrain -115 37 -114 38
+./scripts/genroads.py ./output/Terrain -115 38 -114 39
+./scripts/genroads.py ./output/Terrain -116 35 -115 36
+./scripts/genroads.py ./output/Terrain -116 36 -115 37
+./scripts/genroads.py ./output/Terrain -116 37 -115 38
+./scripts/genroads.py ./output/Terrain -116 38 -115 39
+./scripts/genroads.py ./output/Terrain -117 36 -116 37
+./scripts/genroads.py ./output/Terrain -117 37 -116 38
+./scripts/genroads.py ./output/Terrain -117 38 -116 39
+./scripts/genroads.py ./output/Terrain -118 36 -117 37
+./scripts/genroads.py ./output/Terrain -118 37 -117 38
+./scripts/genroads.py ./output/Terrain -118 38 -117 39
+./scripts/genroads.py ./output/Terrain -119 37 -118 38
+./scripts/genroads.py ./output/Terrain -119 38 -118 39
+./scripts/genroads.py ./output/Terrain -120 38 -119 39
+
+Nevada-Northern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W115.hgt -b -115 39 -114 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n39/ws_w115n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W116.hgt -b -116 39 -115 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n39/ws_w116n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W117.hgt -b -117 39 -116 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n39/ws_w117n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W118.hgt -b -118 39 -117 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n39/ws_w118n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W119.hgt -b -119 39 -118 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n39/ws_w119n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W120.hgt -b -120 39 -119 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n39/ws_w120n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W115.hgt -b -115 40 -114 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n40/ws_w115n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W115.hgt -b -115 41 -114 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n41/ws_w115n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W116.hgt -b -116 40 -115 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n40/ws_w116n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W116.hgt -b -116 41 -115 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n41/ws_w116n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W117.hgt -b -117 40 -116 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n40/ws_w117n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W117.hgt -b -117 41 -116 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n41/ws_w117n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W118.hgt -b -118 40 -117 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n40/ws_w118n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W118.hgt -b -118 41 -117 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n41/ws_w118n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W119.hgt -b -119 40 -118 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n40/ws_w119n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W119.hgt -b -119 41 -118 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w119n41/ws_w119n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W120.hgt -b -120 40 -119 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n40/ws_w120n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nevada-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W120.hgt -b -120 41 -119 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w120n41/ws_w120n41.osgb
+
+./scripts/genVPB.py -120 41 -114 40 ./data/Nevada-Northern_4326-84-hd-corrected.tiff 
+
+./scripts/genroads.py ./output/Terrain -115 39 -114 40
+./scripts/genroads.py ./output/Terrain -115 40 -114 41
+./scripts/genroads.py ./output/Terrain -115 41 -114 42
+./scripts/genroads.py ./output/Terrain -116 39 -115 40
+./scripts/genroads.py ./output/Terrain -116 40 -115 41
+./scripts/genroads.py ./output/Terrain -116 41 -115 42
+./scripts/genroads.py ./output/Terrain -117 39 -116 40
+./scripts/genroads.py ./output/Terrain -117 40 -116 41
+./scripts/genroads.py ./output/Terrain -117 41 -116 42
+./scripts/genroads.py ./output/Terrain -118 39 -117 40
+./scripts/genroads.py ./output/Terrain -118 40 -117 41
+./scripts/genroads.py ./output/Terrain -118 41 -117 42
+./scripts/genroads.py ./output/Terrain -119 39 -118 40
+./scripts/genroads.py ./output/Terrain -119 40 -118 41
+./scripts/genroads.py ./output/Terrain -119 41 -118 42
+./scripts/genroads.py ./output/Terrain -120 39 -119 40
+./scripts/genroads.py ./output/Terrain -120 40 -119 41
+./scripts/genroads.py ./output/Terrain -120 41 -119 42
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Nevada-Southern_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Nevada-Southern@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Nevada-Southern@1" != 255) * "NLCD_2016_Tree_Canopy_Nevada-Southern@1"
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Nevada-Northern_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Nevada-Northern@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Nevada-Northern@1" != 255) * "NLCD_2016_Tree_Canopy_Nevada-Northern@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Nevada-Southern_deciduous.tiff
+("Nevada-Southern_deciduous-coast-clipped@1" != 0) * 43
+Make Decidious Layer EPSG:5070 - NAD83 = Nevada-Northern_deciduous.tiff
+("Nevada-Northern_deciduous-coast-clipped@1" != 0) * 43
+
+Warp NLCD_2019_Land_Cover_Nevada-Southern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nevada-Southern_4326-84.tiff
+Warp Nevada-Southern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nevada-Southern_deciduous_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Nevada-Northern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nevada-Northern_4326-84.tiff
+Warp Nevada-Northern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nevada-Northern_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Nevada-Southern_deciduous_4326-84.@1" + "Nevada-Southern_4326-84@1" = Nevada-Southern_adjusted.tiff
+("Nevada-Southern_deciduous_4326-84@1" < 1) * "Nevada-Southern_4326-84@1" + ("Nevada-Southern_deciduous_4326-84@1" != 0) * "Nevada-Southern_deciduous_4326-84@1"
+Combine "Nevada-Northern_deciduous_4326-84.@1" + "Nevada-Northern_4326-84@1" = Nevada-Northern_adjusted.tiff
+("Nevada-Northern_deciduous_4326-84@1" < 1) * "Nevada-Northern_4326-84@1" + ("Nevada-Northern_deciduous_4326-84@1" != 0) * "Nevada-Northern_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Nevada-Southern_reclass-grass.tiff
+("Nevada-Southern_adjusted@1" = 11) * 41 + ("Nevada-Southern_adjusted@1" = 12) * 34 + ("Nevada-Southern_adjusted@1" = 21) * 26 + ("Nevada-Southern_adjusted@1" = 22) * 26 + ("Nevada-Southern_adjusted@1" = 23) * 26 + ("Nevada-Southern_adjusted@1" = 24) * 26 + ("Nevada-Southern_adjusted@1" = 31) * 27 + ("Nevada-Southern_adjusted@1" = 41) * 26 + ("Nevada-Southern_adjusted@1" = 42) * 24 + ("Nevada-Southern_adjusted@1" = 43) * 25 + ("Nevada-Southern_adjusted@1" = 51) * 30 + ("Nevada-Southern_adjusted@1" = 52) * 29 + ("Nevada-Southern_adjusted@1" = 71) * 26 + ("Nevada-Southern_adjusted@1" = 72) * 32 + ("Nevada-Southern_adjusted@1" = 73) * 31 + ("Nevada-Southern_adjusted@1" = 74) * 31 + ("Nevada-Southern_adjusted@1" = 75) * 32 + ("Nevada-Southern_adjusted@1" = 81) * 18 + ("Nevada-Southern_adjusted@1" = 82) * 19 + ("Nevada-Southern_adjusted@1" = 90) * 25 + ("Nevada-Southern_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Nevada-Northern_reclass-grass.tiff
+("Nevada-Northern_adjusted@1" = 11) * 41 + ("Nevada-Northern_adjusted@1" = 12) * 34 + ("Nevada-Northern_adjusted@1" = 21) * 26 + ("Nevada-Northern_adjusted@1" = 22) * 26 + ("Nevada-Northern_adjusted@1" = 23) * 26 + ("Nevada-Northern_adjusted@1" = 24) * 26 + ("Nevada-Northern_adjusted@1" = 31) * 27 + ("Nevada-Northern_adjusted@1" = 41) * 26 + ("Nevada-Northern_adjusted@1" = 42) * 24 + ("Nevada-Northern_adjusted@1" = 43) * 25 + ("Nevada-Northern_adjusted@1" = 51) * 30 + ("Nevada-Northern_adjusted@1" = 52) * 29 + ("Nevada-Northern_adjusted@1" = 71) * 26 + ("Nevada-Northern_adjusted@1" = 72) * 32 + ("Nevada-Northern_adjusted@1" = 73) * 31 + ("Nevada-Northern_adjusted@1" = 74) * 31 + ("Nevada-Northern_adjusted@1" = 75) * 32 + ("Nevada-Northern_adjusted@1" = 81) * 18 + ("Nevada-Northern_adjusted@1" = 82) * 19 + ("Nevada-Northern_adjusted@1" = 90) * 25 + ("Nevada-Northern_4326-84@1" = 95) * 35
+
+Make Urban layer = Nevada-Southern_urban.tiff
+("Nevada-Southern_adjusted@1" = 21) * 10 + ("Nevada-Southern_adjusted@1" = 22) * 1 + ("Nevada-Southern_adjusted@1" = 23) * 1 + ("Nevada-Southern_adjusted@1" = 24) * 2
+Make Urban layer = Nevada-Northern_urban.tiff
+("Nevada-Northern_adjusted@1" = 21) * 10 + ("Nevada-Northern_adjusted@1" = 22) * 1 + ("Nevada-Northern_adjusted@1" = 23) * 1 + ("Nevada-Northern_adjusted@1" = 24) * 2
+
+Remove the road clutter = Nevada-Southern_urban-only.tiff
+r.neighbor, "median", size=7 Nevada-Southern_urban.tiff
+Remove the road clutter = Nevada-Northern_urban-only.tiff
+r.neighbor, "median", size=7 Nevada-Northern_urban.tiff
+
+Combine "Nevada-Southern_reclass-urban@1" + "Nevada-Southern_reclass-grass@1" = Nevada-Southern_adjusted-combined.tiff
+("Nevada-Southern_urban-only@1" < 1) * "Nevada-Southern_reclass-grass@1" + ("Nevada-Southern_urban-only@1" != 0) * "Nevada-Southern_urban-only@1"
+Combine "Nevada-Northern_reclass-urban@1" + "Nevada-Northern_reclass-grass@1" = Nevada-Northern_adjusted-combined.tiff
+("Nevada-Northern_urban-only@1" < 1) * "Nevada-Northern_reclass-grass@1" + ("Nevada-Northern_urban-only@1" != 0) * "Nevada-Northern_urban-only@1"
+
+Up sample = Nevada-Southern_final-prep-4x.tiff
+Up sample = Nevada-Northern_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Nevada-Southern_4326-84-hd.tiff
+r.neighbor, "median", size=7 Nevada-Southern_final-prep-4x.tiff
+Simplify Nevada-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7 Nevada-Northern_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Nevada-Southern_4326-84-hd-corrected.tiff
+("Nevada-Southern_4326-84-hd@1" = 0) * 44 + ("Nevada-Southern_4326-84-hd@1" != 0) * "Nevada-Southern_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Nevada-Northern_4326-84-hd-corrected.tiff
+("Nevada-Northern_4326-84-hd@1" = 0) * 44 + ("Nevada-Northern_4326-84-hd@1" != 0) * "Nevada-Northern_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Nevada-Southern_4326-84-hd-nowater.tiff
+Nevada-Southern_4326-84-hd-corrected@1 * (Nevada-Southern_4326-84-hd-corrected@1 != 41) + 26 * (Nevada-Southern_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Nevada-Northern_4326-84-hd-nowater.tiff
+Nevada-Northern_4326-84-hd-corrected@1 * (Nevada-Northern_4326-84-hd-corrected@1 != 41) + 26 * (Nevada-Northern_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Nevada-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Nevada-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Nevada-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Nevada-Northern_4326-84-hd-water@1" and "Nevada-Northern_4326-84-hd-nowater@1" = Nevada-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Nevada-Northern_4326-84-hd-nowater@1" and Nevada-Northern_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Nevada-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

@@ -1,0 +1,167 @@
+Idaho
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Idaho/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Idaho/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Idaho/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Idaho-Northern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W114.hgt -b -114 45 -113 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n45/ws_w114n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W114.hgt -b -114 46 -113 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n46/ws_w114n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W114.hgt -b -114 47 -113 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n47/ws_w114n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W114.hgt -b -114 48 -113 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n48/ws_w114n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W115.hgt -b -115 45 -114 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n45/ws_w115n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W115.hgt -b -115 46 -114 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n46/ws_w115n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W115.hgt -b -115 47 -114 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n47/ws_w115n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W115.hgt -b -115 48 -114 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n48/ws_w115n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W116.hgt -b -116 45 -115 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n45/ws_w116n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W116.hgt -b -116 46 -115 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n46/ws_w116n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W116.hgt -b -116 47 -115 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n47/ws_w116n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W116.hgt -b -116 48 -115 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n48/ws_w116n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W117.hgt -b -117 45 -116 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n45/ws_w117n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W117.hgt -b -117 46 -116 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n46/ws_w117n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W117.hgt -b -117 47 -116 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n47/ws_w117n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho_Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W117.hgt -b -117 48 -116 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n48/ws_w117n48.osgb
+
+(Paths above in "docker run" requires having srtm in the local Idaho-Northern data folder)
+Entire block
+./scripts/genVPB.py -117 48 -113 46 ./data/Idaho_Northern_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -114 45 -113 46 ./data/Idaho_Northern_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -114 45 -113 46
+./scripts/genroads.py ./output/Terrain -114 46 -113 47
+./scripts/genroads.py ./output/Terrain -114 47 -113 48
+./scripts/genroads.py ./output/Terrain -114 48 -113 49
+./scripts/genroads.py ./output/Terrain -115 45 -114 46
+./scripts/genroads.py ./output/Terrain -115 46 -114 47
+./scripts/genroads.py ./output/Terrain -115 47 -114 48
+./scripts/genroads.py ./output/Terrain -115 48 -114 49
+./scripts/genroads.py ./output/Terrain -116 45 -115 46
+./scripts/genroads.py ./output/Terrain -116 46 -115 47
+./scripts/genroads.py ./output/Terrain -116 47 -115 48
+./scripts/genroads.py ./output/Terrain -116 48 -115 49
+./scripts/genroads.py ./output/Terrain -117 45 -116 46
+./scripts/genroads.py ./output/Terrain -117 46 -116 47
+./scripts/genroads.py ./output/Terrain -117 47 -116 48
+./scripts/genroads.py ./output/Terrain -117 48 -116 49
+
+Idaho-Southern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W112.hgt -b -112 42 -111 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n42/ws_w112n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W112.hgt -b -112 43 -111 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n43/ws_w112n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W112.hgt -b -112 44 -111 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w112n44/ws_w112n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W113.hgt -b -113 42 -112 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n42/ws_w113n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W113.hgt -b -113 43 -112 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n43/ws_w113n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W113.hgt -b -113 44 -112 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w113n44/ws_w113n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W114.hgt -b -114 42 -113 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n42/ws_w114n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W114.hgt -b -114 43 -113 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n43/ws_w114n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W114.hgt -b -114 44 -113 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n44/ws_w114n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W115.hgt -b -115 42 -114 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n42/ws_w115n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W115.hgt -b -115 43 -114 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n43/ws_w115n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W115.hgt -b -115 44 -114 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n44/ws_w115n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W116.hgt -b -116 42 -115 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n42/ws_w116n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W116.hgt -b -116 43 -115 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n43/ws_w116n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W116.hgt -b -116 44 -115 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n44/ws_w116n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W117.hgt -b -117 42 -116 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n42/ws_w117n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W117.hgt -b -117 43 -116 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n43/ws_w117n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W117.hgt -b -117 44 -116 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w117n44/ws_w117n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W118.hgt -b -118 44 -117 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w118n44/ws_w118n44.osgb
+
+./scripts/genVPB.py -118 44 -111 43 ./data/Idaho-Southern_4326-84-hd-corrected.tiff 
+
+./scripts/genroads.py ./output/Terrain -112 42 -111 43
+./scripts/genroads.py ./output/Terrain -112 43 -111 44
+./scripts/genroads.py ./output/Terrain -112 44 -111 45
+./scripts/genroads.py ./output/Terrain -113 42 -112 43
+./scripts/genroads.py ./output/Terrain -113 43 -112 44
+./scripts/genroads.py ./output/Terrain -113 44 -112 45
+./scripts/genroads.py ./output/Terrain -114 42 -113 43
+./scripts/genroads.py ./output/Terrain -114 43 -113 44
+./scripts/genroads.py ./output/Terrain -114 44 -113 45
+./scripts/genroads.py ./output/Terrain -115 42 -114 43
+./scripts/genroads.py ./output/Terrain -115 43 -114 44
+./scripts/genroads.py ./output/Terrain -115 44 -114 45
+./scripts/genroads.py ./output/Terrain -116 42 -115 43
+./scripts/genroads.py ./output/Terrain -116 43 -115 44
+./scripts/genroads.py ./output/Terrain -116 44 -115 45
+./scripts/genroads.py ./output/Terrain -117 42 -116 43
+./scripts/genroads.py ./output/Terrain -117 43 -116 44
+./scripts/genroads.py ./output/Terrain -117 44 -116 45
+./scripts/genroads.py ./output/Terrain -118 44 -117 45
+
+Make Decidious Layer EPSG:5070 - NAD83 = Idaho-Northern_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Idaho-Northern@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Idaho-Southern_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Idaho-Southern@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_Idaho-Northern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Northern_4326-84.tiff
+Warp Idaho-Northern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Northern_deciduous_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Idaho.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Southern_4326-84.tiff
+Warp Idaho-Southern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Southern_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Idaho-Northern_deciduous_4326-84@1" + "Idaho-Northern_4326-84@1" = Idaho-Northern_adjusted.tiff
+("Idaho-Northern_deciduous_4326-84@1" < 1) * "Idaho-Northern_4326-84@1" + ("Idaho-Northern_deciduous_4326-84@1" != 0) * "Idaho-Northern_deciduous_4326-84@1"
+Combine "Idaho-Southern_deciduous_4326-84@1" + "Idaho-Southern_4326-84@1" = Idaho-Southern_adjusted.tiff
+("Idaho-Southern_deciduous_4326-84@1" < 1) * "Idaho-Southern_4326-84@1" + ("Idaho-Southern_deciduous_4326-84@1" != 0) * "Idaho-Southern_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Idaho-Northern_reclass-grass.tiff
+("Idaho-Northern_adjusted@1" = 11) * 41 + ("Idaho-Northern_adjusted@1" = 12) * 34 + ("Idaho-Northern_adjusted@1" = 21) * 26 + ("Idaho-Northern_adjusted@1" = 22) * 26 + ("Idaho-Northern_adjusted@1" = 23) * 26 + ("Idaho-Northern_adjusted@1" = 24) * 26 + ("Idaho-Northern_adjusted@1" = 31) * 27 + ("Idaho-Northern_adjusted@1" = 41) * 26 + ("Idaho-Northern_adjusted@1" = 42) * 24 + ("Idaho-Northern_adjusted@1" = 43) * 25 + ("Idaho-Northern_adjusted@1" = 51) * 30 + ("Idaho-Northern_adjusted@1" = 52) * 29 + ("Idaho-Northern_adjusted@1" = 71) * 26 + ("Idaho-Northern_adjusted@1" = 72) * 32 + ("Idaho-Northern_adjusted@1" = 73) * 31 + ("Idaho-Northern_adjusted@1" = 74) * 31 + ("Idaho-Northern_adjusted@1" = 75) * 32 + ("Idaho-Northern_adjusted@1" = 81) * 18 + ("Idaho-Northern_adjusted@1" = 82) * 19 + ("Idaho-Northern_adjusted@1" = 90) * 25 + ("Idaho-Northern_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Idaho-Southern_reclass-grass.tiff
+("Idaho-Southern_adjusted@1" = 11) * 41 + ("Idaho-Southern_adjusted@1" = 12) * 34 + ("Idaho-Southern_adjusted@1" = 21) * 26 + ("Idaho-Southern_adjusted@1" = 22) * 26 + ("Idaho-Southern_adjusted@1" = 23) * 26 + ("Idaho-Southern_adjusted@1" = 24) * 26 + ("Idaho-Southern_adjusted@1" = 31) * 27 + ("Idaho-Southern_adjusted@1" = 41) * 26 + ("Idaho-Southern_adjusted@1" = 42) * 24 + ("Idaho-Southern_adjusted@1" = 43) * 25 + ("Idaho-Southern_adjusted@1" = 51) * 30 + ("Idaho-Southern_adjusted@1" = 52) * 29 + ("Idaho-Southern_adjusted@1" = 71) * 26 + ("Idaho-Southern_adjusted@1" = 72) * 32 + ("Idaho-Southern_adjusted@1" = 73) * 31 + ("Idaho-Southern_adjusted@1" = 74) * 31 + ("Idaho-Southern_adjusted@1" = 75) * 32 + ("Idaho-Southern_adjusted@1" = 81) * 18 + ("Idaho-Southern_adjusted@1" = 82) * 19 + ("Idaho-Southern_adjusted@1" = 90) * 25 + ("Idaho-Southern_adjusted@1" = 95) * 35
+
+Make Urban layer = Idaho-Northern_urban.tiff
+("Idaho-Northern_adjusted@1" = 21) * 10 + ("Idaho-Northern_adjusted@1" = 22) * 1 + ("Idaho-Northern_adjusted@1" = 23) * 1 + ("Idaho-Northern_adjusted@1" = 24) * 2
+Make Urban layer = Idaho-Southern_urban.tiff
+("Idaho-Southern_adjusted@1" = 21) * 10 + ("Idaho-Southern_adjusted@1" = 22) * 1 + ("Idaho-Southern_adjusted@1" = 23) * 1 + ("Idaho-Southern_adjusted@1" = 24) * 2
+
+Remove the road clutter = Idaho-Northern_urban-only.tiff
+r.neighbor, "median", size=7 Idaho-Northern_urban.tiff
+Remove the road clutter = Idaho-Southern_urban-only.tiff
+r.neighbor, "median", size=7 Idaho-Southern_urban.tiff
+
+Combine "Idaho-Northern_reclass-urban@1" + "Idaho-Northern_reclass-grass@1" = Idaho-Northern_adjusted-combined.tiff
+("Idaho-Northern_urban-only@1" < 1) * "Idaho-Northern_reclass-grass@1" + ("Idaho-Northern_urban-only@1" != 0) * "Idaho-Northern_urban-only@1"
+Combine "Idaho-Southern_reclass-urban@1" + "Idaho-Southern_reclass-grass@1" = Idaho-Southern_adjusted-combined.tiff
+("Idaho-Southern_urban-only@1" < 1) * "Idaho-Southern_reclass-grass@1" + ("Idaho-Southern_urban-only@1" != 0) * "Idaho-Southern_urban-only@1"
+
+Up sample = Idaho-Northern_final-prep-4x.tiff
+Up sample = Idaho-Southern_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Idaho-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7 Idaho-Northern_4326-84-hd.tiff
+Simplify Idaho-Southern_4326-84-hd.tiff
+r.neighbor, "median", size=7 Idaho-Southern_4326-84-hd.tiff
+
+Reclass index 0 to 44, leave the rest the same = Idaho-Northern_4326-84-hd-corrected.tiff
+("Idaho-Northern_4326-84-hd@1" = 0) * 44 + ("Idaho-Northern_4326-84-hd@1" != 0) * "Idaho-Northern_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Idaho-Southern_4326-84-hd-corrected.tiff
+("Idaho-Southern_4326-84-hd@1" = 0) * 44 + ("Idaho_4326-84-hd@1" != 0) * "Idaho_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Idaho-Northern_4326-84-hd-nowater.tiff
+Idaho-Northern_4326-84-hd-corrected@1 * (Idaho-Northern_4326-84-hd-corrected@1 != 41) + 26 * (Idaho-Northern_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Idaho_4326-84-hd-nowater.tiff
+Idaho_4326-84-hd-corrected@1 * (Idaho_4326-84-hd-corrected@1 != 41) + 26 * (Idaho_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Idaho-Northern_water_4326-84.gpkg.
+Obtain and load vector layer = Idaho_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Idaho-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Idaho-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Idaho-Northern_4326-84-hd-water@1" and "Idaho-Northern_4326-84-hd-nowater@1" = Idaho-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Idaho-Northern_4326-84-hd-nowater@1" and Idaho-Northern_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Idaho-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
