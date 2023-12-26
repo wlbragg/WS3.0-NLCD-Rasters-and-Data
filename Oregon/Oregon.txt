@@ -35,7 +35,7 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W125.hgt -b -125 44 -124 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n44/ws_w125n44.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oregon_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W125.hgt -b -125 45 -124 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n45/ws_w125n45.osgb
 
-(Paths above in "docker run" requires having srtm in the local California-Nevada data folder)
+(Paths above in "docker run" requires having srtm in the local Oregon data folder)
 Entire block
 ./scripts/genVPB.py -125 45 34 -117 43 ./data/Oregon_4326-84-hd-corrected.tiff 
 Single 1X bucket
@@ -119,10 +119,6 @@ Reclass index 0 to 44, leave the rest the same = Oregon_4326-84-hd-corrected.tif
 ("Oregon_4326-84-hd@1" = 0) * 44 + ("Oregon_4326-84-hd@1" != 0) * "Oregon_4326-84-hd@1"
 	
 HD Water Option 
-Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
-Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
-Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
-Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
 Reclass water to grass = Oregon_4326-84-hd-nowater.tiff
 Oregon_4326-84-hd-corrected@1 * (Oregon_4326-84-hd-corrected@1 != 41) + 26 * (Oregon_4326-84-hd-corrected@1 = 41)
 

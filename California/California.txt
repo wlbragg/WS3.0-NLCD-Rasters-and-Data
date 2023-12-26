@@ -1,0 +1,289 @@
+California
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/California/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/California/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/California/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+California-Southern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W115.hgt -b -115 32 -114 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n32/ws_w115n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W115.hgt -b -115 33 -114 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n33/ws_w115n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W115.hgt -b -115 34 -114 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n34/ws_w115n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W116.hgt -b -116 32 -115 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n32/ws_w116n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W116.hgt -b -116 33 -115 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n33/ws_w116n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W116.hgt -b -116 34 -115 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w116n34/ws_w116n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W117.hgt -b -117 32 -116 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n32/ws_w117n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W117.hgt -b -117 33 -116 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n33/ws_w117n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W117.hgt -b -117 34 -116 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n34/ws_w117n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W118.hgt -b -118 32 -117 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n32/ws_w118n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W118.hgt -b -118 33 -117 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n33/ws_w118n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W118.hgt -b -118 34 -117 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n34/ws_w118n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W118.hgt -b -118 35 -117 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n35/ws_w118n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W119.hgt -b -119 32 -118 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n32/ws_w119n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W119.hgt -b -119 33 -118 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n33/ws_w119n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W119.hgt -b -119 34 -118 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n34/ws_w119n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W119.hgt -b -119 35 -118 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n35/ws_w119n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W120.hgt -b -120 33 -119 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n33/ws_w120n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W120.hgt -b -120 34 -119 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n34/ws_w120n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W121.hgt -b -121 33 -120 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n33/ws_w121n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W121.hgt -b -121 34 -120 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n34/ws_w121n34.osgb
+
+(Paths above in "docker run" requires having srtm in the local California data folder)
+Entire block
+./scripts/genVPB.py -121 34 -114 33 ./data/California-Southern_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -115 32 -114 33 ./data/California-Southern_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -115 32 -114 33
+./scripts/genroads.py ./output/Terrain -115 33 -114 34
+./scripts/genroads.py ./output/Terrain -115 34 -114 35
+./scripts/genroads.py ./output/Terrain -116 32 -115 33
+./scripts/genroads.py ./output/Terrain -116 33 -115 34
+./scripts/genroads.py ./output/Terrain -116 34 -115 35
+./scripts/genroads.py ./output/Terrain -117 32 -116 33
+./scripts/genroads.py ./output/Terrain -117 33 -116 34
+./scripts/genroads.py ./output/Terrain -117 34 -116 35
+./scripts/genroads.py ./output/Terrain -118 32 -117 33
+./scripts/genroads.py ./output/Terrain -118 33 -117 34
+./scripts/genroads.py ./output/Terrain -118 34 -117 35
+./scripts/genroads.py ./output/Terrain -119 32 -118 33
+./scripts/genroads.py ./output/Terrain -119 33 -118 34
+./scripts/genroads.py ./output/Terrain -119 34 -118 35
+./scripts/genroads.py ./output/Terrain -120 33 -119 34
+./scripts/genroads.py ./output/Terrain -120 34 -119 35
+./scripts/genroads.py ./output/Terrain -121 33 -120 34
+./scripts/genroads.py ./output/Terrain -121 34 -120 35
+
+California-Central
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W117.hgt -b -117 35 -116 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n35/ws_w117n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W117.hgt -b -117 36 -116 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w117n36/ws_w117n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W118.hgt -b -118 36 -117 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n36/ws_w118n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W118.hgt -b -118 37 -117 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w118n37/ws_w118n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W119.hgt -b -119 36 -118 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n36/ws_w119n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W119.hgt -b -119 37 -118 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n37/ws_w119n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W119.hgt -b -119 38 -118 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w119n38/ws_w119n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W120.hgt -b -120 35 -119 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n35/ws_w120n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W120.hgt -b -120 36 -119 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n36/ws_w120n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W120.hgt -b -120 37 -119 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n37/ws_w120n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W120.hgt -b -120 38 -119 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w120n38/ws_w120n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W121.hgt -b -121 35 -120 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n35/ws_w121n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W121.hgt -b -121 36 -120 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n36/ws_w121n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W121.hgt -b -121 37 -120 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n37/ws_w121n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W121.hgt -b -121 38 -120 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n38/ws_w121n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W122.hgt -b -122 35 -121 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w122n35/ws_w122n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W122.hgt -b -122 36 -121 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w122n36/ws_w122n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W122.hgt -b -122 37 -121 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w122n37/ws_w122n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W122.hgt -b -122 38 -121 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w122n38/ws_w122n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W123.hgt -b -123 36 -122 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w123n36/ws_w123n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W123.hgt -b -123 37 -122 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w123n37/ws_w123n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W123.hgt -b -123 38 -122 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w123n38/ws_w123n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W124.hgt -b -124 37 -123 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w124n37/ws_w124n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Central_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W124.hgt -b -124 38 -123 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w124n38/ws_w124n38.osgb
+
+./scripts/genVPB.py -124 38 -116 36 ./data/California-Central_4326-84-hd-corrected.tiff 
+
+./scripts/genroads.py ./output/Terrain -117 35 -116 36
+./scripts/genroads.py ./output/Terrain -117 36 -116 37
+./scripts/genroads.py ./output/Terrain -118 35 -117 36
+./scripts/genroads.py ./output/Terrain -118 36 -117 37
+./scripts/genroads.py ./output/Terrain -118 37 -117 38
+./scripts/genroads.py ./output/Terrain -119 35 -118 36
+./scripts/genroads.py ./output/Terrain -119 36 -118 37
+./scripts/genroads.py ./output/Terrain -119 37 -118 38
+./scripts/genroads.py ./output/Terrain -119 38 -118 39
+./scripts/genroads.py ./output/Terrain -120 35 -119 36
+./scripts/genroads.py ./output/Terrain -120 36 -119 37
+./scripts/genroads.py ./output/Terrain -120 37 -119 38
+./scripts/genroads.py ./output/Terrain -120 38 -119 39
+./scripts/genroads.py ./output/Terrain -121 35 -120 36
+./scripts/genroads.py ./output/Terrain -121 36 -120 37
+./scripts/genroads.py ./output/Terrain -121 37 -120 38
+./scripts/genroads.py ./output/Terrain -121 38 -120 39
+./scripts/genroads.py ./output/Terrain -122 35 -121 36
+./scripts/genroads.py ./output/Terrain -122 36 -121 37
+./scripts/genroads.py ./output/Terrain -122 37 -121 38
+./scripts/genroads.py ./output/Terrain -122 38 -121 39
+./scripts/genroads.py ./output/Terrain -123 36 -122 37
+./scripts/genroads.py ./output/Terrain -123 37 -122 38
+./scripts/genroads.py ./output/Terrain -123 38 -122 39
+./scripts/genroads.py ./output/Terrain -124 38 -123 39
+
+California-Northern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W121.hgt -b -121 39 -120 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w121n39/ws_w121n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W122.hgt -b -122 39 -121 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w122n39/ws_w122n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W123.hgt -b -123 39 -122 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w123n39/ws_w123n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W124.hgt -b -124 39 -123 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w124n39/ws_w124n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W125.hgt -b -125 39 -124 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n30/w125n39/ws_w125n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W121.hgt -b -121 40 -120 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n40/ws_w121n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W121.hgt -b -121 41 -120 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w121n41/ws_w121n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W122.hgt -b -122 40 -121 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n40/ws_w122n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W122.hgt -b -122 41 -121 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w122n41/ws_w122n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W123.hgt -b -123 40 -122 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n40/ws_w123n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W123.hgt -b -123 41 -122 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w123n41/ws_w123n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W124.hgt -b -124 40 -123 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n40/ws_w124n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W124.hgt -b -124 41 -123 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w124n41/ws_w124n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W125.hgt -b -125 40 -124 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n40/ws_w125n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/California-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W125.hgt -b -125 41 -124 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w130n40/w125n41/ws_w125n41.osgb
+
+./scripts/genVPB.py -125 41 -120 40 ./data/California-Northern_4326-84-hd-corrected.tiff 
+
+./scripts/genroads.py ./output/Terrain -121 39 -120 40
+./scripts/genroads.py ./output/Terrain -121 40 -120 41
+./scripts/genroads.py ./output/Terrain -121 41 -120 42
+./scripts/genroads.py ./output/Terrain -122 39 -121 40
+./scripts/genroads.py ./output/Terrain -122 40 -121 41
+./scripts/genroads.py ./output/Terrain -122 41 -121 42
+./scripts/genroads.py ./output/Terrain -123 39 -122 40
+./scripts/genroads.py ./output/Terrain -123 40 -122 41
+./scripts/genroads.py ./output/Terrain -123 41 -122 42
+./scripts/genroads.py ./output/Terrain -124 39 -123 40
+./scripts/genroads.py ./output/Terrain -124 40 -123 41
+./scripts/genroads.py ./output/Terrain -124 41 -123 42
+./scripts/genroads.py ./output/Terrain -125 39 -124 40
+./scripts/genroads.py ./output/Terrain -125 40 -124 41
+./scripts/genroads.py ./output/Terrain -125 41 -124 42
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\California-Nevada\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = California-Southern_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_California-Southern.tiff = California-Southern_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_California-Central.tiff = California-Central_coast-clipped.tiff
+GIMP NLCD_2019_Land_Cover_California-Northern.tiff = California-Northern_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = California-Southern_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_California-Southern@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_California-Southern@1" != 255) * "NLCD_2016_Tree_Canopy_California-Southern@1"
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = California-Central_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_California-Central@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_California-Central@1" != 255) * "NLCD_2016_Tree_Canopy_California-Central@1"
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = California-Northern_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_California-Northern@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_California-Northern@1" != 255) * "NLCD_2016_Tree_Canopy_California-Northern@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = California-Southern_deciduous.tiff
+("California-Southern_deciduous-coast-clipped@1" != 0) * 43
+Make Decidious Layer EPSG:5070 - NAD83 = California-Central_deciduous.tiff
+("California-Central_deciduous-coast-clipped@1" != 0) * 43
+Make Evergreen Layer EPSG:5070 - NAD83 = California-Northern_deciduous.tiff
+("California-Northern_deciduous-coast-clipped@1" != 0) * 42
+
+Warp California-Southern_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Southern_4326-84.tiff
+Warp California-Southern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Southern_deciduous_4326-84.tiff
+Warp California-Central_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Central_4326-84.tiff
+Warp California-Central_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Central_deciduous_4326-84.tiff
+Warp California-Northern_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Northern_4326-84.tiff
+Warp California-Northern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = California-Northern_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "California-Southern_deciduous_4326-84@1" + "California-Southern_4326-84@1" = California-Southern_adjusted.tiff
+("California-Southern_deciduous_4326-84@1" < 1) * "California-Southern_4326-84@1" + ("California-Southern_deciduous_4326-84@1" != 0) * "California-Southern_deciduous_4326-84@1"
+Combine "California-Central_deciduous_4326-84.@1" + "California-Central_4326-84@1" = California-Central_adjusted.tiff
+("California-Central_deciduous_4326-84@1" < 1) * "California-Central_4326-84@1" + ("California-Central_deciduous_4326-84@1" != 0) * "California-Central_deciduous_4326-84@1"
+Combine "California-Northern_deciduous_4326-84.@1" + "California-Northern_4326-84@1" = California-Northern_adjusted.tiff
+("California-Northern_deciduous_4326-84@1" < 1) * "California-Northern_4326-84@1" + ("California-Northern_deciduous_4326-84@1" != 0) * "California-Northern_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = California-Southern_reclass-grass.tiff
+("California-Southern_adjusted@1" = 11) * 41 + ("California-Southern_adjusted@1" = 12) * 34 + ("California-Southern_adjusted@1" = 21) * 26 + ("California-Southern_adjusted@1" = 22) * 26 + ("California-Southern_adjusted@1" = 23) * 26 + ("California-Southern_adjusted@1" = 24) * 26 + ("California-Southern_adjusted@1" = 31) * 27 + ("California-Southern_adjusted@1" = 41) * 26 + ("California-Southern_adjusted@1" = 42) * 24 + ("California-Southern_adjusted@1" = 43) * 25 + ("California-Southern_adjusted@1" = 51) * 30 + ("California-Southern_adjusted@1" = 52) * 29 + ("California-Southern_adjusted@1" = 71) * 26 + ("California-Southern_adjusted@1" = 72) * 32 + ("California-Southern_adjusted@1" = 73) * 31 + ("California-Southern_adjusted@1" = 74) * 31 + ("California-Southern_adjusted@1" = 75) * 32 + ("California-Southern_adjusted@1" = 81) * 18 + ("California-Southern_adjusted@1" = 82) * 19 + ("California-Southern_adjusted@1" = 90) * 25 + ("California-Southern_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = California-Central_reclass-grass.tiff
+("California-Central_adjusted@1" = 11) * 41 + ("California-Central_adjusted@1" = 12) * 34 + ("California-Central_adjusted@1" = 21) * 26 + ("California-Central_adjusted@1" = 22) * 26 + ("California-Central_adjusted@1" = 23) * 26 + ("California-Central_adjusted@1" = 24) * 26 + ("California-Central_adjusted@1" = 31) * 27 + ("California-Central_adjusted@1" = 41) * 26 + ("California-Central_adjusted@1" = 42) * 24 + ("California-Central_adjusted@1" = 43) * 25 + ("California-Central_adjusted@1" = 51) * 30 + ("California-Central_adjusted@1" = 52) * 29 + ("California-Central_adjusted@1" = 71) * 26 + ("California-Central_adjusted@1" = 72) * 32 + ("California-Central_adjusted@1" = 73) * 31 + ("California-Central_adjusted@1" = 74) * 31 + ("California-Central_adjusted@1" = 75) * 32 + ("California-Central_adjusted@1" = 81) * 18 + ("California-Central_adjusted@1" = 82) * 19 + ("California-Central_adjusted@1" = 90) * 25 + ("California-Central_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = California-Northern_reclass-grass.tiff
+("California-Northern_adjusted@1" = 11) * 41 + ("California-Northern_adjusted@1" = 12) * 34 + ("California-Northern_adjusted@1" = 21) * 26 + ("California-Northern_adjusted@1" = 22) * 26 + ("California-Northern_adjusted@1" = 23) * 26 + ("California-Northern_adjusted@1" = 24) * 26 + ("California-Northern_adjusted@1" = 31) * 27 + ("California-Northern_adjusted@1" = 41) * 26 + ("California-Northern_adjusted@1" = 42) * 24 + ("California-Northern_adjusted@1" = 43) * 25 + ("California-Northern_adjusted@1" = 51) * 30 + ("California-Northern_adjusted@1" = 52) * 29 + ("California-Northern_adjusted@1" = 71) * 26 + ("California-Northern_adjusted@1" = 72) * 32 + ("California-Northern_adjusted@1" = 73) * 31 + ("California-Northern_adjusted@1" = 74) * 31 + ("California-Northern_adjusted@1" = 75) * 32 + ("California-Northern_adjusted@1" = 81) * 18 + ("California-Northern_adjusted@1" = 82) * 19 + ("California-Northern_adjusted@1" = 90) * 25 + ("California-Northern_adjusted@1" = 95) * 35
+
+Make Urban layer = California-Southern_urban.tiff
+("California-Southern_adjusted@1" = 21) * 10 + ("California-Southern_adjusted@1" = 22) * 1 + ("California-Southern_adjusted@1" = 23) * 1 + ("California-Southern_adjusted@1" = 24) * 2
+Make Urban layer = California-Central_urban.tiff
+("California-Central_adjusted@1" = 21) * 10 + ("California-Central_adjusted@1" = 22) * 1 + ("California-Central_adjusted@1" = 23) * 1 + ("California-Central_adjusted@1" = 24) * 2
+Make Urban layer = California-Northern_urban.tiff
+("California-Northern_adjusted@1" = 21) * 10 + ("California-Northern_adjusted@1" = 22) * 1 + ("California-Northern_adjusted@1" = 23) * 1 + ("California-Northern_adjusted@1" = 24) * 2
+
+Remove the road clutter = California-Southern_urban-only.tiff
+r.neighbor, "median", size=7 California-Southern_urban.tiff
+Remove the road clutter = California-Central_urban-only.tiff
+r.neighbor, "median", size=7 California-Central_urban.tiff
+Remove the road clutter = California-Northern_urban-only.tiff
+r.neighbor, "median", size=7 California-Northern_urban.tiff
+
+Combine "California-Southern_reclass-urban@1" + "California-Southern_reclass-grass@1" = California-Southern_adjusted-combined.tiff
+("California-Southern_urban-only@1" < 1) * "California-Southern_reclass-grass@1" + ("California-Southern_urban-only@1" != 0) * "California-Southern_urban-only@1"
+Combine "California-Central_reclass-urban@1" + "California-Central_reclass-grass@1" = California-Central_adjusted-combined.tiff
+("California-Central_urban-only@1" < 1) * "California-Central_reclass-grass@1" + ("California-Central_urban-only@1" != 0) * "California-Central_urban-only@1"
+Combine "California-Northern_reclass-urban@1" + "California-Northern_reclass-grass@1" = California-Northern_adjusted-combined.tiff
+("California-Northern_urban-only@1" < 1) * "California-Northern_reclass-grass@1" + ("California-Northern_urban-only@1" != 0) * "California-Northern_urban-only@1"
+
+Up sample = California-Southern_final-prep-4x.tiff
+Up sample = California-Central_final-prep-4x.tiff
+Up sample = California-Northern_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify California-Southern_4326-84-hd.tiff
+r.neighbor, "median", size=7 California-Southern_final-prep-4x.tiff
+Simplify California-Central_4326-84-hd.tiff
+r.neighbor, "median", size=7 California-Central_final-prep-4x.tiff
+Simplify California-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7 California-Northern_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = California-Southern_4326-84-hd-corrected.tiff
+("California-Southern_4326-84-hd@1" = 0) * 44 + ("California-Southern_4326-84-hd@1" != 0) * "California-Southern_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = California-Central_4326-84-hd-corrected.tiff
+("California-Central_4326-84-hd@1" = 0) * 44 + ("California-Central_4326-84-hd@1" != 0) * "California-Central_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = California-Northern_4326-84-hd-corrected.tiff
+("California-Northern_4326-84-hd@1" = 0) * 44 + ("California-Northern_4326-84-hd@1" != 0) * "California-Northern_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = California-Southern_4326-84-hd-nowater.tiff
+California-Southern_4326-84-hd-corrected@1 * (California-Southern_4326-84-hd-corrected@1 != 41) + 26 * (California-Southern_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = California-Central_4326-84-hd-nowater.tiff
+California-Central_4326-84-hd-corrected@1 * (California-Central_4326-84-hd-corrected@1 != 41) + 26 * (California-Central_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = California-Northern_4326-84-hd-nowater.tiff
+California-Northern_4326-84-hd-corrected@1 * (California-Northern_4326-84-hd-corrected@1 != 41) + 26 * (California-Northern_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = California-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = California-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = California-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "California-Northern_4326-84-hd-water@1" and "California-Northern_4326-84-hd-nowater@1" = California-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "California-Northern_4326-84-hd-nowater@1" and California-Northern_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = California-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
+
+
+Native No-Docker
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W115.hgt -b -115 35 -114 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w115n35\ws_w115n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W116.hgt -b -116 35 -115 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n40\w116n35\ws_w116n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W116.hgt -b -116 36 -115 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n40\w116n36\ws_w116n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W117.hgt -b -117 35 -116 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n40\w117n35\ws_w117n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W117.hgt -b -117 36 -116 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n40\w117n36\ws_w117n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W118.hgt -b -118 35 -117 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w118n36\ws_w118n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W118.hgt -b -118 36 -117 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w118n37\ws_w118n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W118.hgt -b -118 37 -117 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w118n38\ws_w118n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W119.hgt -b -119 35 -118 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w119n35\ws_w119n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W119.hgt -b -119 36 -118 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w119n36\ws_w119n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W119.hgt -b -119 37 -118 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w119n37\ws_w119n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W119.hgt -b -119 38 -118 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w119n38\ws_w119n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W120.hgt -b -120 35 -119 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w120n35\ws_w120n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W120.hgt -b -120 36 -119 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w120n36\ws_w120n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W120.hgt -b -120 37 -119 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w120n37\ws_w120n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W120.hgt -b -120 38 -119 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w120n30\w120n38\ws_w120n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W121.hgt -b -121 35 -120 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w121n35\ws_w121n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W121.hgt -b -121 36 -120 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w121n36\ws_w121n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W121.hgt -b -121 37 -120 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w121n37\ws_w121n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W121.hgt -b -121 38 -120 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w121n38\ws_w121n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N35W122.hgt -b -122 35 -121 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w122n35\ws_w122n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W122.hgt -b -122 36 -121 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w122n36\ws_w122n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W122.hgt -b -122 37 -121 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w122n37\ws_w122n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W122.hgt -b -122 38 -121 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w122n38\ws_w122n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N36W123.hgt -b -123 36 -122 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w123n36\ws_w123n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N37W123.hgt -b -123 37 -122 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w123n37\ws_w123n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W123.hgt -b -123 38 -122 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w123n38\ws_w123n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t D:\Scenery\ws3.0\CaliforniaS\data\NLCD_CA_simplified.tif -d D:\Scenery\ws3.0\SRTM-3\N38W124.hgt -b -124 38 -123 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o D:\Scenery\ws3.0\CaliforniaS\output\vpb\w130n30\w124n38\ws_w124n38.osgb
+
