@@ -52,34 +52,34 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -116 48 -115 49
 
 Montana-Eastern
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W105.hgt -b -105 45 -104 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n45/ws_w105n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W105.hgt -b -105 46 -104 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n46/ws_w105n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W105.hgt -b -105 47 -104 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n47/ws_w105n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W105.hgt -b -105 48 -104 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n48/ws_w105n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W106.hgt -b -106 45 -105 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n45/ws_w106n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W106.hgt -b -106 46 -105 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n46/ws_w106n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W106.hgt -b -106 47 -105 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n47/ws_w106n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W106.hgt -b -106 48 -105 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n48/ws_w106n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W107.hgt -b -107 45 -106 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n45/ws_w107n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W107.hgt -b -107 46 -106 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n46/ws_w107n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W107.hgt -b -107 47 -106 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n47/ws_w107n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W107.hgt -b -107 48 -106 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n48/ws_w107n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W108.hgt -b -108 45 -107 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n45/ws_w108n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W108.hgt -b -108 46 -107 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n46/ws_w108n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W108.hgt -b -108 47 -107 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n47/ws_w108n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W108.hgt -b -108 48 -107 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n48/ws_w108n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W109.hgt -b -109 45 -108 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n45/ws_w109n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W109.hgt -b -109 46 -108 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n46/ws_w109n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W109.hgt -b -109 47 -108 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n47/ws_w109n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W109.hgt -b -109 48 -108 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n48/ws_w109n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W110.hgt -b -110 45 -109 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n45/ws_w110n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W110.hgt -b -110 46 -109 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n46/ws_w110n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W110.hgt -b -110 47 -109 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n47/ws_w110n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W110.hgt -b -110 48 -109 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n48/ws_w110n48.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W111.hgt -b -111 45 -110 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n45/ws_w111n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W111.hgt -b -111 46 -110 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n46/ws_w111n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W111.hgt -b -111 47 -110 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n47/ws_w111n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W111.hgt -b -111 48 -110 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n48/ws_w111n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W105.hgt -b -105 45 -104 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n45/ws_w105n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W105.hgt -b -105 46 -104 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n46/ws_w105n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W105.hgt -b -105 47 -104 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n47/ws_w105n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W105.hgt -b -105 48 -104 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n48/ws_w105n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W106.hgt -b -106 45 -105 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n45/ws_w106n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W106.hgt -b -106 46 -105 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n46/ws_w106n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W106.hgt -b -106 47 -105 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n47/ws_w106n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W106.hgt -b -106 48 -105 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n48/ws_w106n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W107.hgt -b -107 45 -106 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n45/ws_w107n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W107.hgt -b -107 46 -106 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n46/ws_w107n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W107.hgt -b -107 47 -106 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n47/ws_w107n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W107.hgt -b -107 48 -106 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n48/ws_w107n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W108.hgt -b -108 45 -107 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n45/ws_w108n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W108.hgt -b -108 46 -107 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n46/ws_w108n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W108.hgt -b -108 47 -107 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n47/ws_w108n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W108.hgt -b -108 48 -107 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n48/ws_w108n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W109.hgt -b -109 45 -108 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n45/ws_w109n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W109.hgt -b -109 46 -108 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n46/ws_w109n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W109.hgt -b -109 47 -108 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n47/ws_w109n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W109.hgt -b -109 48 -108 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n48/ws_w109n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W110.hgt -b -110 45 -109 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n45/ws_w110n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W110.hgt -b -110 46 -109 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n46/ws_w110n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W110.hgt -b -110 47 -109 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n47/ws_w110n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W110.hgt -b -110 48 -109 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n48/ws_w110n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W111.hgt -b -111 45 -110 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n45/ws_w111n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W111.hgt -b -111 46 -110 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n46/ws_w111n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W111.hgt -b -111 47 -110 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n47/ws_w111n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Montana-Eastern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W111.hgt -b -111 48 -110 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n48/ws_w111n48.osgb
 
 (Paths above in "docker run" requires having srtm in the local Montana-Eastern data folder)
 Entire block
@@ -114,12 +114,13 @@ Entire block
 ./scripts/genroads.py ./output/Terrain -111 47 -110 48
 ./scripts/genroads.py ./output/Terrain -111 48 -110 49
 
-Make Decidious Layer EPSG:5070 - NAD83 = Montana_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Montana@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Montana-Eastern_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Montana-Eastern@1" != 0) * 41
 Make Decidious Layer EPSG:5070 - NAD83 = Montana-Western_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Montana-Western@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Montana-Western@1" != 0) * 41
 
-Warp NLCD_2019_Land_Cover_Montana.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana_4326-84.tiff
+Warp NLCD_2019_Land_Cover_Montana-Eastern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Eastern_4326-84.tiff
+Warp Montana-Eastern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Eastern_deciduous_4326-84.tiff
 Warp Montana_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana_deciduous_4326-84.tiff
 Warp NLCD_2019_Land_Cover_Montana-Western.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Western_4326-84.tiff
 Warp Montana-Western_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Western_deciduous_4326-84.tiff
@@ -128,52 +129,52 @@ Target CRS = EPSG:4326 - WGS 84
 Resampling method to use = Nearest Neighbour
 Output data type = byte
 
-Combine "Montana_deciduous_4326-84@1" + "Montana_4326-84@1" = Montana_adjusted.tiff
-("Montana_deciduous_4326-84@1" < 1) * "Montana_4326-84@1" + ("Montana_deciduous_4326-84@1" != 0) * "Montana_deciduous_4326-84@1"
+Combine "Montana-Eastern_deciduous_4326-84@1" + "Montana-Eastern_4326-84@1" = Montana-Eastern_adjusted.tiff
+("Montana-Eastern_deciduous_4326-84@1" < 1) * "Montana-Eastern_4326-84@1" + ("Montana-Eastern_deciduous_4326-84@1" != 0) * "Montana-Eastern_deciduous_4326-84@1"
 Combine "Montana-Western_deciduous_4326-84@1" + "Montana-Western_4326-84@1" = Montana-Western_adjusted.tiff
 ("Montana-Western_deciduous_4326-84@1" < 1) * "Montana-Western_4326-84@1" + ("Montana-Western_deciduous_4326-84@1" != 0) * "Montana-Western_deciduous_4326-84@1"
 
-Re-class urban 21, 22, 23, 24 = grass 26 = Montana_reclass-grass.tiff
-("Montana_adjusted@1" = 11) * 41 + ("Montana_adjusted@1" = 12) * 34 + ("Montana_adjusted@1" = 21) * 26 + ("Montana_adjusted@1" = 22) * 26 + ("Montana_adjusted@1" = 23) * 26 + ("Montana_adjusted@1" = 24) * 26 + ("Montana_adjusted@1" = 31) * 27 + ("Montana_adjusted@1" = 41) * 26 + ("Montana_adjusted@1" = 42) * 24 + ("Montana_adjusted@1" = 43) * 25 + ("Montana_adjusted@1" = 51) * 30 + ("Montana_adjusted@1" = 52) * 29 + ("Montana_adjusted@1" = 71) * 26 + ("Montana_adjusted@1" = 72) * 32 + ("Montana_adjusted@1" = 73) * 31 + ("Montana_adjusted@1" = 74) * 31 + ("Montana_adjusted@1" = 75) * 32 + ("Montana_adjusted@1" = 81) * 18 + ("Montana_adjusted@1" = 82) * 19 + ("Montana_adjusted@1" = 90) * 25 + ("Montana_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Montana-Eastern_reclass-grass.tiff
+("Montana-Eastern_adjusted@1" = 11) * 41 + ("Montana-Eastern_adjusted@1" = 12) * 34 + ("Montana-Eastern_adjusted@1" = 21) * 26 + ("Montana-Eastern_adjusted@1" = 22) * 26 + ("Montana-Eastern_adjusted@1" = 23) * 26 + ("Montana-Eastern_adjusted@1" = 24) * 26 + ("Montana-Eastern_adjusted@1" = 31) * 27 + ("Montana-Eastern_adjusted@1" = 41) * 26 + ("Montana-Eastern_adjusted@1" = 42) * 24 + ("Montana-Eastern_adjusted@1" = 43) * 25 + ("Montana-Eastern_adjusted@1" = 51) * 30 + ("Montana-Eastern_adjusted@1" = 52) * 29 + ("Montana-Eastern_adjusted@1" = 71) * 26 + ("Montana-Eastern_adjusted@1" = 72) * 32 + ("Montana-Eastern_adjusted@1" = 73) * 31 + ("Montana-Eastern_adjusted@1" = 74) * 31 + ("Montana-Eastern_adjusted@1" = 75) * 32 + ("Montana-Eastern_adjusted@1" = 81) * 18 + ("Montana-Eastern_adjusted@1" = 82) * 19 + ("Montana-Eastern_adjusted@1" = 90) * 25 + ("Montana-Eastern_adjusted@1" = 95) * 35
 Re-class urban 21, 22, 23, 24 = grass 26 = Montana-Western_reclass-grass.tiff
 ("Montana-Western_adjusted@1" = 11) * 41 + ("Montana-Western_adjusted@1" = 12) * 34 + ("Montana-Western_adjusted@1" = 21) * 26 + ("Montana-Western_adjusted@1" = 22) * 26 + ("Montana-Western_adjusted@1" = 23) * 26 + ("Montana-Western_adjusted@1" = 24) * 26 + ("Montana-Western_adjusted@1" = 31) * 27 + ("Montana-Western_adjusted@1" = 41) * 26 + ("Montana-Western_adjusted@1" = 42) * 24 + ("Montana-Western_adjusted@1" = 43) * 25 + ("Montana-Western_adjusted@1" = 51) * 30 + ("Montana-Western_adjusted@1" = 52) * 29 + ("Montana-Western_adjusted@1" = 71) * 26 + ("Montana-Western_adjusted@1" = 72) * 32 + ("Montana-Western_adjusted@1" = 73) * 31 + ("Montana-Western_adjusted@1" = 74) * 31 + ("Montana-Western_adjusted@1" = 75) * 32 + ("Montana-Western_adjusted@1" = 81) * 18 + ("Montana-Western_adjusted@1" = 82) * 19 + ("Montana-Western_adjusted@1" = 90) * 25 + ("Montana-Western_adjusted@1" = 95) * 35
 
-Make Urban layer = Montana_urban.tiff
-("Montana_adjusted@1" = 21) * 10 + ("Montana_adjusted@1" = 22) * 1 + ("Montana_adjusted@1" = 23) * 1 + ("Montana_adjusted@1" = 24) * 2
+Make Urban layer = Montana-Eastern_urban.tiff
+("Montana-Eastern_adjusted@1" = 21) * 10 + ("Montana-Eastern_adjusted@1" = 22) * 1 + ("Montana-Eastern_adjusted@1" = 23) * 1 + ("Montana-Eastern_adjusted@1" = 24) * 2
 Make Urban layer = Montana-Western_urban.tiff
 ("Montana-Western_adjusted@1" = 21) * 10 + ("Montana-Western_adjusted@1" = 22) * 1 + ("Montana-Western_adjusted@1" = 23) * 1 + ("Montana-Western_adjusted@1" = 24) * 2
 
-Remove the road clutter = Montana_urban-only.tiff
-r.neighbor, "median", size=7 Montana_urban.tiff
+Remove the road clutter = Montana-Eastern_urban-only.tiff
+r.neighbor, "median", size=7 Montana-Eastern_urban.tiff
 Remove the road clutter = Montana-Western_urban-only.tiff
 r.neighbor, "median", size=7 Montana-Western_urban.tiff
 
-Combine "Montana_reclass-urban@1" + "Montana_reclass-grass@1" = Montana_adjusted-combined.tiff
-("Montana_urban-only@1" < 1) * "Montana_reclass-grass@1" + ("Montana_urban-only@1" != 0) * "Montana_urban-only@1"
+Combine "Montana-Eastern_reclass-urban@1" + "Montana-Eastern_reclass-grass@1" = Montana-Eastern_adjusted-combined.tiff
+("Montana-Eastern_urban-only@1" < 1) * "Montana-Eastern_reclass-grass@1" + ("Montana-Eastern_urban-only@1" != 0) * "Montana-Eastern_urban-only@1"
 Combine "Montana-Western_reclass-urban@1" + "Montana-Western_reclass-grass@1" = Montana-Western_adjusted-combined.tiff
 ("Montana-Western_urban-only@1" < 1) * "Montana-Western_reclass-grass@1" + ("Montana-Western_urban-only@1" != 0) * "Montana-Western_urban-only@1"
 
-Up sample = Montana_final-prep-4x.tiff
+Up sample = Montana-Eastern_final-prep-4x.tiff
 Up sample = Montana-Western_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Montana_4326-84-hd.tiff
-r.neighbor, "median", size=7 Montana_4326-84-hd.tiff
+Simplify Montana-Eastern_4326-84-hd.tiff
+r.neighbor, "median", size=7 Montana-Eastern_4326-84-hd.tiff
 Simplify Montana-Western_4326-84-hd.tiff
 r.neighbor, "median", size=7 Montana-Western_4326-84-hd.tiff
 
-Reclass index 0 to 44, leave the rest the same = Montana_4326-84-hd-corrected.tiff
-("Montana_4326-84-hd@1" = 0) * 44 + ("Montana_4326-84-hd@1" != 0) * "Montana_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Montana-Eastern_4326-84-hd-corrected.tiff
+("Montana-Eastern_4326-84-hd@1" = 0) * 44 + ("Montana-Eastern_4326-84-hd@1" != 0) * "Montana-Eastern_4326-84-hd@1"
 Reclass index 0 to 44, leave the rest the same = Montana-Western_4326-84-hd-corrected.tiff
 ("Montana-Western_4326-84-hd@1" = 0) * 44 + ("Montana-Western_4326-84-hd@1" != 0) * "Montana-Western_4326-84-hd@1"
 	
 HD Water Option 
-Reclass water to grass = Montana_4326-84-hd-nowater.tiff
-Montana_4326-84-hd-corrected@1 * (Montana_4326-84-hd-corrected@1 != 41) + 26 * (Montana_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Montana-Eastern_4326-84-hd-nowater.tiff
+Montana-Eastern_4326-84-hd-corrected@1 * (Montana-Eastern_4326-84-hd-corrected@1 != 41) + 26 * (Montana-Eastern_4326-84-hd-corrected@1 = 41)
 Reclass water to grass = Montana-Western_4326-84-hd-nowater.tiff
 Montana-Western_4326-84-hd-corrected@1 * (Montana-Western_4326-84-hd-corrected@1 != 41) + 26 * (Montana-Western_4326-84-hd-corrected@1 = 41)
 
-Obtain and load vector layer = Montana_water_4326-84.gpkg.
+Obtain and load vector layer = Montana-Eastern_water_4326-84.gpkg.
 Obtain and load vector layer = Montana-Western_water_4326-84.gpkg.
 Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
 Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"

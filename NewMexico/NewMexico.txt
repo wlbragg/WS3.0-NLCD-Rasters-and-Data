@@ -1,0 +1,135 @@
+NewMexico
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/NewMexico/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/NewMexico/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/NewMexico/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W104.hgt -b -104 32 -103 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n32/ws_w104n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W104.hgt -b -104 33 -103 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n33/ws_w104n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W104.hgt -b -104 34 -103 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n34/ws_w104n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W104.hgt -b -104 35 -103 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n35/ws_w104n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W104.hgt -b -104 36 -103 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n36/ws_w104n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W105.hgt -b -105 32 -104 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n32/ws_w105n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W105.hgt -b -105 33 -104 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n33/ws_w105n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W105.hgt -b -105 34 -104 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n34/ws_w105n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W105.hgt -b -105 35 -104 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n35/ws_w105n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W105.hgt -b -105 36 -104 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n36/ws_w105n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W106.hgt -b -106 32 -105 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n32/ws_w106n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W106.hgt -b -106 33 -105 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n33/ws_w106n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W106.hgt -b -106 34 -105 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n34/ws_w106n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W106.hgt -b -106 35 -105 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n35/ws_w106n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W106.hgt -b -106 36 -105 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n36/ws_w106n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W107.hgt -b -107 31 -106 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n31/ws_w107n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W107.hgt -b -107 32 -106 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n32/ws_w107n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W107.hgt -b -107 33 -106 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n33/ws_w107n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W107.hgt -b -107 34 -106 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n34/ws_w107n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W107.hgt -b -107 35 -106 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n35/ws_w107n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W107.hgt -b -107 36 -106 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n36/ws_w107n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W108.hgt -b -108 31 -107 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n31/ws_w108n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W108.hgt -b -108 32 -107 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n32/ws_w108n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W108.hgt -b -108 33 -107 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n33/ws_w108n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W108.hgt -b -108 34 -107 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n34/ws_w108n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W108.hgt -b -108 35 -107 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n35/ws_w108n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W108.hgt -b -108 36 -107 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n36/ws_w108n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W109.hgt -b -109 31 -108 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n31/ws_w109n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W109.hgt -b -109 32 -108 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n32/ws_w109n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W109.hgt -b -109 33 -108 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n33/ws_w109n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W109.hgt -b -109 34 -108 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n34/ws_w109n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W109.hgt -b -109 35 -108 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n35/ws_w109n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NewMexico_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W109.hgt -b -109 36 -108 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n36/ws_w109n36.osgb
+
+(Paths above in "docker run" requires having srtm in the local NewMexico data folder)
+Entire block
+./scripts/genVPB.py -111 44 -104 42 ./data/NewMexico_4326-84-hd-corrected.tiff
+Single 1X bucket
+./scripts/genVPB.py -105 41 -104 42 ./data/NewMexico_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -104 32 -103 33
+./scripts/genroads.py ./output/Terrain -104 33 -103 34
+./scripts/genroads.py ./output/Terrain -104 34 -103 35
+./scripts/genroads.py ./output/Terrain -104 35 -103 36
+./scripts/genroads.py ./output/Terrain -104 36 -103 37
+./scripts/genroads.py ./output/Terrain -105 32 -104 33
+./scripts/genroads.py ./output/Terrain -105 33 -104 34
+./scripts/genroads.py ./output/Terrain -105 34 -104 35
+./scripts/genroads.py ./output/Terrain -105 35 -104 36
+./scripts/genroads.py ./output/Terrain -105 36 -104 37
+./scripts/genroads.py ./output/Terrain -106 32 -105 33
+./scripts/genroads.py ./output/Terrain -106 33 -105 34
+./scripts/genroads.py ./output/Terrain -106 34 -105 35
+./scripts/genroads.py ./output/Terrain -106 35 -105 36
+./scripts/genroads.py ./output/Terrain -106 36 -105 37
+./scripts/genroads.py ./output/Terrain -107 31 -106 32
+./scripts/genroads.py ./output/Terrain -107 32 -106 33
+./scripts/genroads.py ./output/Terrain -107 33 -106 34
+./scripts/genroads.py ./output/Terrain -107 34 -106 35
+./scripts/genroads.py ./output/Terrain -107 35 -106 36
+./scripts/genroads.py ./output/Terrain -107 36 -106 37
+./scripts/genroads.py ./output/Terrain -108 31 -107 32
+./scripts/genroads.py ./output/Terrain -108 32 -107 33
+./scripts/genroads.py ./output/Terrain -108 33 -107 34
+./scripts/genroads.py ./output/Terrain -108 34 -107 35
+./scripts/genroads.py ./output/Terrain -108 35 -107 36
+./scripts/genroads.py ./output/Terrain -108 36 -107 37
+./scripts/genroads.py ./output/Terrain -109 31 -108 32
+./scripts/genroads.py ./output/Terrain -109 32 -108 33
+./scripts/genroads.py ./output/Terrain -109 33 -108 34
+./scripts/genroads.py ./output/Terrain -109 34 -108 35
+./scripts/genroads.py ./output/Terrain -109 35 -108 36
+./scripts/genroads.py ./output/Terrain -109 36 -108 37
+
+Make Decidious Layer EPSG:5070 - NAD83 = NewMexico_deciduous.tiff
+("NLCD_2016_Tree_Canopy_NewMexico@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_NewMexico.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NewMexico_4326-84.tiff
+Warp NewMexico_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NewMexico_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "NewMexico_deciduous_4326-84@1" + "NewMexico_4326-84@1" = NewMexico_adjusted.tiff
+("NewMexico_deciduous_4326-84@1" < 1) * "NewMexico_4326-84@1" + ("NewMexico_deciduous_4326-84@1" != 0) * "NewMexico_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = NewMexico_reclass-grass.tiff
+("NewMexico_adjusted@1" = 11) * 41 + ("NewMexico_adjusted@1" = 12) * 34 + ("NewMexico_adjusted@1" = 21) * 26 + ("NewMexico_adjusted@1" = 22) * 26 + ("NewMexico_adjusted@1" = 23) * 26 + ("NewMexico_adjusted@1" = 24) * 26 + ("NewMexico_adjusted@1" = 31) * 27 + ("NewMexico_adjusted@1" = 41) * 26 + ("NewMexico_adjusted@1" = 42) * 24 + ("NewMexico_adjusted@1" = 43) * 25 + ("NewMexico_adjusted@1" = 51) * 30 + ("NewMexico_adjusted@1" = 52) * 29 + ("NewMexico_adjusted@1" = 71) * 26 + ("NewMexico_adjusted@1" = 72) * 32 + ("NewMexico_adjusted@1" = 73) * 31 + ("NewMexico_adjusted@1" = 74) * 31 + ("NewMexico_adjusted@1" = 75) * 32 + ("NewMexico_adjusted@1" = 81) * 18 + ("NewMexico_adjusted@1" = 82) * 19 + ("NewMexico_adjusted@1" = 90) * 25 + ("NewMexico_adjusted@1" = 95) * 35
+
+Make Urban layer = NewMexico_urban.tiff
+("NewMexico_adjusted@1" = 21) * 10 + ("NewMexico_adjusted@1" = 22) * 1 + ("NewMexico_adjusted@1" = 23) * 1 + ("NewMexico_adjusted@1" = 24) * 2
+
+Remove the road clutter = NewMexico_urban-only.tiff
+r.neighbor, "median", size=7 NewMexico_urban.tiff
+
+Combine "NewMexico_reclass-urban@1" + "NewMexico_reclass-grass@1" = NewMexico_adjusted-combined.tiff
+("NewMexico_urban-only@1" < 1) * "NewMexico_reclass-grass@1" + ("NewMexico_urban-only@1" != 0) * "NewMexico_urban-only@1"
+
+Up sample = NewMexico_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify NewMexico_4326-84-hd.tiff
+r.neighbor, "median", size=7 NewMexico_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = NewMexico_4326-84-hd-corrected.tiff
+("NewMexico_4326-84-hd@1" = 0) * 44 + ("NewMexico_4326-84-hd@1" != 0) * "NewMexico_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = NewMexico_4326-84-hd-nowater.tiff
+NewMexico_4326-84-hd@1 * (NewMexico_4326-84-hd@1 != 41) + 26 * (NewMexico_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = NewMexico_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = NewMexico_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = NewMexico_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "NewMexico_4326-84-hd-water@1" and "NewMexico_4326-84-hd-nowater@1" = NewMexico_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "NewMexico_4326-84-hd-nowater@1" and NewMexico_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = NewMexico_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

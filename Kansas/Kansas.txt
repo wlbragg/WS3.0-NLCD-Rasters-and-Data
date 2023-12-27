@@ -1,0 +1,148 @@
+Kansas
+
+Windows
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Kansas/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Kansas/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Kansas/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Entire block
+./scripts/genVPB.py -102 39 -94 38 ./data/Kansas_4326-84-hd.tiff (this requires having srtm in the local Kansas data folder)
+Single 1X bucket
+./scripts/genVPB.py -97 37 -96 38 ./data/Kansas_4326-84-hd.tiff
+
+Linux
+docker run --rm --mount "type=bind,source=/media/wayne/B28641FF8641C497/Scenery/ws3.0/Kansas/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=/media/wayne/B28641FF8641C497/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3" --mount "type=bind,source=/media/wayne/B28641FF8641C497/Scenery/ws3.0/Kansas/output,target=/home/flightgear/output" --mount "type=bind,source=/media/wayne/B28641FF8641C497/Scenery/ws3.0/Kansas/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Docker
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W095.hgt -b -95 37 -94 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n37/ws_w095n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W095.hgt -b -95 38 -94 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n38/ws_w095n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W095.hgt -b -95 39 -94 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n39/ws_w095n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W096.hgt -b -96 37 -95 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n37/ws_w096n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W096.hgt -b -96 38 -95 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n38/ws_w096n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W096.hgt -b -96 39 -95 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n39/ws_w096n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W097.hgt -b -97 37 -96 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n37/ws_w097n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W097.hgt -b -97 38 -96 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n38/ws_w097n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W097.hgt -b -97 39 -96 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n39/ws_w097n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W098.hgt -b -98 37 -97 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n37/ws_w098n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W098.hgt -b -98 38 -97 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n38/ws_w098n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W098.hgt -b -98 39 -97 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n39/ws_w098n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W099.hgt -b -99 37 -98 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n37/ws_w099n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W099.hgt -b -99 38 -98 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n38/ws_w099n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W099.hgt -b -99 39 -98 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n39/ws_w099n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W100.hgt -b -100 37 -99 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n37/ws_w100n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W100.hgt -b -100 38 -99 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n38/ws_w100n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W100.hgt -b -100 39 -99 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n39/ws_w100n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W101.hgt -b -101 37 -100 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n37/ws_w101n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W101.hgt -b -101 38 -100 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n38/ws_w101n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W101.hgt -b -101 39 -100 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n39/ws_w101n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N37W102.hgt -b -102 37 -101 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n37/ws_w102n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N38W102.hgt -b -102 38 -101 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n38/ws_w102n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Kansas_4326-84-hdwater.tiff -d ./SRTM-3/N39W102.hgt -b -102 39 -101 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n39/ws_w102n39.osgb
+
+Native no Docker (run in cli from G:\Scenery\VirtualPlanetBuilder)
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W095.hgt -b -95 37 -94 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w095n37\ws_w095n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W095.hgt -b -95 38 -94 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w095n38\ws_w095n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W095.hgt -b -95 39 -94 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w095n39\ws_w095n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W096.hgt -b -96 37 -95 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w096n37\ws_w096n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W096.hgt -b -96 38 -95 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w096n38\ws_w096n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W096.hgt -b -96 39 -95 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w096n39\ws_w096n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W097.hgt -b -97 37 -96 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w097n37\ws_w097n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W097.hgt -b -97 38 -96 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w097n38\ws_w097n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W097.hgt -b -97 39 -96 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w097n39\ws_w097n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W098.hgt -b -98 37 -97 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w098n37\ws_w098n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W098.hgt -b -98 38 -97 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w098n38\ws_w098n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W098.hgt -b -98 39 -97 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w098n39\ws_w098n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W099.hgt -b -99 37 -98 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w099n37\ws_w099n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W099.hgt -b -99 38 -98 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w099n38\ws_w099n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W099.hgt -b -99 39 -98 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w099n39\ws_w099n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W100.hgt -b -100 37 -99 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w100n37\ws_w100n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W100.hgt -b -100 38 -99 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w100n38\ws_w100n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W100.hgt -b -100 39 -99 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w100n30\w100n39\ws_w100n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W101.hgt -b -101 37 -100 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w101n37\ws_w101n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W101.hgt -b -101 38 -100 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w101n38\ws_w101n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W101.hgt -b -101 39 -100 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w101n39\ws_w101n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N37W102.hgt -b -102 37 -101 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w102n37\ws_w102n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N38W102.hgt -b -102 38 -101 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w102n38\ws_w102n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t G:\Scenery\ws3.0\Kansas\data\Kansas_4326-84-hd.tiff -d G:\Scenery\ws3.0\SRTM-3\N39W102.hgt -b -102 39 -101 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o G:\Scenery\ws3.0\Kansas\output\vpb\w110n30\w102n39\ws_w102n39.osgb
+
+./scripts/genroads.py ./output/Terrain -95 37 -94 38
+./scripts/genroads.py ./output/Terrain -95 38 -94 39
+./scripts/genroads.py ./output/Terrain -95 39 -94 40
+./scripts/genroads.py ./output/Terrain -96 37 -95 38
+./scripts/genroads.py ./output/Terrain -96 38 -95 39
+./scripts/genroads.py ./output/Terrain -96 39 -95 40
+./scripts/genroads.py ./output/Terrain -97 37 -96 38
+./scripts/genroads.py ./output/Terrain -97 38 -96 39
+./scripts/genroads.py ./output/Terrain -97 39 -96 40
+./scripts/genroads.py ./output/Terrain -98 37 -97 38
+./scripts/genroads.py ./output/Terrain -98 38 -97 39
+./scripts/genroads.py ./output/Terrain -98 39 -97 40
+./scripts/genroads.py ./output/Terrain -99 37 -98 38
+./scripts/genroads.py ./output/Terrain -99 38 -98 39
+./scripts/genroads.py ./output/Terrain -99 39 -98 40
+./scripts/genroads.py ./output/Terrain -100 37 -99 38
+./scripts/genroads.py ./output/Terrain -100 38 -99 39
+./scripts/genroads.py ./output/Terrain -100 39 -99 40
+./scripts/genroads.py ./output/Terrain -101 37 -100 38
+./scripts/genroads.py ./output/Terrain -101 38 -100 39
+./scripts/genroads.py ./output/Terrain -101 39 -100 40
+./scripts/genroads.py ./output/Terrain -102 37 -101 38
+./scripts/genroads.py ./output/Terrain -102 38 -101 39
+./scripts/genroads.py ./output/Terrain -102 39 -101 40
+
+Make Decidious Layer EPSG:5070 - NAD83 = Kansas_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Kansas@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_Kansas.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Kansas_4326-84.tiff
+Warp Kansas_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Kansas_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Kansas_deciduous_4326-84@1" + "Kansas_4326-84@1" = Kansas_adjusted.tiff
+("Kansas_deciduous_4326-84@1" < 1) * "Kansas_4326-84@1" + ("Kansas_deciduous_4326-84@1" != 0) * "Kansas_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Kansas_reclass-grass.tiff
+("Kansas_adjusted@1" = 11) * 41 + ("Kansas_adjusted@1" = 12) * 34 + ("Kansas_adjusted@1" = 21) * 26 + ("Kansas_adjusted@1" = 22) * 26 + ("Kansas_adjusted@1" = 23) * 26 + ("Kansas_adjusted@1" = 24) * 26 + ("Kansas_adjusted@1" = 31) * 27 + ("Kansas_adjusted@1" = 41) * 26 + ("Kansas_adjusted@1" = 42) * 24 + ("Kansas_adjusted@1" = 43) * 25 + ("Kansas_adjusted@1" = 51) * 30 + ("Kansas_adjusted@1" = 52) * 29 + ("Kansas_adjusted@1" = 71) * 26 + ("Kansas_adjusted@1" = 72) * 32 + ("Kansas_adjusted@1" = 73) * 31 + ("Kansas_adjusted@1" = 74) * 31 + ("Kansas_adjusted@1" = 75) * 32 + ("Kansas_adjusted@1" = 81) * 18 + ("Kansas_adjusted@1" = 82) * 19 + ("Kansas_adjusted@1" = 90) * 25 + ("Kansas_adjusted@1" = 95) * 35
+
+Make Urban layer = Kansas_urban.tiff
+("Kansas_adjusted@1" = 21) * 10 + ("Kansas_adjusted@1" = 22) * 1 + ("Kansas_adjusted@1" = 23) * 1 + ("Kansas_adjusted@1" = 24) * 2
+
+Remove the road clutter = Kansas_urban-only.tiff
+r.neighbor, "median", size=7 Kansas_urban.tiff
+
+Combine "Kansas_reclass-urban@1" + "Kansas_reclass-grass@1" = Kansas_adjusted-combined.tiff
+("Kansas_urban-only@1" < 1) * "Kansas_reclass-grass@1" + ("Kansas_urban-only@1" != 0) * "Kansas_urban-only@1"
+
+Up sample = Kansas_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Kansas_4326-84-hd.tiff
+r.neighbor, "median", size=7 Kansas_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Kansas_4326-84-hd-corrected.tiff
+("Kansas_4326-84-hd@1" = 0) * 44 + ("Kansas_4326-84-hd@1" != 0) * "Kansas_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = Kansas_4326-84-hd-nowater.tiff
+Kansas_4326-84-hd@1 * (Kansas_4326-84-hd@1 != 41) + 26 * (Kansas_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = Kansas_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Kansas_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = Kansas_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Kansas_4326-84-hd-water@1" and "Kansas_4326-84-hd-nowater@1" = Kansas_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Kansas_4326-84-hd-nowater@1" and Kansas_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Kansas_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
+
