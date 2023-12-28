@@ -103,8 +103,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = Oregon_reclass-grass.tiff
 Make Urban layer = Oregon_urban.tiff
 ("Oregon_adjusted@1" = 21) * 10 + ("Oregon_adjusted@1" = 22) * 1 + ("Oregon_adjusted@1" = 23) * 1 + ("Oregon_adjusted@1" = 24) * 2
 
-Remove the road clutter = Oregon_urban-only.tiff
-r.neighbor, "median", size=7 Oregon_urban.tiff
+Remove Oregon_urban.tiff road clutter = Oregon_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Oregon_reclass-urban@1" + "Oregon_reclass-grass@1" = Oregon_adjusted-combined.tiff
 ("Oregon_urban-only@1" < 1) * "Oregon_reclass-grass@1" + ("Oregon_urban-only@1" != 0) * "Oregon_urban-only@1"
@@ -112,8 +112,8 @@ Combine "Oregon_reclass-urban@1" + "Oregon_reclass-grass@1" = Oregon_adjusted-co
 Up sample = Oregon_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Oregon_4326-84-hd.tiff
-r.neighbor, "median", size=7 Oregon_final-prep-4x.tiff
+Simplify Oregon_final-prep-4x.tiff = Oregon_4326-84-hd.tiff
+r.neighbor, "median", size=7 
 
 Reclass index 0 to 44, leave the rest the same = Oregon_4326-84-hd-corrected.tiff
 ("Oregon_4326-84-hd@1" = 0) * 44 + ("Oregon_4326-84-hd@1" != 0) * "Oregon_4326-84-hd@1"

@@ -115,10 +115,9 @@ Make Urban layer = Idaho-Northern_urban.tiff
 Make Urban layer = Idaho-Southern_urban.tiff
 ("Idaho-Southern_adjusted@1" = 21) * 10 + ("Idaho-Southern_adjusted@1" = 22) * 1 + ("Idaho-Southern_adjusted@1" = 23) * 1 + ("Idaho-Southern_adjusted@1" = 24) * 2
 
-Remove the road clutter = Idaho-Northern_urban-only.tiff
-r.neighbor, "median", size=7 Idaho-Northern_urban.tiff
-Remove the road clutter = Idaho-Southern_urban-only.tiff
-r.neighbor, "median", size=7 Idaho-Southern_urban.tiff
+Remove Idaho-Northern_urban.tiff road clutter = Idaho-Northern_urban-only.tiff
+Remove Idaho-Southern_urban.tiff road clutter = Idaho-Southern_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Idaho-Northern_reclass-urban@1" + "Idaho-Northern_reclass-grass@1" = Idaho-Northern_adjusted-combined.tiff
 ("Idaho-Northern_urban-only@1" < 1) * "Idaho-Northern_reclass-grass@1" + ("Idaho-Northern_urban-only@1" != 0) * "Idaho-Northern_urban-only@1"
@@ -129,10 +128,9 @@ Up sample = Idaho-Northern_final-prep-4x.tiff
 Up sample = Idaho-Southern_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Idaho-Northern_final-prep-4x.tiff
-r.neighbor, "median", size=7 Idaho-Northern_4326-84-hd.tiff
-Simplify Idaho-Southern_final-prep-4x.tiff
-r.neighbor, "median", size=7 Idaho-Southern_4326-84-hd.tiff
+Simplify Idaho-Northern_4326-84-hd.tiff = Idaho-Northern_final-prep-4x.tiff
+Simplify Idaho-Southern_4326-84-hd.tiff = Idaho-Southern_final-prep-4x.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Idaho-Northern_4326-84-hd-corrected.tiff
 ("Idaho-Northern_4326-84-hd@1" = 0) * 44 + ("Idaho-Northern_4326-84-hd@1" != 0) * "Idaho-Northern_4326-84-hd@1"

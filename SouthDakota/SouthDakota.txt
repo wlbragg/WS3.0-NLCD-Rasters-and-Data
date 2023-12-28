@@ -83,8 +83,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = SouthDakota_reclass-grass.tiff
 Make Urban layer = SouthDakota_urban.tiff
 ("SouthDakota_adjusted@1" = 21) * 10 + ("SouthDakota_adjusted@1" = 22) * 1 + ("SouthDakota_adjusted@1" = 23) * 1 + ("SouthDakota_adjusted@1" = 24) * 2
 
-Remove the road clutter = SouthDakota_urban-only.tiff
-r.neighbor, "median", size=7 SouthDakota_urban.tiff
+Remove SouthDakota_urban.tiff road clutter = SouthDakota_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "SouthDakota_reclass-urban@1" + "SouthDakota_reclass-grass@1" = SouthDakota_adjusted-combined.tiff
 ("SouthDakota_urban-only@1" < 1) * "SouthDakota_reclass-grass@1" + ("SouthDakota_urban-only@1" != 0) * "SouthDakota_urban-only@1"
@@ -92,8 +92,8 @@ Combine "SouthDakota_reclass-urban@1" + "SouthDakota_reclass-grass@1" = SouthDak
 Up sample = SouthDakota_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify SouthDakota_4326-84-hd.tiff
-r.neighbor, "median", size=7 SouthDakota_final-prep-4x.tiff
+Simplify SouthDakota_final-prep-4x.tiff = SouthDakota_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = SouthDakota_4326-84-hd-corrected.tiff
 ("SouthDakota_4326-84-hd@1" = 0) * 44 + ("SouthDakota_4326-84-hd@1" != 0) * "SouthDakota_4326-84-hd@1"

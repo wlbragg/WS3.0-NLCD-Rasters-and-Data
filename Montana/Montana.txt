@@ -144,10 +144,9 @@ Make Urban layer = Montana-Eastern_urban.tiff
 Make Urban layer = Montana-Western_urban.tiff
 ("Montana-Western_adjusted@1" = 21) * 10 + ("Montana-Western_adjusted@1" = 22) * 1 + ("Montana-Western_adjusted@1" = 23) * 1 + ("Montana-Western_adjusted@1" = 24) * 2
 
-Remove the road clutter = Montana-Eastern_urban-only.tiff
-r.neighbor, "median", size=7 Montana-Eastern_urban.tiff
-Remove the road clutter = Montana-Western_urban-only.tiff
-r.neighbor, "median", size=7 Montana-Western_urban.tiff
+Remove Montana-Eastern_urban.tiff road clutter = Montana-Eastern_urban-only.tiff
+Remove Montana-Western_urban.tiff road clutter = Montana-Western_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Montana-Eastern_reclass-urban@1" + "Montana-Eastern_reclass-grass@1" = Montana-Eastern_adjusted-combined.tiff
 ("Montana-Eastern_urban-only@1" < 1) * "Montana-Eastern_reclass-grass@1" + ("Montana-Eastern_urban-only@1" != 0) * "Montana-Eastern_urban-only@1"
@@ -158,10 +157,9 @@ Up sample = Montana-Eastern_final-prep-4x.tiff
 Up sample = Montana-Western_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Montana-Eastern_4326-84-hd.tiff
-r.neighbor, "median", size=7 Montana-Eastern_4326-84-hd.tiff
-Simplify Montana-Western_4326-84-hd.tiff
-r.neighbor, "median", size=7 Montana-Western_4326-84-hd.tiff
+Simplify Montana-Eastern_final-prep-4x.tiff = Montana-Eastern_4326-84-hd.tiff
+Simplify Montana-Western_final-prep-4x.tiff = Montana-Western_4326-84-hd.tiff
+r.neighbor, "median", size=7 
 
 Reclass index 0 to 44, leave the rest the same = Montana-Eastern_4326-84-hd-corrected.tiff
 ("Montana-Eastern_4326-84-hd@1" = 0) * 44 + ("Montana-Eastern_4326-84-hd@1" != 0) * "Montana-Eastern_4326-84-hd@1"
