@@ -1,0 +1,125 @@
+Wyoming
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Wyoming/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Wyoming/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Wyoming/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W105.hgt -b -105 41 -104 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n41/ws_w105n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W105.hgt -b -105 42 -104 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n42/ws_w105n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W105.hgt -b -105 43 -104 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n43/ws_w105n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W105.hgt -b -105 44 -104 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n44/ws_w105n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W106.hgt -b -106 41 -105 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n41/ws_w106n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W106.hgt -b -106 42 -105 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n42/ws_w106n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W106.hgt -b -106 43 -105 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n43/ws_w106n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W106.hgt -b -106 44 -105 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n44/ws_w106n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W107.hgt -b -107 41 -106 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n41/ws_w107n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W107.hgt -b -107 42 -106 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n42/ws_w107n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W107.hgt -b -107 43 -106 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n43/ws_w107n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W107.hgt -b -107 44 -106 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n44/ws_w107n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W108.hgt -b -108 41 -107 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n41/ws_w108n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W108.hgt -b -108 42 -107 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n42/ws_w108n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W108.hgt -b -108 43 -107 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n43/ws_w108n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W108.hgt -b -108 44 -107 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n44/ws_w108n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W109.hgt -b -109 41 -108 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n41/ws_w109n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W109.hgt -b -109 42 -108 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n42/ws_w109n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W109.hgt -b -109 43 -108 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n43/ws_w109n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W109.hgt -b -109 44 -108 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n44/ws_w109n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W110.hgt -b -110 41 -109 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n41/ws_w110n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W110.hgt -b -110 42 -109 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n42/ws_w110n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W110.hgt -b -110 43 -109 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n43/ws_w110n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W110.hgt -b -110 44 -109 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w110n44/ws_w110n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W111.hgt -b -111 41 -110 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n41/ws_w111n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W111.hgt -b -111 42 -110 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n42/ws_w111n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N43W111.hgt -b -111 43 -110 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n43/ws_w111n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Wyoming_4326-84-hd-corrected.tiff -d ./SRTM-3/N44W111.hgt -b -111 44 -110 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w111n44/ws_w111n44.osgb
+
+(Paths above in "docker run" requires having srtm in the local Wyoming data folder)
+Entire block
+./scripts/genVPB.py -111 44 -104 42 ./data/Wyoming_4326-84-hd-corrected.tiff
+Single 1X bucket
+./scripts/genVPB.py -105 41 -104 42 ./data/Wyoming_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -105 41 -104 42
+./scripts/genroads.py ./output/Terrain -105 42 -104 43
+./scripts/genroads.py ./output/Terrain -105 43 -104 44
+./scripts/genroads.py ./output/Terrain -105 44 -104 45
+./scripts/genroads.py ./output/Terrain -106 41 -105 42
+./scripts/genroads.py ./output/Terrain -106 42 -105 43
+./scripts/genroads.py ./output/Terrain -106 43 -105 44
+./scripts/genroads.py ./output/Terrain -106 44 -105 45
+./scripts/genroads.py ./output/Terrain -107 41 -106 42
+./scripts/genroads.py ./output/Terrain -107 42 -106 43
+./scripts/genroads.py ./output/Terrain -107 43 -106 44
+./scripts/genroads.py ./output/Terrain -107 44 -106 45
+./scripts/genroads.py ./output/Terrain -108 41 -107 42
+./scripts/genroads.py ./output/Terrain -108 42 -107 43
+./scripts/genroads.py ./output/Terrain -108 43 -107 44
+./scripts/genroads.py ./output/Terrain -108 44 -107 45
+./scripts/genroads.py ./output/Terrain -109 41 -108 42
+./scripts/genroads.py ./output/Terrain -109 42 -108 43
+./scripts/genroads.py ./output/Terrain -109 43 -108 44
+./scripts/genroads.py ./output/Terrain -109 44 -108 45
+./scripts/genroads.py ./output/Terrain -110 41 -109 42
+./scripts/genroads.py ./output/Terrain -110 42 -109 43
+./scripts/genroads.py ./output/Terrain -110 43 -109 44
+./scripts/genroads.py ./output/Terrain -110 44 -109 45
+./scripts/genroads.py ./output/Terrain -111 41 -110 42
+./scripts/genroads.py ./output/Terrain -111 42 -110 43
+./scripts/genroads.py ./output/Terrain -111 43 -110 44
+./scripts/genroads.py ./output/Terrain -111 44 -110 45
+
+Make Decidious Layer EPSG:5070 - NAD83 = Wyoming_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Wyoming@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_Wyoming.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Wyoming_4326-84.tiff
+Warp Wyoming_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Wyoming_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Wyoming_deciduous_4326-84@1" + "Wyoming_4326-84@1" = Wyoming_adjusted.tiff
+("Wyoming_deciduous_4326-84@1" < 1) * "Wyoming_4326-84@1" + ("Wyoming_deciduous_4326-84@1" != 0) * "Wyoming_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Wyoming_reclass-grass.tiff
+("Wyoming_adjusted@1" = 11) * 41 + ("Wyoming_adjusted@1" = 12) * 34 + ("Wyoming_adjusted@1" = 21) * 26 + ("Wyoming_adjusted@1" = 22) * 26 + ("Wyoming_adjusted@1" = 23) * 26 + ("Wyoming_adjusted@1" = 24) * 26 + ("Wyoming_adjusted@1" = 31) * 27 + ("Wyoming_adjusted@1" = 41) * 26 + ("Wyoming_adjusted@1" = 42) * 24 + ("Wyoming_adjusted@1" = 43) * 25 + ("Wyoming_adjusted@1" = 51) * 30 + ("Wyoming_adjusted@1" = 52) * 29 + ("Wyoming_adjusted@1" = 71) * 26 + ("Wyoming_adjusted@1" = 72) * 32 + ("Wyoming_adjusted@1" = 73) * 31 + ("Wyoming_adjusted@1" = 74) * 31 + ("Wyoming_adjusted@1" = 75) * 32 + ("Wyoming_adjusted@1" = 81) * 18 + ("Wyoming_adjusted@1" = 82) * 19 + ("Wyoming_adjusted@1" = 90) * 25 + ("Wyoming_adjusted@1" = 95) * 35
+
+Make Urban layer = Wyoming_urban.tiff
+("Wyoming_adjusted@1" = 21) * 10 + ("Wyoming_adjusted@1" = 22) * 1 + ("Wyoming_adjusted@1" = 23) * 1 + ("Wyoming_adjusted@1" = 24) * 2
+
+Remove the road clutter = Wyoming_urban-only.tiff
+r.neighbor, "median", size=7 Wyoming_urban.tiff
+
+Combine "Wyoming_reclass-urban@1" + "Wyoming_reclass-grass@1" = Wyoming_adjusted-combined.tiff
+("Wyoming_urban-only@1" < 1) * "Wyoming_reclass-grass@1" + ("Wyoming_urban-only@1" != 0) * "Wyoming_urban-only@1"
+
+Up sample = Wyoming_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Wyoming_4326-84-hd.tiff
+r.neighbor, "median", size=7 Wyoming_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Wyoming_4326-84-hd-corrected.tiff
+("Wyoming_4326-84-hd@1" = 0) * 44 + ("Wyoming_4326-84-hd@1" != 0) * "Wyoming_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = Wyoming_4326-84-hd-nowater.tiff
+Wyoming_4326-84-hd@1 * (Wyoming_4326-84-hd@1 != 41) + 26 * (Wyoming_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = Wyoming_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Wyoming_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = Wyoming_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Wyoming_4326-84-hd-water@1" and "Wyoming_4326-84-hd-nowater@1" = Wyoming_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Wyoming_4326-84-hd-nowater@1" and Wyoming_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Wyoming_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

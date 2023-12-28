@@ -1,0 +1,125 @@
+Colorado
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Colorado/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Colorado/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Colorado/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W103.hgt -b -103 37 -102 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n37/ws_w103n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W103.hgt -b -103 38 -102 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n38/ws_w103n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W103.hgt -b -103 39 -102 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n39/ws_w103n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W103.hgt -b -103 40 -102 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w103n40/ws_w103n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W104.hgt -b -104 37 -103 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n37/ws_w104n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W104.hgt -b -104 38 -103 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n38/ws_w104n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W104.hgt -b -104 39 -103 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n39/ws_w104n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W104.hgt -b -104 40 -103 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w104n40/ws_w104n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W105.hgt -b -105 37 -104 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n37/ws_w105n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W105.hgt -b -105 38 -104 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n38/ws_w105n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W105.hgt -b -105 39 -104 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n39/ws_w105n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W105.hgt -b -105 40 -104 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w105n40/ws_w105n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W106.hgt -b -106 37 -105 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n37/ws_w106n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W106.hgt -b -106 38 -105 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n38/ws_w106n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W106.hgt -b -106 39 -105 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n39/ws_w106n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W106.hgt -b -106 40 -105 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w106n40/ws_w106n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W107.hgt -b -107 37 -106 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n37/ws_w107n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W107.hgt -b -107 38 -106 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n38/ws_w107n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W107.hgt -b -107 39 -106 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n39/ws_w107n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W107.hgt -b -107 40 -106 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w107n40/ws_w107n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W108.hgt -b -108 37 -107 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n37/ws_w108n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W108.hgt -b -108 38 -107 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n38/ws_w108n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W108.hgt -b -108 39 -107 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w108n39/ws_w108n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W108.hgt -b -108 40 -107 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w108n40/ws_w108n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N37W109.hgt -b -109 37 -108 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n37/ws_w109n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N38W109.hgt -b -109 38 -108 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n38/ws_w109n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N39W109.hgt -b -109 39 -108 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w109n39/ws_w109n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Colorado_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W109.hgt -b -109 40 -108 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w109n40/ws_w109n40.osgb
+
+(Paths above in "docker run" requires having srtm in the local Colorado data folder)
+Entire block
+./scripts/genVPB.py -109 40 -102 38 ./data/Colorado_4326-84-hd-corrected.tiff
+Single 1X bucket
+./scripts/genVPB.py -103 37 -102 38 ./data/Colorado_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -103 37 -102 38
+./scripts/genroads.py ./output/Terrain -103 38 -102 39
+./scripts/genroads.py ./output/Terrain -103 39 -102 40
+./scripts/genroads.py ./output/Terrain -103 40 -102 41
+./scripts/genroads.py ./output/Terrain -104 37 -103 38
+./scripts/genroads.py ./output/Terrain -104 38 -103 39
+./scripts/genroads.py ./output/Terrain -104 39 -103 40
+./scripts/genroads.py ./output/Terrain -104 40 -103 41
+./scripts/genroads.py ./output/Terrain -105 37 -104 38
+./scripts/genroads.py ./output/Terrain -105 38 -104 39
+./scripts/genroads.py ./output/Terrain -105 39 -104 40
+./scripts/genroads.py ./output/Terrain -105 40 -104 41
+./scripts/genroads.py ./output/Terrain -106 37 -105 38
+./scripts/genroads.py ./output/Terrain -106 38 -105 39
+./scripts/genroads.py ./output/Terrain -106 39 -105 40
+./scripts/genroads.py ./output/Terrain -106 40 -105 41
+./scripts/genroads.py ./output/Terrain -107 37 -106 38
+./scripts/genroads.py ./output/Terrain -107 38 -106 39
+./scripts/genroads.py ./output/Terrain -107 39 -106 40
+./scripts/genroads.py ./output/Terrain -107 40 -106 41
+./scripts/genroads.py ./output/Terrain -108 37 -107 38
+./scripts/genroads.py ./output/Terrain -108 38 -107 39
+./scripts/genroads.py ./output/Terrain -108 39 -107 40
+./scripts/genroads.py ./output/Terrain -108 40 -107 41
+./scripts/genroads.py ./output/Terrain -109 37 -108 38
+./scripts/genroads.py ./output/Terrain -109 38 -108 39
+./scripts/genroads.py ./output/Terrain -109 39 -108 40
+./scripts/genroads.py ./output/Terrain -109 40 -108 41
+
+Make Decidious Layer EPSG:5070 - NAD83 = Colorado_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Colorado@1" != 0) * 41
+
+Warp NLCD_2019_Land_Cover_Colorado.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Colorado_4326-84.tiff
+Warp Colorado_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Colorado_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Colorado_deciduous_4326-84@1" + "Colorado_4326-84@1" = Colorado_adjusted.tiff
+("Colorado_deciduous_4326-84@1" < 1) * "Colorado_4326-84@1" + ("Colorado_deciduous_4326-84@1" != 0) * "Colorado_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Colorado_reclass-grass.tiff
+("Colorado_adjusted@1" = 11) * 41 + ("Colorado_adjusted@1" = 12) * 34 + ("Colorado_adjusted@1" = 21) * 26 + ("Colorado_adjusted@1" = 22) * 26 + ("Colorado_adjusted@1" = 23) * 26 + ("Colorado_adjusted@1" = 24) * 26 + ("Colorado_adjusted@1" = 31) * 27 + ("Colorado_adjusted@1" = 41) * 26 + ("Colorado_adjusted@1" = 42) * 24 + ("Colorado_adjusted@1" = 43) * 25 + ("Colorado_adjusted@1" = 51) * 30 + ("Colorado_adjusted@1" = 52) * 29 + ("Colorado_adjusted@1" = 71) * 26 + ("Colorado_adjusted@1" = 72) * 32 + ("Colorado_adjusted@1" = 73) * 31 + ("Colorado_adjusted@1" = 74) * 31 + ("Colorado_adjusted@1" = 75) * 32 + ("Colorado_adjusted@1" = 81) * 18 + ("Colorado_adjusted@1" = 82) * 19 + ("Colorado_adjusted@1" = 90) * 25 + ("Colorado_adjusted@1" = 95) * 35
+
+Make Urban layer = Colorado_urban.tiff
+("Colorado_adjusted@1" = 21) * 10 + ("Colorado_adjusted@1" = 22) * 1 + ("Colorado_adjusted@1" = 23) * 1 + ("Colorado_adjusted@1" = 24) * 2
+
+Remove the road clutter = Colorado_urban-only.tiff
+r.neighbor, "median", size=7 Colorado_urban.tiff
+
+Combine "Colorado_reclass-urban@1" + "Colorado_reclass-grass@1" = Colorado_adjusted-combined.tiff
+("Colorado_urban-only@1" < 1) * "Colorado_reclass-grass@1" + ("Colorado_urban-only@1" != 0) * "Colorado_urban-only@1"
+
+Up sample = Colorado_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Colorado_4326-84-hd.tiff
+r.neighbor, "median", size=7 Colorado_final-prep-4x.tiff
+
+Reclass index 0 to 44, leave the rest the same = Colorado_4326-84-hd-corrected.tiff
+("Colorado_4326-84-hd@1" = 0) * 44 + ("Colorado_4326-84-hd@1" != 0) * "Colorado_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = Colorado_4326-84-hd-nowater.tiff
+Colorado_4326-84-hd@1 * (Colorado_4326-84-hd@1 != 41) + 26 * (Colorado_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = Colorado_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Colorado_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = Colorado_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Colorado_4326-84-hd-water@1" and "Colorado_4326-84-hd-nowater@1" = Colorado_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Colorado_4326-84-hd-nowater@1" and Colorado_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Colorado_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
