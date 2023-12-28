@@ -120,10 +120,9 @@ Make Urban layer = Nevada-Southern_urban.tiff
 Make Urban layer = Nevada-Northern_urban.tiff
 ("Nevada-Northern_adjusted@1" = 21) * 10 + ("Nevada-Northern_adjusted@1" = 22) * 1 + ("Nevada-Northern_adjusted@1" = 23) * 1 + ("Nevada-Northern_adjusted@1" = 24) * 2
 
-Remove the road clutter = Nevada-Southern_urban-only.tiff
-r.neighbor, "median", size=7 Nevada-Southern_urban.tiff
-Remove the road clutter = Nevada-Northern_urban-only.tiff
-r.neighbor, "median", size=7 Nevada-Northern_urban.tiff
+Remove Nevada-Southern_urban.tiff road clutter = Nevada-Southern_urban-only.tiff
+Remove Nevada-Northern_urban.tiff road clutter = Nevada-Northern_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Nevada-Southern_reclass-urban@1" + "Nevada-Southern_reclass-grass@1" = Nevada-Southern_adjusted-combined.tiff
 ("Nevada-Southern_urban-only@1" < 1) * "Nevada-Southern_reclass-grass@1" + ("Nevada-Southern_urban-only@1" != 0) * "Nevada-Southern_urban-only@1"
@@ -134,10 +133,9 @@ Up sample = Nevada-Southern_final-prep-4x.tiff
 Up sample = Nevada-Northern_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Nevada-Southern_4326-84-hd.tiff
-r.neighbor, "median", size=7 Nevada-Southern_final-prep-4x.tiff
-Simplify Nevada-Northern_4326-84-hd.tiff
-r.neighbor, "median", size=7 Nevada-Northern_final-prep-4x.tiff
+Simplify Nevada-Southern_final-prep-4x.tiff = Nevada-Southern_4326-84-hd.tiff
+Simplify Nevada-Northern_final-prep-4x.tiff = Nevada-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Nevada-Southern_4326-84-hd-corrected.tiff
 ("Nevada-Southern_4326-84-hd@1" = 0) * 44 + ("Nevada-Southern_4326-84-hd@1" != 0) * "Nevada-Southern_4326-84-hd@1"

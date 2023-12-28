@@ -95,8 +95,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = NewMexico_reclass-grass.tiff
 Make Urban layer = NewMexico_urban.tiff
 ("NewMexico_adjusted@1" = 21) * 10 + ("NewMexico_adjusted@1" = 22) * 1 + ("NewMexico_adjusted@1" = 23) * 1 + ("NewMexico_adjusted@1" = 24) * 2
 
-Remove the road clutter = NewMexico_urban-only.tiff
-r.neighbor, "median", size=7 NewMexico_urban.tiff
+Remove NewMexico_urban.tiff road clutter = NewMexico_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "NewMexico_reclass-urban@1" + "NewMexico_reclass-grass@1" = NewMexico_adjusted-combined.tiff
 ("NewMexico_urban-only@1" < 1) * "NewMexico_reclass-grass@1" + ("NewMexico_urban-only@1" != 0) * "NewMexico_urban-only@1"
@@ -104,8 +104,8 @@ Combine "NewMexico_reclass-urban@1" + "NewMexico_reclass-grass@1" = NewMexico_ad
 Up sample = NewMexico_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify NewMexico_4326-84-hd.tiff
-r.neighbor, "median", size=7 NewMexico_final-prep-4x.tiff
+Simplify NewMexico_final-prep-4x.tiff = NewMexico_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = NewMexico_4326-84-hd-corrected.tiff
 ("NewMexico_4326-84-hd@1" = 0) * 44 + ("NewMexico_4326-84-hd@1" != 0) * "NewMexico_4326-84-hd@1"

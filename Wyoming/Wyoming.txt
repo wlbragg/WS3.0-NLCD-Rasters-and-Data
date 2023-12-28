@@ -85,8 +85,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = Wyoming_reclass-grass.tiff
 Make Urban layer = Wyoming_urban.tiff
 ("Wyoming_adjusted@1" = 21) * 10 + ("Wyoming_adjusted@1" = 22) * 1 + ("Wyoming_adjusted@1" = 23) * 1 + ("Wyoming_adjusted@1" = 24) * 2
 
-Remove the road clutter = Wyoming_urban-only.tiff
-r.neighbor, "median", size=7 Wyoming_urban.tiff
+Remove Wyoming_urban.tiff road clutter = Wyoming_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Wyoming_reclass-urban@1" + "Wyoming_reclass-grass@1" = Wyoming_adjusted-combined.tiff
 ("Wyoming_urban-only@1" < 1) * "Wyoming_reclass-grass@1" + ("Wyoming_urban-only@1" != 0) * "Wyoming_urban-only@1"
@@ -94,8 +94,8 @@ Combine "Wyoming_reclass-urban@1" + "Wyoming_reclass-grass@1" = Wyoming_adjusted
 Up sample = Wyoming_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Wyoming_4326-84-hd.tiff
-r.neighbor, "median", size=7 Wyoming_final-prep-4x.tiff
+Simplify Wyoming_final-prep-4x.tiff = Wyoming_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Wyoming_4326-84-hd-corrected.tiff
 ("Wyoming_4326-84-hd@1" = 0) * 44 + ("Wyoming_4326-84-hd@1" != 0) * "Wyoming_4326-84-hd@1"

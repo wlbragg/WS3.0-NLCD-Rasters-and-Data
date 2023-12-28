@@ -75,8 +75,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = Utah_reclass-grass.tiff
 Make Urban layer = Utah_urban.tiff
 ("Utah_adjusted@1" = 21) * 10 + ("Utah_adjusted@1" = 22) * 1 + ("Utah_adjusted@1" = 23) * 1 + ("Utah_adjusted@1" = 24) * 2
 
-Remove the road clutter = Utah_urban-only.tiff
-r.neighbor, "median", size=7 Utah_urban.tiff
+Remove Utah_urban.tiff road clutter = Utah_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Utah_reclass-urban@1" + "Utah_reclass-grass@1" = Utah_adjusted-combined.tiff
 ("Utah_urban-only@1" < 1) * "Utah_reclass-grass@1" + ("Utah_urban-only@1" != 0) * "Utah_urban-only@1"
@@ -84,8 +84,8 @@ Combine "Utah_reclass-urban@1" + "Utah_reclass-grass@1" = Utah_adjusted-combined
 Up sample = Utah_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Utah_4326-84-hd.tiff
-r.neighbor, "median", size=7 Utah_final-prep-4x.tiff
+Simplify Utah_final-prep-4x.tiff = Utah_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Utah_4326-84-hd-corrected.tiff
 ("Utah_4326-84-hd@1" = 0) * 44 + ("Utah_4326-84-hd@1" != 0) * "Utah_4326-84-hd@1"

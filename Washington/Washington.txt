@@ -87,8 +87,8 @@ Re-class urban 21, 22, 23, 24 = grass 26 = Washington_reclass-grass.tiff
 Make Urban layer = Washington_urban.tiff
 ("Washington_adjusted@1" = 21) * 10 + ("Washington_adjusted@1" = 22) * 1 + ("Washington_adjusted@1" = 23) * 1 + ("Washington_adjusted@1" = 24) * 2
 
-Remove the road clutter = Washington_urban-only.tiff
-r.neighbor, "median", size=7 Washington_urban.tiff
+Remove Washington_urban.tiff road clutter = Washington_urban-only.tiff
+r.neighbor, "median", size=7 
 
 Combine "Washington_reclass-urban@1" + "Washington_reclass-grass@1" = Washington_adjusted-combined.tiff
 ("Washington_urban-only@1" < 1) * "Washington_reclass-grass@1" + ("Washington_urban-only@1" != 0) * "Washington_urban-only@1"
@@ -96,8 +96,8 @@ Combine "Washington_reclass-urban@1" + "Washington_reclass-grass@1" = Washington
 Up sample = Washington_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Washington_4326-84-hd.tiff
-r.neighbor, "median", size=7 Washington_final-prep-4x.tiff
+Simplify Washington_final-prep-4x.tiff = Washington_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Washington_4326-84-hd-corrected.tiff
 ("Washington_4326-84-hd@1" = 0) * 44 + ("Washington_4326-84-hd@1" != 0) * "Washington_4326-84-hd@1"

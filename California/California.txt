@@ -189,12 +189,10 @@ Make Urban layer = California-Central_urban.tiff
 Make Urban layer = California-Northern_urban.tiff
 ("California-Northern_adjusted@1" = 21) * 10 + ("California-Northern_adjusted@1" = 22) * 1 + ("California-Northern_adjusted@1" = 23) * 1 + ("California-Northern_adjusted@1" = 24) * 2
 
-Remove the road clutter = California-Southern_urban-only.tiff
-r.neighbor, "median", size=7 California-Southern_urban.tiff
-Remove the road clutter = California-Central_urban-only.tiff
-r.neighbor, "median", size=7 California-Central_urban.tiff
-Remove the road clutter = California-Northern_urban-only.tiff
-r.neighbor, "median", size=7 California-Northern_urban.tiff
+Remove California-Southern_urban.tiff road clutter = California-Southern_urban-only.tiff
+Remove California-Central_urban.tiff road clutter = California-Central_urban-only.tiff
+Remove California-Northern_urban.tiff road clutter = California-Northern_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "California-Southern_reclass-urban@1" + "California-Southern_reclass-grass@1" = California-Southern_adjusted-combined.tiff
 ("California-Southern_urban-only@1" < 1) * "California-Southern_reclass-grass@1" + ("California-Southern_urban-only@1" != 0) * "California-Southern_urban-only@1"
@@ -208,12 +206,10 @@ Up sample = California-Central_final-prep-4x.tiff
 Up sample = California-Northern_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify California-Southern_4326-84-hd.tiff
-r.neighbor, "median", size=7 California-Southern_final-prep-4x.tiff
-Simplify California-Central_4326-84-hd.tiff
-r.neighbor, "median", size=7 California-Central_final-prep-4x.tiff
-Simplify California-Northern_4326-84-hd.tiff
-r.neighbor, "median", size=7 California-Northern_final-prep-4x.tiff
+Simplify California-Southern_final-prep-4x.tiff = California-Southern_4326-84-hd.tiff
+Simplify California-Central_final-prep-4x.tiff = California-Central_4326-84-hd.tiff 
+Simplify California-Northern_final-prep-4x.tiff = California-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7 
 
 Reclass index 0 to 44, leave the rest the same = California-Southern_4326-84-hd-corrected.tiff
 ("California-Southern_4326-84-hd@1" = 0) * 44 + ("California-Southern_4326-84-hd@1" != 0) * "California-Southern_4326-84-hd@1"
