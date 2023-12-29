@@ -84,13 +84,13 @@ Combine "Arizona_deciduous_4326-84@1" + "Arizona_4326-84@1" = Arizona_adjusted.t
 ("Arizona_deciduous_4326-84@1" < 1) * "Arizona_4326-84@1" + ("Arizona_deciduous_4326-84@1" != 0) * "Arizona_deciduous_4326-84@1"
 
 Re-class urban 21, 22, 23, 24 = grass 26 = Arizona_reclass-grass.tiff
-("Arizona_adjusted@1" = 11) * 41 + ("Arizona_adjusted@1" = 12) * 34 + ("Arizona_adjusted@1" = 21) * 26 + ("Arizona_adjusted@1" = 22) * 26 + ("Arizona_adjusted@1" = 23) * 26 + ("Arizona_adjusted@1" = 24) * 26 + ("Arizona_adjusted@1" = 31) * 27 + ("Arizona_adjusted@1" = 41) * 26 + ("Arizona_adjusted@1" = 42) * 24 + ("Arizona_adjusted@1" = 43) * 25 + ("Arizona_adjusted@1" = 51) * 30 + ("Arizona_adjusted@1" = 52) * 29 + ("Arizona_adjusted@1" = 71) * 26 + ("Arizona_adjusted@1" = 72) * 32 + ("Arizona_adjusted@1" = 73) * 31 + ("Arizona_adjusted@1" = 74) * 31 + ("Arizona_adjusted@1" = 75) * 32 + ("Arizona_adjusted@1" = 81) * 18 + ("Arizona_adjusted@1" = 82) * 19 + ("Arizona_adjusted@1" = 90) * 25 + ("Arizona_adjusted@1" = 95) * 35
+("Arizona_adjusted@1" = 11) * 41 + ("Arizona_adjusted@1" = 12) * 34 + ("Arizona_adjusted@1" = 21) * 26 + ("Arizona_adjusted@1" = 22) * 26 + ("Arizona_adjusted@1" = 23) * 26 + ("Arizona_adjusted@1" = 24) * 26 + ("Arizona_adjusted@1" = 31) * 27 + ("Arizona_adjusted@1" = 41) * 23 + ("Arizona_adjusted@1" = 42) * 24 + ("Arizona_adjusted@1" = 43) * 25 + ("Arizona_adjusted@1" = 51) * 30 + ("Arizona_adjusted@1" = 52) * 29 + ("Arizona_adjusted@1" = 71) * 26 + ("Arizona_adjusted@1" = 72) * 32 + ("Arizona_adjusted@1" = 73) * 31 + ("Arizona_adjusted@1" = 74) * 31 + ("Arizona_adjusted@1" = 75) * 32 + ("Arizona_adjusted@1" = 81) * 18 + ("Arizona_adjusted@1" = 82) * 19 + ("Arizona_adjusted@1" = 90) * 25 + ("Arizona_adjusted@1" = 95) * 35
 
 Make Urban layer = Arizona_urban.tiff
 ("Arizona_adjusted@1" = 21) * 10 + ("Arizona_adjusted@1" = 22) * 1 + ("Arizona_adjusted@1" = 23) * 1 + ("Arizona_adjusted@1" = 24) * 2
 
-Remove the road clutter = Arizona_urban-only.tiff
-r.neighbor, "median", size=7 Arizona_urban.tiff
+Remove Arizona_urban.tiff road clutter = Arizona_urban-only.tiff
+r.neighbor, "median", size=7
 
 Combine "Arizona_reclass-urban@1" + "Arizona_reclass-grass@1" = Arizona_adjusted-combined.tiff
 ("Arizona_urban-only@1" < 1) * "Arizona_reclass-grass@1" + ("Arizona_urban-only@1" != 0) * "Arizona_urban-only@1"
@@ -98,8 +98,8 @@ Combine "Arizona_reclass-urban@1" + "Arizona_reclass-grass@1" = Arizona_adjusted
 Up sample = Arizona_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
-Simplify Arizona_4326-84-hd.tiff
-r.neighbor, "median", size=7 Arizona_final-prep-4x.tiff
+Simplify Arizona_final-prep-4x.tiff = Arizona_4326-84-hd.tiff
+r.neighbor, "median", size=7
 
 Reclass index 0 to 44, leave the rest the same = Arizona_4326-84-hd-corrected.tiff
 ("Arizona_4326-84-hd@1" = 0) * 44 + ("Arizona_4326-84-hd@1" != 0) * "Arizona_4326-84-hd@1"

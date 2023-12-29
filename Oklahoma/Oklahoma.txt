@@ -1,0 +1,141 @@
+Oklahoma
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Oklahoma/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Oklahoma/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Oklahoma/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W095.hgt -b -95 33 -94 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n33/ws_w095n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W095.hgt -b -95 34 -94 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n34/ws_w095n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W095.hgt -b -95 35 -94 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n35/ws_w095n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W095.hgt -b -95 36 -94 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n36/ws_w095n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W096.hgt -b -96 33 -95 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n33/ws_w096n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W096.hgt -b -96 34 -95 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n34/ws_w096n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W096.hgt -b -96 35 -95 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n35/ws_w096n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W096.hgt -b -96 36 -95 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n36/ws_w096n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W097.hgt -b -97 33 -96 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n33/ws_w097n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W097.hgt -b -97 34 -96 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n34/ws_w097n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W097.hgt -b -97 35 -96 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n35/ws_w097n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W097.hgt -b -97 36 -96 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n36/ws_w097n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W098.hgt -b -98 33 -97 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n33/ws_w098n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W098.hgt -b -98 34 -97 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n34/ws_w098n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W098.hgt -b -98 35 -97 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n35/ws_w098n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W098.hgt -b -98 36 -97 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n36/ws_w098n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W099.hgt -b -99 33 -98 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n33/ws_w099n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W099.hgt -b -99 34 -98 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n34/ws_w099n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W099.hgt -b -99 35 -98 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n35/ws_w099n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W099.hgt -b -99 36 -98 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n36/ws_w099n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W100.hgt -b -100 33 -99 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n33/ws_w100n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W100.hgt -b -100 34 -99 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n34/ws_w100n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W100.hgt -b -100 35 -99 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n35/ws_w100n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W100.hgt -b -100 36 -99 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n36/ws_w100n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W101.hgt -b -101 33 -100 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n33/ws_w101n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W101.hgt -b -101 34 -100 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n34/ws_w101n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W101.hgt -b -101 35 -100 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n35/ws_w101n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W101.hgt -b -101 36 -100 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n36/ws_w101n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W102.hgt -b -102 33 -101 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n33/ws_w102n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W102.hgt -b -102 34 -101 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n34/ws_w102n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W102.hgt -b -102 35 -101 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n35/ws_w102n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W102.hgt -b -102 36 -101 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n36/ws_w102n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W103.hgt -b -103 33 -102 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n33/ws_w103n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W103.hgt -b -103 34 -102 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n34/ws_w103n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W103.hgt -b -103 35 -102 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n35/ws_w103n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Oklahoma_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W103.hgt -b -103 36 -102 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n36/ws_w103n36.osgb
+
+(Paths above in "docker run" requires having srtm in the local Oklahoma data folder)
+Entire block
+./scripts/genVPB.py -103 36 -94 34 ./data/Oklahoma_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -95 33 -94 34 ./data/Oklahoma_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -95 33 -94 34
+./scripts/genroads.py ./output/Terrain -95 34 -94 35
+./scripts/genroads.py ./output/Terrain -95 35 -94 36
+./scripts/genroads.py ./output/Terrain -95 36 -94 37
+./scripts/genroads.py ./output/Terrain -96 33 -95 34
+./scripts/genroads.py ./output/Terrain -96 34 -95 35
+./scripts/genroads.py ./output/Terrain -96 35 -95 36
+./scripts/genroads.py ./output/Terrain -96 36 -95 37
+./scripts/genroads.py ./output/Terrain -97 33 -96 34
+./scripts/genroads.py ./output/Terrain -97 34 -96 35
+./scripts/genroads.py ./output/Terrain -97 35 -96 36
+./scripts/genroads.py ./output/Terrain -97 36 -96 37
+./scripts/genroads.py ./output/Terrain -98 33 -97 34
+./scripts/genroads.py ./output/Terrain -98 34 -97 35
+./scripts/genroads.py ./output/Terrain -98 35 -97 36
+./scripts/genroads.py ./output/Terrain -98 36 -97 37
+./scripts/genroads.py ./output/Terrain -99 33 -98 34
+./scripts/genroads.py ./output/Terrain -99 34 -98 35
+./scripts/genroads.py ./output/Terrain -99 35 -98 36
+./scripts/genroads.py ./output/Terrain -99 36 -98 37
+./scripts/genroads.py ./output/Terrain -100 33 -99 34
+./scripts/genroads.py ./output/Terrain -100 34 -99 35
+./scripts/genroads.py ./output/Terrain -100 35 -99 36
+./scripts/genroads.py ./output/Terrain -100 36 -99 37
+./scripts/genroads.py ./output/Terrain -101 33 -100 34
+./scripts/genroads.py ./output/Terrain -101 34 -100 35
+./scripts/genroads.py ./output/Terrain -101 35 -100 36
+./scripts/genroads.py ./output/Terrain -101 36 -100 37
+./scripts/genroads.py ./output/Terrain -102 33 -101 34
+./scripts/genroads.py ./output/Terrain -102 34 -101 35
+./scripts/genroads.py ./output/Terrain -102 35 -101 36
+./scripts/genroads.py ./output/Terrain -102 36 -101 37
+./scripts/genroads.py ./output/Terrain -103 33 -102 34
+./scripts/genroads.py ./output/Terrain -103 34 -102 35
+./scripts/genroads.py ./output/Terrain -103 35 -102 36
+./scripts/genroads.py ./output/Terrain -103 36 -102 37
+
+Make Decidious Layer EPSG:5070 - NAD83 = Oklahoma_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Oklahoma@1" != 0) * 41
+
+Warp NLCD_2021_Land_Cover_Oklahoma.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Oklahoma_4326-84.tiff
+Warp Oklahoma_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Oklahoma_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Oklahoma_deciduous_4326-84@1" + "Oklahoma_4326-84@1" = Oklahoma_adjusted.tiff
+("Oklahoma_deciduous_4326-84@1" < 1) * "Oklahoma_4326-84@1" + ("Oklahoma_deciduous_4326-84@1" != 0) * "Oklahoma_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Oklahoma_reclass-grass.tiff
+("Oklahoma_adjusted@1" = 11) * 41 + ("Oklahoma_adjusted@1" = 12) * 34 + ("Oklahoma_adjusted@1" = 21) * 26 + ("Oklahoma_adjusted@1" = 22) * 26 + ("Oklahoma_adjusted@1" = 23) * 26 + ("Oklahoma_adjusted@1" = 24) * 26 + ("Oklahoma_adjusted@1" = 31) * 27 + ("Oklahoma_adjusted@1" = 41) * 23 + ("Oklahoma_adjusted@1" = 42) * 24 + ("Oklahoma_adjusted@1" = 43) * 25 + ("Oklahoma_adjusted@1" = 51) * 30 + ("Oklahoma_adjusted@1" = 52) * 29 + ("Oklahoma_adjusted@1" = 71) * 26 + ("Oklahoma_adjusted@1" = 72) * 32 + ("Oklahoma_adjusted@1" = 73) * 31 + ("Oklahoma_adjusted@1" = 74) * 31 + ("Oklahoma_adjusted@1" = 75) * 32 + ("Oklahoma_adjusted@1" = 81) * 18 + ("Oklahoma_adjusted@1" = 82) * 19 + ("Oklahoma_adjusted@1" = 90) * 25 + ("Oklahoma_adjusted@1" = 95) * 35
+
+Make Urban layer = Oklahoma_urban.tiff
+("Oklahoma_adjusted@1" = 21) * 10 + ("Oklahoma_adjusted@1" = 22) * 1 + ("Oklahoma_adjusted@1" = 23) * 1 + ("Oklahoma_adjusted@1" = 24) * 2
+
+Remove Oklahoma_urban.tiff road clutter = Oklahoma_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Oklahoma_reclass-urban@1" + "Oklahoma_reclass-grass@1" = Oklahoma_adjusted-combined.tiff
+("Oklahoma_urban-only@1" < 1) * "Oklahoma_reclass-grass@1" + ("Oklahoma_urban-only@1" != 0) * "Oklahoma_urban-only@1"
+
+Up sample = Oklahoma_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Oklahoma_final-prep-4x.tiff = Oklahoma_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Oklahoma_4326-84-hd-corrected.tiff
+("Oklahoma_4326-84-hd@1" = 0) * 44 + ("Oklahoma_4326-84-hd@1" != 0) * "Oklahoma_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Oklahoma_4326-84-hd-nowater.tiff
+Oklahoma_4326-84-hd-corrected@1 * (Oklahoma_4326-84-hd-corrected@1 != 41) + 26 * (Oklahoma_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Oklahoma_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Oklahoma_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Oklahoma_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Oklahoma_4326-84-hd-water@1" and "Oklahoma_4326-84-hd-nowater@1" = Oklahoma_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Oklahoma_4326-84-hd-nowater@1" and Oklahoma_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Oklahoma_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
