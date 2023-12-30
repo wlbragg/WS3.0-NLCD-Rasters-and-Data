@@ -1,0 +1,291 @@
+Texas *
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Texas/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Texas/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Texas/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Texas-Southern
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W096.hgt -b -96 28 -95 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w096n28/ws_w096n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N27W097.hgt -b -97 27 -96 28 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w097n27/ws_w097n27.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W097.hgt -b -97 28 -96 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w097n28/ws_w097n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N25W098.hgt -b -98 25 -97 26 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w098n25/ws_w098n25.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N26W098.hgt -b -98 26 -97 27 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w098n26/ws_w098n26.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N27W098.hgt -b -98 27 -97 28 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w098n27/ws_w098n27.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W098.hgt -b -98 28 -97 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w098n28/ws_w098n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N26W099.hgt -b -99 26 -98 27 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w099n26/ws_w099n26.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N27W099.hgt -b -99 27 -98 28 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w099n27/ws_w099n27.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W099.hgt -b -99 28 -98 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w099n28/ws_w099n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N26W100.hgt -b -100 26 -99 27 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w100n26/ws_w100n26.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N27W100.hgt -b -100 27 -99 28 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w100n27/ws_w100n27.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W100.hgt -b -100 28 -99 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w100n28/ws_w100n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-Southern_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W101.hgt -b -101 28 -100 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w101n28/ws_w101n28.osgb
+
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W094.hgt -b -94 29 -93 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w094n29/ws_w094n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W094.hgt -b -94 30 -93 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n30/ws_w094n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W094.hgt -b -94 31 -93 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n31/ws_w094n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W095.hgt -b -95 29 -94 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w095n29/ws_w095n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W095.hgt -b -95 30 -94 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n30/ws_w095n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W095.hgt -b -95 31 -94 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n31/ws_w095n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W095.hgt -b -95 32 -94 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n32/ws_w095n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W095.hgt -b -95 33 -94 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n33/ws_w095n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W096.hgt -b -96 29 -95 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w096n29/ws_w096n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W096.hgt -b -96 30 -95 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n30/ws_w096n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W096.hgt -b -96 31 -95 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n31/ws_w096n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W096.hgt -b -96 32 -95 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n32/ws_w096n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W096.hgt -b -96 33 -95 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n33/ws_w096n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W097.hgt -b -97 29 -96 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w097n29/ws_w097n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W097.hgt -b -97 30 -96 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n30/ws_w097n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W097.hgt -b -97 31 -96 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n31/ws_w097n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W097.hgt -b -97 32 -96 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n32/ws_w097n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W097.hgt -b -97 33 -96 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w097n33/ws_w097n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W098.hgt -b -98 29 -97 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w098n29/ws_w098n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W098.hgt -b -98 30 -97 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n30/ws_w098n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W098.hgt -b -98 31 -97 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n31/ws_w098n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W098.hgt -b -98 32 -97 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n32/ws_w098n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W098.hgt -b -98 33 -97 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w098n33/ws_w098n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-2_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W099.hgt -b -99 29 -98 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w099n29/ws_w099n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W099.hgt -b -99 30 -98 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n30/ws_w099n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W099.hgt -b -99 31 -98 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n31/ws_w099n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W099.hgt -b -99 32 -98 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n32/ws_w099n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W099.hgt -b -99 33 -98 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n33/ws_w099n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W099.hgt -b -99 34 -98 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w099n34/ws_w099n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W100.hgt -b -100 29 -99 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w100n29/ws_w100n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W100.hgt -b -100 30 -99 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n30/ws_w100n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W100.hgt -b -100 31 -99 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n31/ws_w100n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W100.hgt -b -100 32 -99 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n32/ws_w100n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W100.hgt -b -100 33 -99 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n33/ws_w100n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-3_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W100.hgt -b -100 34 -99 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w100n34/ws_w100n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W101.hgt -b -101 29 -100 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w101n29/ws_w101n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W101.hgt -b -101 30 -100 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n30/ws_w101n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W101.hgt -b -101 31 -100 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n31/ws_w101n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W101.hgt -b -101 32 -100 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n32/ws_w101n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W101.hgt -b -101 33 -100 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n33/ws_w101n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W101.hgt -b -101 34 -100 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n34/ws_w101n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W101.hgt -b -101 35 -100 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n35/ws_w101n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W101.hgt -b -101 36 -100 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w101n36/ws_w101n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W102.hgt -b -102 29 -101 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w102n29/ws_w102n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W102.hgt -b -102 30 -101 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n30/ws_w102n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W102.hgt -b -102 31 -101 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n31/ws_w102n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W102.hgt -b -102 32 -101 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n32/ws_w102n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W102.hgt -b -102 33 -101 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n33/ws_w102n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W102.hgt -b -102 34 -101 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n34/ws_w102n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W102.hgt -b -102 35 -101 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n35/ws_w102n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W102.hgt -b -102 36 -101 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w102n36/ws_w102n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W103.hgt -b -103 29 -102 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w103n29/ws_w103n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W103.hgt -b -103 30 -102 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n30/ws_w103n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W103.hgt -b -103 31 -102 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n31/ws_w103n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W103.hgt -b -103 32 -102 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n32/ws_w103n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W103.hgt -b -103 33 -102 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n33/ws_w103n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W103.hgt -b -103 34 -102 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n34/ws_w103n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W103.hgt -b -103 35 -102 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n35/ws_w103n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-4_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W103.hgt -b -103 36 -102 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w103n36/ws_w103n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N28W104.hgt -b -104 28 -103 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n28/ws_w104n28.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W104.hgt -b -104 29 -103 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w104n29/ws_w104n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W104.hgt -b -104 30 -103 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n30/ws_w104n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W104.hgt -b -104 31 -103 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w104n31/ws_w104n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N29W105.hgt -b -105 29 -104 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n20/w105n29/ws_w105n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W105.hgt -b -105 30 -104 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n30/ws_w105n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W105.hgt -b -105 31 -104 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w105n31/ws_w105n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N30W106.hgt -b -106 30 -105 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n30/ws_w106n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W106.hgt -b -106 31 -105 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w106n31/ws_w106n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Texas-1_4326-84-hd-corrected.tiff -d ./SRTM-3/N31W107.hgt -b -107 31 -106 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n30/w107n31/ws_w107n31.osgb
+
+(Paths above in "docker run" requires having srtm in the local Texas data folder)
+Entire block
+./scripts/genVPB.py -121 34 -114 33 ./data/Texas-Southern_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -115 32 -114 33 ./data/Texas-Southern_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -94 29 -93 30
+./scripts/genroads.py ./output/Terrain -94 30 -93 31
+./scripts/genroads.py ./output/Terrain -94 31 -93 32
+./scripts/genroads.py ./output/Terrain -95 29 -94 30
+./scripts/genroads.py ./output/Terrain -95 30 -94 31
+./scripts/genroads.py ./output/Terrain -95 31 -94 32
+./scripts/genroads.py ./output/Terrain -95 32 -94 33
+./scripts/genroads.py ./output/Terrain -95 33 -94 34
+./scripts/genroads.py ./output/Terrain -96 28 -95 29
+./scripts/genroads.py ./output/Terrain -96 29 -95 30
+./scripts/genroads.py ./output/Terrain -96 30 -95 31
+./scripts/genroads.py ./output/Terrain -96 31 -95 32
+./scripts/genroads.py ./output/Terrain -96 32 -95 33
+./scripts/genroads.py ./output/Terrain -96 33 -95 34
+./scripts/genroads.py ./output/Terrain -97 27 -96 28
+./scripts/genroads.py ./output/Terrain -97 28 -96 29
+./scripts/genroads.py ./output/Terrain -97 29 -96 30
+./scripts/genroads.py ./output/Terrain -97 30 -96 31
+./scripts/genroads.py ./output/Terrain -97 31 -96 32
+./scripts/genroads.py ./output/Terrain -97 32 -96 33
+./scripts/genroads.py ./output/Terrain -97 33 -96 34
+./scripts/genroads.py ./output/Terrain -98 25 -97 26
+./scripts/genroads.py ./output/Terrain -98 26 -97 27
+./scripts/genroads.py ./output/Terrain -98 27 -97 28
+./scripts/genroads.py ./output/Terrain -98 28 -97 29
+./scripts/genroads.py ./output/Terrain -98 29 -97 30
+./scripts/genroads.py ./output/Terrain -98 30 -97 31
+./scripts/genroads.py ./output/Terrain -98 31 -97 32
+./scripts/genroads.py ./output/Terrain -98 32 -97 33
+./scripts/genroads.py ./output/Terrain -98 33 -97 34
+./scripts/genroads.py ./output/Terrain -99 26 -98 27
+./scripts/genroads.py ./output/Terrain -99 27 -98 28
+./scripts/genroads.py ./output/Terrain -99 28 -98 29
+./scripts/genroads.py ./output/Terrain -99 29 -98 30
+./scripts/genroads.py ./output/Terrain -99 30 -98 31
+./scripts/genroads.py ./output/Terrain -99 31 -98 32
+./scripts/genroads.py ./output/Terrain -99 32 -98 33
+./scripts/genroads.py ./output/Terrain -99 33 -98 34
+./scripts/genroads.py ./output/Terrain -99 34 -98 35
+./scripts/genroads.py ./output/Terrain -100 26 -99 27
+./scripts/genroads.py ./output/Terrain -100 27 -99 28
+./scripts/genroads.py ./output/Terrain -100 28 -99 29
+./scripts/genroads.py ./output/Terrain -100 29 -99 30
+./scripts/genroads.py ./output/Terrain -100 30 -99 31
+./scripts/genroads.py ./output/Terrain -100 31 -99 32
+./scripts/genroads.py ./output/Terrain -100 32 -99 33
+./scripts/genroads.py ./output/Terrain -100 33 -99 34
+./scripts/genroads.py ./output/Terrain -100 34 -99 35
+./scripts/genroads.py ./output/Terrain -101 28 -100 29
+./scripts/genroads.py ./output/Terrain -101 29 -100 30
+./scripts/genroads.py ./output/Terrain -101 30 -100 31
+./scripts/genroads.py ./output/Terrain -101 31 -100 32
+./scripts/genroads.py ./output/Terrain -101 32 -100 33
+./scripts/genroads.py ./output/Terrain -101 33 -100 34
+./scripts/genroads.py ./output/Terrain -101 34 -100 35
+./scripts/genroads.py ./output/Terrain -101 35 -100 36
+./scripts/genroads.py ./output/Terrain -101 36 -100 37
+./scripts/genroads.py ./output/Terrain -102 29 -101 30
+./scripts/genroads.py ./output/Terrain -102 30 -101 31
+./scripts/genroads.py ./output/Terrain -102 31 -101 32
+./scripts/genroads.py ./output/Terrain -102 32 -101 33
+./scripts/genroads.py ./output/Terrain -102 33 -101 34
+./scripts/genroads.py ./output/Terrain -102 34 -101 35
+./scripts/genroads.py ./output/Terrain -102 35 -101 36
+./scripts/genroads.py ./output/Terrain -102 36 -101 37
+./scripts/genroads.py ./output/Terrain -103 29 -102 30
+./scripts/genroads.py ./output/Terrain -103 30 -102 31
+./scripts/genroads.py ./output/Terrain -103 31 -102 32
+./scripts/genroads.py ./output/Terrain -103 32 -102 33
+./scripts/genroads.py ./output/Terrain -103 33 -102 34
+./scripts/genroads.py ./output/Terrain -103 34 -102 35
+./scripts/genroads.py ./output/Terrain -103 35 -102 36
+./scripts/genroads.py ./output/Terrain -103 36 -102 37
+./scripts/genroads.py ./output/Terrain -104 28 -103 29
+./scripts/genroads.py ./output/Terrain -104 29 -103 30
+./scripts/genroads.py ./output/Terrain -104 30 -103 31
+./scripts/genroads.py ./output/Terrain -104 31 -103 32
+./scripts/genroads.py ./output/Terrain -105 29 -104 30
+./scripts/genroads.py ./output/Terrain -105 30 -104 31
+./scripts/genroads.py ./output/Terrain -105 31 -104 32
+./scripts/genroads.py ./output/Terrain -106 30 -105 31
+./scripts/genroads.py ./output/Terrain -106 31 -105 32
+./scripts/genroads.py ./output/Terrain -107 31 -105 31
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Texas-Nevada\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Texas-Southern_coast-clipped.tiff
+GIMP NLCD_2021_Land_Cover_Texas-Southern.tiff = Texas-Southern_coast-clipped.tiff
+GIMP NLCD_2021_Land_Cover_Texas-Central.tiff = Texas-Central_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Texas-Southern_deciduous-coast-clipped.tiff
+("NLCD_2021_Tree_Canopy_Texas-Southern@1" = 255) * 0 + ("NLCD_2021_Tree_Canopy_Texas-Southern@1" != 255) * "NLCD_2021_Tree_Canopy_Texas-Southern@1"
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Texas-Central_deciduous-coast-clipped.tiff
+("NLCD_2021_Tree_Canopy_Texas-Central@1" = 255) * 0 + ("NLCD_2021_Tree_Canopy_Texas-Central@1" != 255) * "NLCD_2021_Tree_Canopy_Texas-Central@1"
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Texas-Northern_deciduous-coast-clipped.tiff
+("NLCD_2021_Tree_Canopy_Texas-Northern@1" = 255) * 0 + ("NLCD_2021_Tree_Canopy_Texas-Northern@1" != 255) * "NLCD_2021_Tree_Canopy_Texas-Northern@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Texas-Southern_deciduous.tiff
+("Texas-Southern_deciduous-coast-clipped@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Texas-Central_deciduous.tiff
+("Texas-Central_deciduous-coast-clipped@1" != 0) * 41
+Make Decidious Layer EPSG:5070 - NAD83 = Texas-Northern_deciduous.tiff
+("Texas-Northern_deciduous-coast-clipped@1" != 0) * 41
+
+Warp Texas-Southern_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Southern_4326-84.tiff
+Warp Texas-Southern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Southern_deciduous_4326-84.tiff
+Warp Texas-Central_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Central_4326-84.tiff
+Warp Texas-Central_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Central_deciduous_4326-84.tiff
+Warp GIMP NLCD_2021_Land_Cover_Texas-Northern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Northern_4326-84.tiff
+Warp Texas-Northern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Texas-Northern_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Texas-Southern_deciduous_4326-84@1" + "Texas-Southern_4326-84@1" = Texas-Southern_adjusted.tiff
+("Texas-Southern_deciduous_4326-84@1" < 1) * "Texas-Southern_4326-84@1" + ("Texas-Southern_deciduous_4326-84@1" != 0) * "Texas-Southern_deciduous_4326-84@1"
+Combine "Texas-Central_deciduous_4326-84.@1" + "Texas-Central_4326-84@1" = Texas-Central_adjusted.tiff
+("Texas-Central_deciduous_4326-84@1" < 1) * "Texas-Central_4326-84@1" + ("Texas-Central_deciduous_4326-84@1" != 0) * "Texas-Central_deciduous_4326-84@1"
+Combine "Texas-Northern_deciduous_4326-84.@1" + "Texas-Northern_4326-84@1" = Texas-Northern_adjusted.tiff
+("Texas-Northern_deciduous_4326-84@1" < 1) * "Texas-Northern_4326-84@1" + ("Texas-Northern_deciduous_4326-84@1" != 0) * "Texas-Northern_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Texas-Southern_reclass-grass.tiff
+("Texas-Southern_adjusted@1" = 11) * 41 + ("Texas-Southern_adjusted@1" = 12) * 34 + ("Texas-Southern_adjusted@1" = 21) * 26 + ("Texas-Southern_adjusted@1" = 22) * 26 + ("Texas-Southern_adjusted@1" = 23) * 26 + ("Texas-Southern_adjusted@1" = 24) * 26 + ("Texas-Southern_adjusted@1" = 31) * 27 + ("Texas-Southern_adjusted@1" = 41) * 23 + ("Texas-Southern_adjusted@1" = 42) * 24 + ("Texas-Southern_adjusted@1" = 43) * 25 + ("Texas-Southern_adjusted@1" = 51) * 30 + ("Texas-Southern_adjusted@1" = 52) * 29 + ("Texas-Southern_adjusted@1" = 71) * 26 + ("Texas-Southern_adjusted@1" = 72) * 32 + ("Texas-Southern_adjusted@1" = 73) * 31 + ("Texas-Southern_adjusted@1" = 74) * 31 + ("Texas-Southern_adjusted@1" = 75) * 32 + ("Texas-Southern_adjusted@1" = 81) * 18 + ("Texas-Southern_adjusted@1" = 82) * 19 + ("Texas-Southern_adjusted@1" = 90) * 25 + ("Texas-Southern_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Texas-Central_reclass-grass.tiff
+("Texas-Central_adjusted@1" = 11) * 41 + ("Texas-Central_adjusted@1" = 12) * 34 + ("Texas-Central_adjusted@1" = 21) * 26 + ("Texas-Central_adjusted@1" = 22) * 26 + ("Texas-Central_adjusted@1" = 23) * 26 + ("Texas-Central_adjusted@1" = 24) * 26 + ("Texas-Central_adjusted@1" = 31) * 27 + ("Texas-Central_adjusted@1" = 41) * 23 + ("Texas-Central_adjusted@1" = 42) * 24 + ("Texas-Central_adjusted@1" = 43) * 25 + ("Texas-Central_adjusted@1" = 51) * 30 + ("Texas-Central_adjusted@1" = 52) * 29 + ("Texas-Central_adjusted@1" = 71) * 26 + ("Texas-Central_adjusted@1" = 72) * 32 + ("Texas-Central_adjusted@1" = 73) * 31 + ("Texas-Central_adjusted@1" = 74) * 31 + ("Texas-Central_adjusted@1" = 75) * 32 + ("Texas-Central_adjusted@1" = 81) * 18 + ("Texas-Central_adjusted@1" = 82) * 19 + ("Texas-Central_adjusted@1" = 90) * 25 + ("Texas-Central_adjusted@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Texas-Northern_reclass-grass.tiff
+("Texas-Northern_adjusted@1" = 11) * 41 + ("Texas-Northern_adjusted@1" = 12) * 34 + ("Texas-Northern_adjusted@1" = 21) * 26 + ("Texas-Northern_adjusted@1" = 22) * 26 + ("Texas-Northern_adjusted@1" = 23) * 26 + ("Texas-Northern_adjusted@1" = 24) * 26 + ("Texas-Northern_adjusted@1" = 31) * 27 + ("Texas-Northern_adjusted@1" = 41) * 23 + ("Texas-Northern_adjusted@1" = 42) * 24 + ("Texas-Northern_adjusted@1" = 43) * 25 + ("Texas-Northern_adjusted@1" = 51) * 30 + ("Texas-Northern_adjusted@1" = 52) * 29 + ("Texas-Northern_adjusted@1" = 71) * 26 + ("Texas-Northern_adjusted@1" = 72) * 32 + ("Texas-Northern_adjusted@1" = 73) * 31 + ("Texas-Northern_adjusted@1" = 74) * 31 + ("Texas-Northern_adjusted@1" = 75) * 32 + ("Texas-Northern_adjusted@1" = 81) * 18 + ("Texas-Northern_adjusted@1" = 82) * 19 + ("Texas-Northern_adjusted@1" = 90) * 25 + ("Texas-Northern_adjusted@1" = 95) * 35
+
+Make Urban layer = Texas-Southern_urban.tiff
+("Texas-Southern_adjusted@1" = 21) * 10 + ("Texas-Southern_adjusted@1" = 22) * 1 + ("Texas-Southern_adjusted@1" = 23) * 1 + ("Texas-Southern_adjusted@1" = 24) * 2
+Make Urban layer = Texas-Central_urban.tiff
+("Texas-Central_adjusted@1" = 21) * 10 + ("Texas-Central_adjusted@1" = 22) * 1 + ("Texas-Central_adjusted@1" = 23) * 1 + ("Texas-Central_adjusted@1" = 24) * 2
+Make Urban layer = Texas-Northern_urban.tiff
+("Texas-Northern_adjusted@1" = 21) * 10 + ("Texas-Northern_adjusted@1" = 22) * 1 + ("Texas-Northern_adjusted@1" = 23) * 1 + ("Texas-Northern_adjusted@1" = 24) * 2
+
+Remove Texas-Southern_urban.tiff road clutter = Texas-Southern_urban-only.tiff
+Remove Texas-Central_urban.tiff road clutter = Texas-Central_urban-only.tiff
+Remove Texas-Northern_urban.tiff road clutter = Texas-Northern_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Texas-Southern_reclass-urban@1" + "Texas-Southern_reclass-grass@1" = Texas-Southern_adjusted-combined.tiff
+("Texas-Southern_urban-only@1" < 1) * "Texas-Southern_reclass-grass@1" + ("Texas-Southern_urban-only@1" != 0) * "Texas-Southern_urban-only@1"
+Combine "Texas-Central_reclass-urban@1" + "Texas-Central_reclass-grass@1" = Texas-Central_adjusted-combined.tiff
+("Texas-Central_urban-only@1" < 1) * "Texas-Central_reclass-grass@1" + ("Texas-Central_urban-only@1" != 0) * "Texas-Central_urban-only@1"
+Combine "Texas-Northern_reclass-urban@1" + "Texas-Northern_reclass-grass@1" = Texas-Northern_adjusted-combined.tiff
+("Texas-Northern_urban-only@1" < 1) * "Texas-Northern_reclass-grass@1" + ("Texas-Northern_urban-only@1" != 0) * "Texas-Northern_urban-only@1"
+
+Up sample = Texas-Southern_final-prep-4x.tiff
+Up sample = Texas-Central_final-prep-4x.tiff
+Up sample = Texas-Northern_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Texas-Southern_final-prep-4x.tiff = Texas-Southern_4326-84-hd.tiff
+Simplify Texas-Central_final-prep-4x.tiff = Texas-Central_4326-84-hd.tiff 
+Simplify Texas-Northern_final-prep-4x.tiff = Texas-Northern_4326-84-hd.tiff
+r.neighbor, "median", size=7 
+
+Reclass index 0 to 44, leave the rest the same = Texas-Southern_4326-84-hd-corrected.tiff
+("Texas-Southern_4326-84-hd@1" = 0) * 44 + ("Texas-Southern_4326-84-hd@1" != 0) * "Texas-Southern_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Texas-Central_4326-84-hd-corrected.tiff
+("Texas-Central_4326-84-hd@1" = 0) * 44 + ("Texas-Central_4326-84-hd@1" != 0) * "Texas-Central_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Texas-Northern_4326-84-hd-corrected.tiff
+("Texas-Northern_4326-84-hd@1" = 0) * 44 + ("Texas-Northern_4326-84-hd@1" != 0) * "Texas-Northern_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Texas-Southern_4326-84-hd-nowater.tiff
+Texas-Southern_4326-84-hd-corrected@1 * (Texas-Southern_4326-84-hd-corrected@1 != 41) + 26 * (Texas-Southern_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Texas-Central_4326-84-hd-nowater.tiff
+Texas-Central_4326-84-hd-corrected@1 * (Texas-Central_4326-84-hd-corrected@1 != 41) + 26 * (Texas-Central_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Texas-Northern_4326-84-hd-nowater.tiff
+Texas-Northern_4326-84-hd-corrected@1 * (Texas-Northern_4326-84-hd-corrected@1 != 41) + 26 * (Texas-Northern_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Texas-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Texas-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Texas-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Texas-Northern_4326-84-hd-water@1" and "Texas-Northern_4326-84-hd-nowater@1" = Texas-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Texas-Northern_4326-84-hd-nowater@1" and Texas-Northern_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Texas-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

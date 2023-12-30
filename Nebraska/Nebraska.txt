@@ -1,0 +1,117 @@
+Nebraska
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Nebraska/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Nebraska/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Nebraska/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W096.hgt -b -96 40 -95 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n40/ws_w096n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W096.hgt -b -96 41 -95 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n41/ws_w096n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W097.hgt -b -97 40 -96 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n40/ws_w097n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W097.hgt -b -97 41 -96 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n41/ws_w097n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W097.hgt -b -97 42 -96 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n42/ws_w097n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W098.hgt -b -98 40 -97 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n40/ws_w098n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W098.hgt -b -98 41 -97 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n41/ws_w098n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W098.hgt -b -98 42 -97 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n42/ws_w098n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W099.hgt -b -99 40 -98 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w099n40/ws_w099n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W099.hgt -b -99 41 -98 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w099n41/ws_w099n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W099.hgt -b -99 42 -98 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w099n42/ws_w099n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W100.hgt -b -100 40 -99 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w100n40/ws_w100n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W100.hgt -b -100 41 -99 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w100n41/ws_w100n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W100.hgt -b -100 42 -99 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w100n42/ws_w100n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W101.hgt -b -101 40 -100 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w101n40/ws_w101n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W101.hgt -b -101 41 -100 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w101n41/ws_w101n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W101.hgt -b -101 42 -100 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w101n42/ws_w101n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N40W102.hgt -b -102 40 -101 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w102n40/ws_w102n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W102.hgt -b -102 41 -101 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w102n41/ws_w102n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W102.hgt -b -102 42 -101 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w102n42/ws_w102n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W103.hgt -b -103 41 -102 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w103n41/ws_w103n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W103.hgt -b -103 42 -102 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w103n42/ws_w103n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N41W104.hgt -b -104 41 -103 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w104n41/ws_w104n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Nebraska_4326-84-hd-corrected.tiff -d ./SRTM-3/N42W104.hgt -b -104 42 -103 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w110n40/w104n42/ws_w104n42.osgb
+
+(Paths above in "docker run" requires having srtm in the local Nebraska data folder)
+Entire block
+./scripts/genVPB.py -104 42 -95 41 ./data/Nebraska_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -96 40 -95 41 ./data/Nebraska_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -96 40 -95 41
+./scripts/genroads.py ./output/Terrain -96 41 -95 42
+./scripts/genroads.py ./output/Terrain -97 40 -96 41
+./scripts/genroads.py ./output/Terrain -97 41 -96 42
+./scripts/genroads.py ./output/Terrain -97 42 -96 43
+./scripts/genroads.py ./output/Terrain -98 40 -97 41
+./scripts/genroads.py ./output/Terrain -98 41 -97 42
+./scripts/genroads.py ./output/Terrain -98 42 -97 43
+./scripts/genroads.py ./output/Terrain -99 40 -98 41
+./scripts/genroads.py ./output/Terrain -99 41 -98 42
+./scripts/genroads.py ./output/Terrain -99 42 -98 43
+./scripts/genroads.py ./output/Terrain -100 40 -99 41
+./scripts/genroads.py ./output/Terrain -100 41 -99 42
+./scripts/genroads.py ./output/Terrain -100 42 -99 43
+./scripts/genroads.py ./output/Terrain -101 40 -100 41
+./scripts/genroads.py ./output/Terrain -101 41 -100 42
+./scripts/genroads.py ./output/Terrain -101 42 -100 43
+./scripts/genroads.py ./output/Terrain -102 40 -101 41
+./scripts/genroads.py ./output/Terrain -102 41 -101 42
+./scripts/genroads.py ./output/Terrain -102 42 -101 43
+./scripts/genroads.py ./output/Terrain -103 41 -102 42
+./scripts/genroads.py ./output/Terrain -103 42 -102 43
+./scripts/genroads.py ./output/Terrain -104 41 -103 42
+./scripts/genroads.py ./output/Terrain -104 42 -103 43
+
+Make Decidious Layer EPSG:5070 - NAD83 = Nebraska_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Nebraska@1" != 0) * 41
+
+Warp NLCD_2021_Land_Cover_Nebraska.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nebraska_4326-84.tiff
+Warp Nebraska_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Nebraska_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Nebraska_deciduous_4326-84@1" + "Nebraska_4326-84@1" = Nebraska_adjusted.tiff
+("Nebraska_deciduous_4326-84@1" < 1) * "Nebraska_4326-84@1" + ("Nebraska_deciduous_4326-84@1" != 0) * "Nebraska_deciduous_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Nebraska_reclass-grass.tiff
+("Nebraska_adjusted@1" = 11) * 41 + ("Nebraska_adjusted@1" = 12) * 34 + ("Nebraska_adjusted@1" = 21) * 26 + ("Nebraska_adjusted@1" = 22) * 26 + ("Nebraska_adjusted@1" = 23) * 26 + ("Nebraska_adjusted@1" = 24) * 26 + ("Nebraska_adjusted@1" = 31) * 27 + ("Nebraska_adjusted@1" = 41) * 23 + ("Nebraska_adjusted@1" = 42) * 24 + ("Nebraska_adjusted@1" = 43) * 25 + ("Nebraska_adjusted@1" = 51) * 30 + ("Nebraska_adjusted@1" = 52) * 29 + ("Nebraska_adjusted@1" = 71) * 26 + ("Nebraska_adjusted@1" = 72) * 32 + ("Nebraska_adjusted@1" = 73) * 31 + ("Nebraska_adjusted@1" = 74) * 31 + ("Nebraska_adjusted@1" = 75) * 32 + ("Nebraska_adjusted@1" = 81) * 18 + ("Nebraska_adjusted@1" = 82) * 19 + ("Nebraska_adjusted@1" = 90) * 25 + ("Nebraska_adjusted@1" = 95) * 35
+
+Make Urban layer = Nebraska_urban.tiff
+("Nebraska_adjusted@1" = 21) * 10 + ("Nebraska_adjusted@1" = 22) * 1 + ("Nebraska_adjusted@1" = 23) * 1 + ("Nebraska_adjusted@1" = 24) * 2
+
+Remove Nebraska_urban.tiff road clutter = Nebraska_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Nebraska_reclass-urban@1" + "Nebraska_reclass-grass@1" = Nebraska_adjusted-combined.tiff
+("Nebraska_urban-only@1" < 1) * "Nebraska_reclass-grass@1" + ("Nebraska_urban-only@1" != 0) * "Nebraska_urban-only@1"
+
+Up sample = Nebraska_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Nebraska_final-prep-4x.tiff = Nebraska_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Nebraska_4326-84-hd-corrected.tiff
+("Nebraska_4326-84-hd@1" = 0) * 44 + ("Nebraska_4326-84-hd@1" != 0) * "Nebraska_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Nebraska_4326-84-hd-nowater.tiff
+Nebraska_4326-84-hd-corrected@1 * (Nebraska_4326-84-hd-corrected@1 != 41) + 26 * (Nebraska_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Nebraska_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Nebraska_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Nebraska_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Nebraska_4326-84-hd-water@1" and "Nebraska_4326-84-hd-nowater@1" = Nebraska_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Nebraska_4326-84-hd-nowater@1" and Nebraska_4326-84-hd-water.tiff
+Output data type = "Float32"
+Merged = Nebraska_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
