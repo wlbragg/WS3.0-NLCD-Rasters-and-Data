@@ -89,7 +89,7 @@ r.neighbor, "median", size=7
 Combine "SouthDakota_urban-only@1" + "SouthDakota_reclass-grass@1" = SouthDakota_adjusted-combined.tiff
 ("SouthDakota_urban-only@1" < 1) * "SouthDakota_reclass-grass@1" + ("SouthDakota_urban-only@1" != 0) * "SouthDakota_urban-only@1"
 
-Up sample = SouthDakota_final-prep-4x.tiff
+Up sample SouthDakota_adjusted-combined.tiff = SouthDakota_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify SouthDakota_final-prep-4x.tiff = SouthDakota_4326-84-hd.tiff

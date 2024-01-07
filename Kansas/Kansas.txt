@@ -113,7 +113,7 @@ r.neighbor, "median", size=7
 Combine "Kansas_urban-only@1" + "Kansas_reclass-grass@1" = Kansas_adjusted-combined.tiff
 ("Kansas_urban-only@1" < 1) * "Kansas_reclass-grass@1" + ("Kansas_urban-only@1" != 0) * "Kansas_urban-only@1"
 
-Up sample = Kansas_final-prep-4x.tiff
+Up sample Kansas_adjusted-combined.tiff = Kansas_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Kansas_final-prep-4x.tiff = Kansas_4326-84-hd.tiff

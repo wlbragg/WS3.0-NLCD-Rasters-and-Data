@@ -66,10 +66,10 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -109 39 -108 40
 ./scripts/genroads.py ./output/Terrain -109 40 -108 41
 
-Make Decidious Layer EPSG:5070 - NAD83 = Colorado_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Colorado@1" != 0) * 41
+Make Mixed Forest Layer EPSG:5070 - NAD83 = Colorado_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Colorado@1" != 0) * 42
 
-Warp NLCD_2019_Land_Cover_Colorado.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Colorado_4326-84.tiff
+Warp NLCD_2021_Land_Cover_Colorado.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Colorado_4326-84.tiff
 Warp Colorado_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Colorado_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -88,11 +88,11 @@ Make Urban layer = Colorado_urban.tiff
 Remove the road clutter = Colorado_urban-only.tiff
 r.neighbor, "median", size=7 Colorado_urban.tiff
 
-Combine "Colorado_reclass-urban@1" + "Colorado_reclass-grass@1" = Colorado_adjusted-combined.tiff
+Combine "Colorado_urban-only@1" + "Colorado_reclass-grass@1" = Colorado_adjusted-combined.tiff
 ("Colorado_urban-only@1" < 1) * "Colorado_reclass-grass@1" + ("Colorado_urban-only@1" != 0) * "Colorado_urban-only@1"
 
-Up sample = Colorado_final-prep-4x.tiff
-Up sample 4x resolution 0.00008309125
+Up sample Colorado_adjusted-combined.tiff = Colorado_final-prep-4x.tiff
+Up sample 4x resolution  
 
 Simplify Colorado_4326-84-hd.tiff
 r.neighbor, "median", size=7 Colorado_final-prep-4x.tiff
@@ -120,6 +120,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Colorado_4326-84-hd-water@1" and "Colorado_4326-84-hd-nowater@1" = Colorado_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Colorado_4326-84-hd-nowater@1" and Colorado_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Colorado_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.

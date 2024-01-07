@@ -67,9 +67,9 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -111 44 -110 45
 
 Make Decidious Layer EPSG:5070 - NAD83 = Wyoming_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Wyoming@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Wyoming@1" != 0) * 43
 
-Warp NLCD_2019_Land_Cover_Wyoming.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Wyoming_4326-84.tiff
+Warp NLCD_2021_Land_Cover_Wyoming.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Wyoming_4326-84.tiff
 Warp Wyoming_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Wyoming_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -88,10 +88,10 @@ Make Urban layer = Wyoming_urban.tiff
 Remove Wyoming_urban.tiff road clutter = Wyoming_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Wyoming_reclass-urban@1" + "Wyoming_reclass-grass@1" = Wyoming_adjusted-combined.tiff
+Combine "Wyoming_urban-only@1" + "Wyoming_reclass-grass@1" = Wyoming_adjusted-combined.tiff
 ("Wyoming_urban-only@1" < 1) * "Wyoming_reclass-grass@1" + ("Wyoming_urban-only@1" != 0) * "Wyoming_urban-only@1"
 
-Up sample = Wyoming_final-prep-4x.tiff
+Up sample Wyoming_adjusted-combined.tiff = Wyoming_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Wyoming_final-prep-4x.tiff = Wyoming_4326-84-hd.tiff
@@ -120,6 +120,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Wyoming_4326-84-hd-water@1" and "Wyoming_4326-84-hd-nowater@1" = Wyoming_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Wyoming_4326-84-hd-nowater@1" and Wyoming_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Wyoming_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.

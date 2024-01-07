@@ -4,7 +4,6 @@ docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/NorthDakota/data,targ
 
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W097.hgt -b -97 46 -96 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n46/ws_w097n46.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W097.hgt -b -97 47 -96 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n47/ws_w097n47.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W097.hgt -b -97 48 -96 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n48/ws_w097n48.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W098.hgt -b -98 46 -97 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n46/ws_w098n46.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W098.hgt -b -98 47 -97 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n47/ws_w098n47.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NorthDakota_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W098.hgt -b -98 48 -97 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n48/ws_w098n48.osgb
@@ -35,7 +34,6 @@ Single 1X bucket
 
 ./scripts/genroads.py ./output/Terrain -97 46 -96 47
 ./scripts/genroads.py ./output/Terrain -97 47 -96 48
-./scripts/genroads.py ./output/Terrain -97 48 -96 49
 ./scripts/genroads.py ./output/Terrain -98 46 -97 47
 ./scripts/genroads.py ./output/Terrain -98 47 -97 48
 ./scripts/genroads.py ./output/Terrain -98 48 -97 49
@@ -59,9 +57,9 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -104 48 -103 49
 
 Make Decidious Layer EPSG:5070 - NAD83 = NorthDakota_deciduous.tiff
-("NLCD_2016_Tree_Canopy_NorthDakota@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_NorthDakota@1" != 0) * 41
 
-Warp NLCD_2019_Land_Cover_NorthDakota.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NorthDakota_4326-84.tiff
+Warp NLCD_2021_Land_Cover_NorthDakota.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NorthDakota_4326-84.tiff
 Warp NorthDakota_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NorthDakota_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -80,10 +78,10 @@ Make Urban layer = NorthDakota_urban.tiff
 Remove NorthDakota_urban.tiff road clutter = NorthDakota_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "NorthDakota_reclass-urban@1" + "NorthDakota_reclass-grass@1" = NorthDakota_adjusted-combined.tiff
+Combine "NorthDakota_urban-only@1" + "NorthDakota_reclass-grass@1" = NorthDakota_adjusted-combined.tiff
 ("NorthDakota_urban-only@1" < 1) * "NorthDakota_reclass-grass@1" + ("NorthDakota_urban-only@1" != 0) * "NorthDakota_urban-only@1"
 
-Up sample = NorthDakota_final-prep-4x.tiff
+Up sample NorthDakota_adjusted-combined.tiff = NorthDakota_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify NorthDakota_final-prep-4x.tiff = NorthDakota_4326-84-hd.tiff
@@ -112,6 +110,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "NorthDakota_4326-84-hd-water@1" and "NorthDakota_4326-84-hd-nowater@1" = NorthDakota_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "NorthDakota_4326-84-hd-nowater@1" and NorthDakota_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = NorthDakota_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.
