@@ -4,12 +4,9 @@ docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Idaho/data,target=/ho
 
 Idaho-Northern
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W114.hgt -b -114 45 -113 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n45/ws_w114n45.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W114.hgt -b -114 46 -113 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n46/ws_w114n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W114.hgt -b -114 47 -113 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n47/ws_w114n47.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W114.hgt -b -114 48 -113 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w114n48/ws_w114n48.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W115.hgt -b -115 45 -114 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n45/ws_w115n45.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W115.hgt -b -115 46 -114 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n46/ws_w115n46.osgb
-osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N47W115.hgt -b -115 47 -114 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n47/ws_w115n47.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N48W115.hgt -b -115 48 -114 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w115n48/ws_w115n48.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N45W116.hgt -b -116 45 -115 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n45/ws_w116n45.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Idaho-Northern_4326-84-hd-corrected.tiff -d ./SRTM-3/N46W116.hgt -b -116 46 -115 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n40/w116n46/ws_w116n46.osgb
@@ -87,9 +84,9 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 ./scripts/genroads.py ./output/Terrain -118 44 -117 45
 
 Make Decidious Layer EPSG:5070 - NAD83 = Idaho-Northern_deciduous.tiff
-("NLCD_2021_Tree_Canopy_Idaho-Northern@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Idaho-Northern@1" != 0) * 42
 Make Decidious Layer EPSG:5070 - NAD83 = Idaho-Southern_deciduous.tiff
-("NLCD_2021_Tree_Canopy_Idaho-Southern@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Idaho-Southern@1" != 0) * 42
 
 Warp NLCD_2021_Land_Cover_Idaho-Northern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Northern_4326-84.tiff
 Warp Idaho-Northern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Idaho-Northern_deciduous_4326-84.tiff
@@ -119,9 +116,9 @@ Remove Idaho-Northern_urban.tiff road clutter = Idaho-Northern_urban-only.tiff
 Remove Idaho-Southern_urban.tiff road clutter = Idaho-Southern_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Idaho-Northern_reclass-urban@1" + "Idaho-Northern_reclass-grass@1" = Idaho-Northern_adjusted-combined.tiff
+Combine "Idaho-Northern_urban-only@1" + "Idaho-Northern_reclass-grass@1" = Idaho-Northern_adjusted-combined.tiff
 ("Idaho-Northern_urban-only@1" < 1) * "Idaho-Northern_reclass-grass@1" + ("Idaho-Northern_urban-only@1" != 0) * "Idaho-Northern_urban-only@1"
-Combine "Idaho-Southern_reclass-urban@1" + "Idaho-Southern_reclass-grass@1" = Idaho-Southern_adjusted-combined.tiff
+Combine "Idaho-Southern_urban-only@1" + "Idaho-Southern_reclass-grass@1" = Idaho-Southern_adjusted-combined.tiff
 ("Idaho-Southern_urban-only@1" < 1) * "Idaho-Southern_reclass-grass@1" + ("Idaho-Southern_urban-only@1" != 0) * "Idaho-Southern_urban-only@1"
 
 Up sample = Idaho-Northern_final-prep-4x.tiff
@@ -160,6 +157,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Idaho-Northern_4326-84-hd-water@1" and "Idaho-Northern_4326-84-hd-nowater@1" = Idaho-Northern_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Idaho-Northern_4326-84-hd-nowater@1" and Idaho-Northern_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Idaho-Northern_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.

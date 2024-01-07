@@ -80,10 +80,10 @@ Make Urban layer = Nebraska_urban.tiff
 Remove Nebraska_urban.tiff road clutter = Nebraska_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Nebraska_reclass-urban@1" + "Nebraska_reclass-grass@1" = Nebraska_adjusted-combined.tiff
+Combine "Nebraska_urban-only@1" + "Nebraska_reclass-grass@1" = Nebraska_adjusted-combined.tiff
 ("Nebraska_urban-only@1" < 1) * "Nebraska_reclass-grass@1" + ("Nebraska_urban-only@1" != 0) * "Nebraska_urban-only@1"
 
-Up sample = Nebraska_final-prep-4x.tiff
+Up sample Nebraska_adjusted-combined.tiff = Nebraska_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Nebraska_final-prep-4x.tiff = Nebraska_4326-84-hd.tiff
@@ -112,6 +112,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Nebraska_4326-84-hd-water@1" and "Nebraska_4326-84-hd-nowater@1" = Nebraska_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Nebraska_4326-84-hd-nowater@1" and Nebraska_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Nebraska_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.

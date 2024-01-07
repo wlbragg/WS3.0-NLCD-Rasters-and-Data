@@ -65,9 +65,9 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -104 45 -103 46
 
 Make Decidious Layer EPSG:5070 - NAD83 = SouthDakota_deciduous.tiff
-("NLCD_2016_Tree_Canopy_SouthDakota@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_SouthDakota@1" != 0) * 41
 
-Warp NLCD_2019_Land_Cover_SouthDakota.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = SouthDakota_4326-84.tiff
+Warp NLCD_2021_Land_Cover_SouthDakota.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = SouthDakota_4326-84.tiff
 Warp SouthDakota_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = SouthDakota_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -86,10 +86,10 @@ Make Urban layer = SouthDakota_urban.tiff
 Remove SouthDakota_urban.tiff road clutter = SouthDakota_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "SouthDakota_reclass-urban@1" + "SouthDakota_reclass-grass@1" = SouthDakota_adjusted-combined.tiff
+Combine "SouthDakota_urban-only@1" + "SouthDakota_reclass-grass@1" = SouthDakota_adjusted-combined.tiff
 ("SouthDakota_urban-only@1" < 1) * "SouthDakota_reclass-grass@1" + ("SouthDakota_urban-only@1" != 0) * "SouthDakota_urban-only@1"
 
-Up sample = SouthDakota_final-prep-4x.tiff
+Up sample SouthDakota_adjusted-combined.tiff = SouthDakota_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify SouthDakota_final-prep-4x.tiff = SouthDakota_4326-84-hd.tiff
@@ -118,6 +118,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "SouthDakota_4326-84-hd-water@1" and "SouthDakota_4326-84-hd-nowater@1" = SouthDakota_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "SouthDakota_4326-84-hd-nowater@1" and SouthDakota_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = SouthDakota_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.

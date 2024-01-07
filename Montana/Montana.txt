@@ -115,9 +115,9 @@ Entire block
 ./scripts/genroads.py ./output/Terrain -111 48 -110 49
 
 Make Decidious Layer EPSG:5070 - NAD83 = Montana-Eastern_deciduous.tiff
-("NLCD_2021_Tree_Canopy_Montana-Eastern@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Montana-Eastern@1" != 0) * 42
 Make Decidious Layer EPSG:5070 - NAD83 = Montana-Western_deciduous.tiff
-("NLCD_2021_Tree_Canopy_Montana-Western@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Montana-Western@1" != 0) * 42
 
 Warp NLCD_2019_Land_Cover_Montana-Eastern.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Eastern_4326-84.tiff
 Warp Montana-Eastern_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Montana-Eastern_deciduous_4326-84.tiff
@@ -148,13 +148,13 @@ Remove Montana-Eastern_urban.tiff road clutter = Montana-Eastern_urban-only.tiff
 Remove Montana-Western_urban.tiff road clutter = Montana-Western_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Montana-Eastern_reclass-urban@1" + "Montana-Eastern_reclass-grass@1" = Montana-Eastern_adjusted-combined.tiff
+Combine "Montana-Eastern_urban-only@1" + "Montana-Eastern_reclass-grass@1" = Montana-Eastern_adjusted-combined.tiff
 ("Montana-Eastern_urban-only@1" < 1) * "Montana-Eastern_reclass-grass@1" + ("Montana-Eastern_urban-only@1" != 0) * "Montana-Eastern_urban-only@1"
-Combine "Montana-Western_reclass-urban@1" + "Montana-Western_reclass-grass@1" = Montana-Western_adjusted-combined.tiff
+Combine "Montana-Western_urban-only@1" + "Montana-Western_reclass-grass@1" = Montana-Western_adjusted-combined.tiff
 ("Montana-Western_urban-only@1" < 1) * "Montana-Western_reclass-grass@1" + ("Montana-Western_urban-only@1" != 0) * "Montana-Western_urban-only@1"
 
-Up sample = Montana-Eastern_final-prep-4x.tiff
-Up sample = Montana-Western_final-prep-4x.tiff
+Up sample Montana-Eastern_adjusted-combined.tiff = Montana-Eastern_final-prep-4x.tiff
+Up sample Montana-Western_adjusted-combined.tiff = Montana-Western_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Montana-Eastern_final-prep-4x.tiff = Montana-Eastern_4326-84-hd.tiff
@@ -189,6 +189,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Montana-Western_4326-84-hd-water@1" and "Montana-Western_4326-84-hd-nowater@1" = Montana-Western_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Montana-Western_4326-84-hd-nowater@1" and Montana-Western_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Montana-Western_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.
