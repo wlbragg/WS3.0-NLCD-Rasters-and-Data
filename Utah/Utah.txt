@@ -57,9 +57,9 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -114 41 -113 42
 
 Make Decidious Layer EPSG:5070 - NAD83 = Utah_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Utah@1" != 0) * 43
+("NLCD_2021_Tree_Canopy_Utah@1" != 0) * 43
 
-Warp NLCD_2019_Land_Cover_Utah.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_4326-84.tiff
+Warp NLCD_2021_Land_Cover_Utah.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_4326-84.tiff
 Warp Utah_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Utah_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -67,7 +67,7 @@ Resampling method to use = Nearest Neighbour
 Output data type = byte
 
 Combine "Utah_deciduous_4326-84@1" + "Utah_4326-84@1" = Utah_adjusted.tiff
-("Utah_deciduous_4326-84@1" < 1) * "Utah_4326-84@1" + ("Utah_deciduous_4326-84@1" != 0) * "Utah_deciduous_4326-84@1"
+(("Utah_4326-84@1" > 0 AND "Utah_4326-84@1" != 41 AND "Utah_4326-84@1" != 42 AND "Utah_4326-84@1" != 43) AND "Utah_deciduous_4326-84@1" > 0) * "Utah_deciduous_4326-84@1" + ("Utah_4326-84@1" = 41 OR "Utah_4326-84@1" = 42 OR "Utah_4326-84@1" = 43 OR "Utah_deciduous_4326-84@1" <= 0) * "Utah_4326-84@1"
 
 Re-class urban 21, 22, 23, 24 = grass 26 = Utah_reclass-grass.tiff
 ("Utah_adjusted@1" = 11) * 41 + ("Utah_adjusted@1" = 12) * 34 + ("Utah_adjusted@1" = 21) * 26 + ("Utah_adjusted@1" = 22) * 26 + ("Utah_adjusted@1" = 23) * 26 + ("Utah_adjusted@1" = 24) * 26 + ("Utah_adjusted@1" = 31) * 27 + ("Utah_adjusted@1" = 41) * 23 + ("Utah_adjusted@1" = 42) * 24 + ("Utah_adjusted@1" = 43) * 25 + ("Utah_adjusted@1" = 51) * 30 + ("Utah_adjusted@1" = 52) * 29 + ("Utah_adjusted@1" = 71) * 26 + ("Utah_adjusted@1" = 72) * 32 + ("Utah_adjusted@1" = 73) * 31 + ("Utah_adjusted@1" = 74) * 31 + ("Utah_adjusted@1" = 75) * 32 + ("Utah_adjusted@1" = 81) * 18 + ("Utah_adjusted@1" = 82) * 19 + ("Utah_adjusted@1" = 90) * 25 + ("Utah_adjusted@1" = 95) * 35
@@ -78,10 +78,10 @@ Make Urban layer = Utah_urban.tiff
 Remove Utah_urban.tiff road clutter = Utah_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Utah_reclass-urban@1" + "Utah_reclass-grass@1" = Utah_adjusted-combined.tiff
+Combine "Utah_urban-only@1" + "Utah_reclass-grass@1" = Utah_adjusted-combined.tiff
 ("Utah_urban-only@1" < 1) * "Utah_reclass-grass@1" + ("Utah_urban-only@1" != 0) * "Utah_urban-only@1"
 
-Up sample = Utah_final-prep-4x.tiff
+Up sample Utah_adjusted-combined.tiff = Utah_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Utah_final-prep-4x.tiff = Utah_4326-84-hd.tiff
@@ -110,6 +110,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Utah_4326-84-hd-water@1" and "Utah_4326-84-hd-nowater@1" = Utah_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Utah_4326-84-hd-nowater@1" and Utah_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Utah_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.
