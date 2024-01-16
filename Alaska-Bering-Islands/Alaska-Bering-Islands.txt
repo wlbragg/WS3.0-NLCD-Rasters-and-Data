@@ -1,0 +1,211 @@
+Alaska-Bering-Islands
+
+SRTM-1
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-1,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+SRTM-3
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+Panoramas3
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Alaska-Bering-Islands/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Panoramas3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Alaska/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+Alaska-St-Matthew
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Matthew_4326-84-hd-corrected.tiff -d ./SRTM-3/N60W174.hgt -b -174 60 -173 61 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w174n60/ws_w174n60.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Matthew_4326-84-hd-corrected.tiff -d ./SRTM-3/N60W173.hgt -b -173 60 -172 61 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w173n60/ws_w173n60.osgb
+
+Alaska-Unalaska
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W170.hgt -b -170 52 -169 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w170n52/ws_w170n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N53W170.hgt -b -170 53 -171 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w170n53/ws_w170n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W169.hgt -b -169 52 -168 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w169n52/ws_w169n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N53W169.hgt -b -169 53 -168 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w169n53/ws_w169n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N53W168.hgt -b -168 53 -167 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w168n53/ws_w168n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N53W167.hgt -b -167 53 -166 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w167n53/ws_w167n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N54W167.hgt -b -167 54 -166 55 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w167n54/ws_w167n54.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N54W166.hgt -b -166 54 -165 55 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w166n54/ws_w166n54.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Unalaska_4326-84-hd-corrected.tiff -d ./SRTM-3/N54W165.hgt -b -165 54 -164 55 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w165n54/ws_w165n54.osgb
+
+Alaska-St-Lawrence
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Lawrence_4326-84-hd-corrected.tiff -d ./SRTM-3/N63W172.hgt -b -172 63 -171 64 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w172n63/ws_w172n63.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Lawrence_4326-84-hd-corrected.tiff -d ./SRTM-3/N63W171.hgt -b -171 63 -170 64 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w171n63/ws_w171n63.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Lawrence_4326-84-hd-corrected.tiff -d ./SRTM-3/N62W170.hgt -b -170 62 -169 63 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w170n62/ws_w170n62.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Lawrence_4326-84-hd-corrected.tiff -d ./SRTM-3/N63W170.hgt -b -170 63 -169 64 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w170n63/ws_w170n63.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Lawrence_4326-84-hd-corrected.tiff -d ./SRTM-3/N63W169.hgt -b -169 63 -168 64 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n60/w169n63/ws_w169n63.osgb
+
+Alaska-St-Paul-George
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Paul-George_4326-84-hd-corrected.tiff -d ./SRTM-3/N57W171.hgt -b -171 57 -170 58 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w171n57/ws_w171n57.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-St-Paul-George_4326-84-hd-corrected.tiff -d ./SRTM-3/N56W170.hgt -b -170 56 -169 57 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w170n56/ws_w170n56.osgb
+
+Alaska-Nunivak
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N59W168.hgt -b -168 59 -167 60 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w168n59/ws_w168n59.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N60W168.hgt -b -168 60 -167 61 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n60/w168n60/ws_w168n60.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N59W167.hgt -b -167 59 -166 60 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w167n59/ws_w167n59.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N60W167.hgt -b -167 60 -166 61 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n60/w167n60/ws_w167n60.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N59W166.hgt -b -166 59 -165 60 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n50/w166n59/ws_w166n59.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N60W166.hgt -b -166 60 -165 61 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w170n60/w166n60/ws_w166n60.osgb
+
+Alaska-Attu-Kiska
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W179.hgt -b -179 51 -178 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w179n51/ws_w179n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W178.hgt -b -178 51 -177 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w178n51/ws_w178n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W177.hgt -b -177 51 -176 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w177n51/ws_w177n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N59W177.hgt -b -177 52 -176 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w177n52/ws_w177n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W176.hgt -b -176 51 -175 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w176n51/ws_w176n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W176.hgt -b -176 52 -175 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w176n52/ws_w176n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W175.hgt -b -175 52 -174 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w175n52/ws_w175n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W174.hgt -b -174 52 -173 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w174n52/ws_w174n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W173.hgt -b -173 52 -172 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w173n52/ws_w173n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W172.hgt -b -172 52 -171 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w172n52/ws_w172n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Attu-Kiska_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W171.hgt -b -171 52 -170 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w171n52/ws_w171n52.osgb
+
+Alaska-Attu-Kiska
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W172.hgt -b -172 52 -171 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w172n52/ws_w172n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N53W172.hgt -b -172 53 -171 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w172n53/ws_w172n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W173.hgt -b -173 53 -172 54 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w173n53/ws_w173n53.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W174.hgt -b -174 52 -173 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w174n52/ws_w174n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W175.hgt -b -175 52 -174 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w175n52/ws_w175n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W177.hgt -b -177 51 -176 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w177n51/ws_w177n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W177.hgt -b -177 52 -176 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w177n52/ws_w177n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W178.hgt -b -178 51 -177 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w178n51/ws_w178n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W178.hgt -b -178 52 -177 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w178n52/ws_w178n52.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N51W179.hgt -b -179 51 -178 52 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w179n51/ws_w179n51.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Alaska-Nunivak_4326-84-hd-corrected.tiff -d ./SRTM-3/N52W179.hgt -b -179 52 -178 53 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w180n50/w179n52/ws_w179n52.osgb
+
+
+(Paths above in "docker run" requires having srtm in the local Alaska-St-Matthew data folder)
+Entire block
+./scripts/genVPB.py -141 60 -140 60 ./data/Alaska-St-Matthew_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -141 60 -133 59 ./data/Alaska-St-Matthew_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -140 60 -139 61
+./scripts/genroads.py ./output/Terrain -141 60 -140 61
+
+Make Decidious Layer EPSG:5070 - NAD83 = Alaska-St-Matthew_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Alaska-St-Matthew@1" != 0) * 43
+Make Decidious Layer EPSG:5070 - NAD83 = Alaska-Unalaska_deciduous.tiff
+("NLCD_2016_Tree_Canopy_Alaska-Unalaska@1" != 0) * 43
+
+Warp NLCD_2016_Land_Cover_St-Matthew.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-St-Matthew_4326-84.tiff
+Warp NLCD_2016_Land_Cover_Unalaska.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-Unalaska_4326-84.tiff
+Warp NLCD_2016_Land_Cover_St-Lawrence.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-St-Lawrence_4326-84.tiff
+Warp NLCD_2016_Land_Cover_St-Paul-George.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-St-Paul-George_4326-84.tiff
+Warp NLCD_2016_Land_Cover_Nunivak.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-Nunivak_4326-84.tiff
+Warp NLCD_2016_Land_Cover_Atka-Adak.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-Atka-Adak_4326-84.tiff
+Warp NLCD_2016_Land_Cover_Attu-Kiska.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alaska-Attu-Kiska_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Alaska-St-Matthew_deciduous_4326-84@1" + "Alaska-St-Matthew_4326-84@1" = Alaska-St-Matthew_adjusted.tiff
+(("Alaska-St-Matthew_4326-84@1" > 0 AND "Alaska-St-Matthew_4326-84@1" != 41 AND "Alaska-St-Matthew_4326-84@1" != 42 AND "Alaska-St-Matthew_4326-84@1" != 43) AND "Alaska-St-Matthew_deciduous_4326-84@1" > 0) * "Alaska-St-Matthew_deciduous_4326-84@1" + ("Alaska-St-Matthew_4326-84@1" = 41 OR "Alaska-St-Matthew_4326-84@1" = 42 OR "Alaska-St-Matthew_4326-84@1" = 43 OR "Alaska-St-Matthew_deciduous_4326-84@1" <= 0) * "Alaska-St-Matthew_4326-84@1"
+Combine "Alaska-Unalaska_deciduous_4326-84@1" + "Alaska-Unalaska_4326-84@1" = Alaska-Unalaska_adjusted.tiff
+(("Alaska-Unalaska_4326-84@1" > 0 AND "Alaska-Unalaska_4326-84@1" != 41 AND "Alaska-Unalaska_4326-84@1" != 42 AND "Alaska-Unalaska_4326-84@1" != 43) AND "Alaska-Unalaska_deciduous_4326-84@1" > 0) * "Alaska-Unalaska_deciduous_4326-84@1" + ("Alaska-Unalaska_4326-84@1" = 41 OR "Alaska-Unalaska_4326-84@1" = 42 OR "Alaska-Unalaska_4326-84@1" = 43 OR "Alaska-Unalaska_deciduous_4326-84@1" <= 0) * "Alaska-Unalaska_4326-84@1"
+Combine "Alaska-St-Lawrence_deciduous_4326-84@1" + "Alaska-St-Lawrence_4326-84@1" = Alaska-St-Lawrence_adjusted.tiff
+(("Alaska-St-Lawrence_4326-84@1" > 0 AND "Alaska-St-Lawrence_4326-84@1" != 41 AND "Alaska-St-Lawrence_4326-84@1" != 42 AND "Alaska-St-Lawrence_4326-84@1" != 43) AND "Alaska-St-Lawrence_deciduous_4326-84@1" > 0) * "Alaska-St-Lawrence_deciduous_4326-84@1" + ("Alaska-St-Lawrence_4326-84@1" = 41 OR "Alaska-St-Lawrence_4326-84@1" = 42 OR "Alaska-St-Lawrence_4326-84@1" = 43 OR "Alaska-St-Lawrence_deciduous_4326-84@1" <= 0) * "Alaska-St-Lawrence_4326-84@1"
+Combine "Alaska-St-Paul-George_deciduous_4326-84@1" + "Alaska-St-Paul-George_4326-84@1" = Alaska-St-Paul-George_adjusted.tiff
+(("Alaska-St-Paul-George_4326-84@1" > 0 AND "Alaska-St-Paul-George_4326-84@1" != 41 AND "Alaska-St-Paul-George_4326-84@1" != 42 AND "Alaska-St-Paul-George_4326-84@1" != 43) AND "Alaska-St-Paul-George_deciduous_4326-84@1" > 0) * "Alaska-St-Paul-George_deciduous_4326-84@1" + ("Alaska-St-Paul-George_4326-84@1" = 41 OR "Alaska-St-Paul-George_4326-84@1" = 42 OR "Alaska-St-Paul-George_4326-84@1" = 43 OR "Alaska-St-Paul-George_deciduous_4326-84@1" <= 0) * "Alaska-St-Paul-George_4326-84@1"
+Combine "Alaska-Nunivak_deciduous_4326-84@1" + "Alaska-Nunivak_4326-84@1" = Alaska-Nunivak_adjusted.tiff
+(("Alaska-Nunivak_4326-84@1" > 0 AND "Alaska-Nunivak_4326-84@1" != 41 AND "Alaska-Nunivak_4326-84@1" != 42 AND "Alaska-Nunivak_4326-84@1" != 43) AND "Alaska-Nunivak_deciduous_4326-84@1" > 0) * "Alaska-Nunivak_deciduous_4326-84@1" + ("Alaska-Nunivak_4326-84@1" = 41 OR "Alaska-Nunivak_4326-84@1" = 42 OR "Alaska-Nunivak_4326-84@1" = 43 OR "Alaska-Nunivak_deciduous_4326-84@1" <= 0) * "Alaska-Nunivak_4326-84@1"
+Combine "Alaska-Atka-Adak_deciduous_4326-84@1" + "Alaska-Atka-Adak_4326-84@1" = Alaska-Atka-Adak_adjusted.tiff
+(("Alaska-Atka-Adak_4326-84@1" > 0 AND "Alaska-Atka-Adak_4326-84@1" != 41 AND "Alaska-Atka-Adak_4326-84@1" != 42 AND "Alaska-Atka-Adak_4326-84@1" != 43) AND "Alaska-Atka-Adak_deciduous_4326-84@1" > 0) * "Alaska-Atka-Adak_deciduous_4326-84@1" + ("Alaska-Atka-Adak_4326-84@1" = 41 OR "Alaska-Atka-Adak_4326-84@1" = 42 OR "Alaska-Atka-Adak_4326-84@1" = 43 OR "Alaska-Atka-Adak_deciduous_4326-84@1" <= 0) * "Alaska-Atka-Adak_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-St-Matthew_reclass-grass.tiff
+("Alaska-St-Matthew_4326-84@1" = 11) * 41 + ("Alaska-St-Matthew_4326-84@1" = 12) * 34 + ("Alaska-St-Matthew_4326-84@1" = 21) * 26 + ("Alaska-St-Matthew_4326-84@1" = 22) * 26 + ("Alaska-St-Matthew_4326-84@1" = 23) * 26 + ("Alaska-St-Matthew_4326-84@1" = 24) * 26 + ("Alaska-St-Matthew_4326-84@1" = 31) * 27 + ("Alaska-St-Matthew_4326-84@1" = 41) * 23 + ("Alaska-St-Matthew_4326-84@1" = 42) * 24 + ("Alaska-St-Matthew_4326-84@1" = 43) * 25 + ("Alaska-St-Matthew_4326-84@1" = 51) * 30 + ("Alaska-St-Matthew_4326-84@1" = 52) * 29 + ("Alaska-St-Matthew_4326-84@1" = 71) * 26 + ("Alaska-St-Matthew_4326-84@1" = 72) * 32 + ("Alaska-St-Matthew_4326-84@1" = 73) * 31 + ("Alaska-St-Matthew_4326-84@1" = 74) * 31 + ("Alaska-St-Matthew_4326-84@1" = 75) * 32 + ("Alaska-St-Matthew_4326-84@1" = 81) * 18 + ("Alaska-St-Matthew_4326-84@1" = 82) * 19 + ("Alaska-St-Matthew_4326-84@1" = 90) * 25 + ("Alaska-St-Matthew_4326-84@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-Unalaska_reclass-grass.tiff
+("Alaska-Unalaska_4326-84@1" = 11) * 41 + ("Alaska-Unalaska_4326-84@1" = 12) * 34 + ("Alaska-Unalaska_4326-84@1" = 21) * 26 + ("Alaska-Unalaska_4326-84@1" = 22) * 26 + ("Alaska-Unalaska_4326-84@1" = 23) * 26 + ("Alaska-Unalaska_4326-84@1" = 24) * 26 + ("Alaska-Unalaska_4326-84@1" = 31) * 27 + ("Alaska-Unalaska_4326-84@1" = 41) * 23 + ("Alaska-Unalaska_4326-84@1" = 42) * 24 + ("Alaska-Unalaska_4326-84@1" = 43) * 25 + ("Alaska-Unalaska_4326-84@1" = 51) * 30 + ("Alaska-Unalaska_4326-84@1" = 52) * 29 + ("Alaska-Unalaska_4326-84@1" = 71) * 26 + ("Alaska-Unalaska_4326-84@1" = 72) * 32 + ("Alaska-Unalaska_4326-84@1" = 73) * 31 + ("Alaska-Unalaska_4326-84@1" = 74) * 31 + ("Alaska-Unalaska_4326-84@1" = 75) * 32 + ("Alaska-Unalaska_4326-84@1" = 81) * 18 + ("Alaska-Unalaska_4326-84@1" = 82) * 19 + ("Alaska-Unalaska_4326-84@1" = 90) * 25 + ("Alaska-Unalaska_4326-84@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-St-Lawrence_reclass-grass.tiff
+("Alaska-St-Lawrence_4326-84@1" = 11) * 41 + ("Alaska-St-Lawrence_4326-84@1" = 12) * 34 + ("Alaska-St-Lawrence_4326-84@1" = 21) * 26 + ("Alaska-St-Lawrence_4326-84@1" = 22) * 26 + ("Alaska-St-Lawrence_4326-84@1" = 23) * 26 + ("Alaska-St-Lawrence_4326-84@1" = 24) * 26 + ("Alaska-St-Lawrence_4326-84@1" = 31) * 27 + ("Alaska-St-Lawrence_4326-84@1" = 41) * 23 + ("Alaska-St-Lawrence_4326-84@1" = 42) * 24 + ("Alaska-St-Lawrence_4326-84@1" = 43) * 25 + ("Alaska-St-Lawrence_4326-84@1" = 51) * 30 + ("Alaska-St-Lawrence_4326-84@1" = 52) * 29 + ("Alaska-St-Lawrence_4326-84@1" = 71) * 26 + ("Alaska-St-Lawrence_4326-84@1" = 72) * 32 + ("Alaska-St-Lawrence_4326-84@1" = 73) * 31 + ("Alaska-St-Lawrence_4326-84@1" = 74) * 31 + ("Alaska-St-Lawrence_4326-84@1" = 75) * 32 + ("Alaska-St-Lawrence_4326-84@1" = 81) * 18 + ("Alaska-St-Lawrence_4326-84@1" = 82) * 19 + ("Alaska-St-Lawrence_4326-84@1" = 90) * 25 + ("Alaska-St-Lawrence_4326-84@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-St-Paul-George_reclass-grass.tiff
+("Alaska-St-Paul-George_4326-84@1" = 11) * 41 + ("Alaska-St-Paul-George_4326-84@1" = 12) * 34 + ("Alaska-St-Paul-George_4326-84@1" = 21) * 26 + ("Alaska-St-Paul-George_4326-84@1" = 22) * 26 + ("Alaska-St-Paul-George_4326-84@1" = 23) * 26 + ("Alaska-St-Paul-George_4326-84@1" = 24) * 26 + ("Alaska-St-Paul-George_4326-84@1" = 31) * 27 + ("Alaska-St-Paul-George_4326-84@1" = 41) * 23 + ("Alaska-St-Paul-George_4326-84@1" = 42) * 24 + ("Alaska-St-Paul-George_4326-84@1" = 43) * 25 + ("Alaska-St-Paul-George_4326-84@1" = 51) * 30 + ("Alaska-St-Paul-George_4326-84@1" = 52) * 29 + ("Alaska-St-Paul-George_4326-84@1" = 71) * 26 + ("Alaska-St-Paul-George_4326-84@1" = 72) * 32 + ("Alaska-St-Paul-George_4326-84@1" = 73) * 31 + ("Alaska-St-Paul-George_4326-84@1" = 74) * 31 + ("Alaska-St-Paul-George_4326-84@1" = 75) * 32 + ("Alaska-St-Paul-George_4326-84@1" = 81) * 18 + ("Alaska-St-Paul-George_4326-84@1" = 82) * 19 + ("Alaska-St-Paul-George_4326-84@1" = 90) * 25 + ("Alaska-St-Paul-George_4326-84@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-Nunivak_reclass-grass.tiff
+("Alaska-Nunivak_4326-84@1" = 11) * 41 + ("Alaska-Nunivak_4326-84@1" = 12) * 34 + ("Alaska-Nunivak_4326-84@1" = 21) * 26 + ("Alaska-Nunivak_4326-84@1" = 22) * 26 + ("Alaska-Nunivak_4326-84@1" = 23) * 26 + ("Alaska-Nunivak_4326-84@1" = 24) * 26 + ("Alaska-Nunivak_4326-84@1" = 31) * 27 + ("Alaska-Nunivak_4326-84@1" = 41) * 23 + ("Alaska-Nunivak_4326-84@1" = 42) * 24 + ("Alaska-Nunivak_4326-84@1" = 43) * 25 + ("Alaska-Nunivak_4326-84@1" = 51) * 30 + ("Alaska-Nunivak_4326-84@1" = 52) * 29 + ("Alaska-Nunivak_4326-84@1" = 71) * 26 + ("Alaska-Nunivak_4326-84@1" = 72) * 32 + ("Alaska-Nunivak_4326-84@1" = 73) * 31 + ("Alaska-Nunivak_4326-84@1" = 74) * 31 + ("Alaska-Nunivak_4326-84@1" = 75) * 32 + ("Alaska-Nunivak_4326-84@1" = 81) * 18 + ("Alaska-Nunivak_4326-84@1" = 82) * 19 + ("Alaska-Nunivak_4326-84@1" = 90) * 25 + ("Alaska-Nunivak_4326-84@1" = 95) * 35
+Re-class urban 21, 22, 23, 24 = grass 26 = Alaska-Atka-Adak_reclass-grass.tiff
+("Alaska-Atka-Adak_4326-84@1" = 11) * 41 + ("Alaska-Atka-Adak_4326-84@1" = 12) * 34 + ("Alaska-Atka-Adak_4326-84@1" = 21) * 26 + ("Alaska-Atka-Adak_4326-84@1" = 22) * 26 + ("Alaska-Atka-Adak_4326-84@1" = 23) * 26 + ("Alaska-Atka-Adak_4326-84@1" = 24) * 26 + ("Alaska-Atka-Adak_4326-84@1" = 31) * 27 + ("Alaska-Atka-Adak_4326-84@1" = 41) * 23 + ("Alaska-Atka-Adak_4326-84@1" = 42) * 24 + ("Alaska-Atka-Adak_4326-84@1" = 43) * 25 + ("Alaska-Atka-Adak_4326-84@1" = 51) * 30 + ("Alaska-Atka-Adak_4326-84@1" = 52) * 29 + ("Alaska-Atka-Adak_4326-84@1" = 71) * 26 + ("Alaska-Atka-Adak_4326-84@1" = 72) * 32 + ("Alaska-Atka-Adak_4326-84@1" = 73) * 31 + ("Alaska-Atka-Adak_4326-84@1" = 74) * 31 + ("Alaska-Atka-Adak_4326-84@1" = 75) * 32 + ("Alaska-Atka-Adak_4326-84@1" = 81) * 18 + ("Alaska-Atka-Adak_4326-84@1" = 82) * 19 + ("Alaska-Atka-Adak_4326-84@1" = 90) * 25 + ("Alaska-Atka-Adak_4326-84@1" = 95) * 35
+
+Make Urban layer = Alaska-St-Matthew_urban.tiff
+("Alaska-St-Matthew_4326-84@1" = 21) * 10 + ("Alaska-St-Matthew_4326-84@1" = 22) * 1 + ("Alaska-St-Matthew_4326-84@1" = 23) * 1 + ("Alaska-St-Matthew_4326-84@1" = 24) * 2
+Make Urban layer = Alaska-Unalaska_urban.tiff
+("Alaska-Unalaska_4326-84@1" = 21) * 10 + ("Alaska-Unalaska_4326-84@1" = 22) * 1 + ("Alaska-Unalaska_4326-84@1" = 23) * 1 + ("Alaska-Unalaska_4326-84@1" = 24) * 2
+Make Urban layer = Alaska-St-Lawrence_urban.tiff
+("Alaska-St-Lawrence_4326-84@1" = 21) * 10 + ("Alaska-St-Lawrence_4326-84@1" = 22) * 1 + ("Alaska-St-Lawrence_4326-84@1" = 23) * 1 + ("Alaska-St-Lawrence_4326-84@1" = 24) * 2
+Make Urban layer = Alaska-St-Paul-George_urban.tiff
+("Alaska-St-Paul-George_4326-84@1" = 21) * 10 + ("Alaska-St-Paul-George_4326-84@1" = 22) * 1 + ("Alaska-St-Paul-George_4326-84@1" = 23) * 1 + ("Alaska-St-Paul-George_4326-84@1" = 24) * 2
+Make Urban layer = Alaska-Nunivak_urban.tiff
+("Alaska-Nunivak_4326-84@1" = 21) * 10 + ("Alaska-Nunivak_4326-84@1" = 22) * 1 + ("Alaska-Nunivak_4326-84@1" = 23) * 1 + ("Alaska-Nunivak_4326-84@1" = 24) * 2
+Make Urban layer = Alaska-Atka-Adak_urban.tiff
+("Alaska-Atka-Adak_4326-84@1" = 21) * 10 + ("Alaska-Atka-Adak_4326-84@1" = 22) * 1 + ("Alaska-Atka-Adak_4326-84@1" = 23) * 1 + ("Alaska-Atka-Adak_4326-84@1" = 24) * 2
+
+Remove Alaska-St-Matthew_urban.tiff road clutter = Alaska-St-Matthew_urban-only.tiff
+Remove Alaska-Unalaska_urban.tiff road clutter = Alaska-Unalaska_urban-only.tiff
+Remove Alaska-St-Lawrence_urban.tiff road clutter = Alaska-St-Lawrence_urban-only.tiff
+Remove Alaska-St-Paul-George_urban.tiff road clutter = Alaska-St-Paul-George_urban-only.tiff
+Remove Alaska-Nunivak_urban.tiff road clutter = Alaska-Nunivak_urban-only.tiff
+Remove Alaska-Atka-Adak_urban.tiff road clutter = Alaska-Atka-Adak_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Alaska-St-Matthew_urban-only@1" + "Alaska-St-Matthew_reclass-grass@1" = Alaska-St-Matthew_adjusted-combined.tiff
+("Alaska-St-Matthew_urban-only@1" < 1) * "Alaska-St-Matthew_reclass-grass@1" + ("Alaska-St-Matthew_urban-only@1" != 0) * "Alaska-St-Matthew_urban-only@1"
+Combine "Alaska-Unalaska_urban-only@1" + "Alaska-Unalaska_reclass-grass@1" = Alaska-Unalaska_adjusted-combined.tiff
+("Alaska-Unalaska_urban-only@1" < 1) * "Alaska-Unalaska_reclass-grass@1" + ("Alaska-Unalaska_urban-only@1" != 0) * "Alaska-Unalaska_urban-only@1"
+Combine "Alaska-St-Lawrence_urban-only@1" + "Alaska-St-Lawrence_reclass-grass@1" = Alaska-St-Lawrence_adjusted-combined.tiff
+("Alaska-St-Lawrence_urban-only@1" < 1) * "Alaska-St-Lawrence_reclass-grass@1" + ("Alaska-St-Lawrence_urban-only@1" != 0) * "Alaska-St-Lawrence_urban-only@1"
+Combine "Alaska-St-Paul-George_urban-only@1" + "Alaska-St-Paul-George_reclass-grass@1" = Alaska-St-Paul-George_adjusted-combined.tiff
+("Alaska-St-Paul-George_urban-only@1" < 1) * "Alaska-St-Paul-George_reclass-grass@1" + ("Alaska-St-Paul-George_urban-only@1" != 0) * "Alaska-St-Paul-George_urban-only@1"
+Combine "Alaska-Nunivak_urban-only@1" + "Alaska-Nunivak_reclass-grass@1" = Alaska-Nunivak_adjusted-combined.tiff
+("Alaska-Nunivak_urban-only@1" < 1) * "Alaska-Nunivak_reclass-grass@1" + ("Alaska-Nunivak_urban-only@1" != 0) * "Alaska-Nunivak_urban-only@1"
+Combine "Alaska-Atka-Adak_urban-only@1" + "Alaska-Atka-Adak_reclass-grass@1" = Alaska-Atka-Adak_adjusted-combined.tiff
+("Alaska-Atka-Adak_urban-only@1" < 1) * "Alaska-Atka-Adak_reclass-grass@1" + ("Alaska-Atka-Adak_urban-only@1" != 0) * "Alaska-Atka-Adak_urban-only@1"
+
+Up sample Alaska-St-Matthew_adjusted-combined.tiff = Alaska-St-Matthew_final-prep-4x.tiff
+Up sample Alaska-Unalaska_adjusted-combined.tiff = Alaska-Unalaska_final-prep-4x.tiff
+Up sample Alaska-St-Lawrence_adjusted-combined.tiff = Alaska-St-Lawrence_final-prep-4x.tiff
+Up sample Alaska-St-Paul-George_adjusted-combined.tiff = Alaska-St-Paul-George_final-prep-4x.tiff
+Up sample Alaska-Nunivak_adjusted-combined.tiff = Alaska-Nunivak_final-prep-4x.tiff
+Up sample Alaska-Atka-Adak_adjusted-combined.tiff = Alaska-Atka-Adak_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Alaska-St-Matthew_final-prep-4x.tiff = Alaska-St-Matthew_4326-84-hd.tiff
+Simplify Alaska-Unalaska_final-prep-4x.tiff = Alaska-Unalaska_4326-84-hd.tiff
+Simplify Alaska-St-Lawrence_final-prep-4x.tiff = Alaska-St-Lawrence_4326-84-hd.tiff
+Simplify Alaska-St-Paul-George_final-prep-4x.tiff = Alaska-St-Paul-George_4326-84-hd.tiff
+Simplify Alaska-Nunivak_final-prep-4x.tiff = Alaska-Nunivak_4326-84-hd.tiff
+Simplify Alaska-Atka-Adak_final-prep-4x.tiff = Alaska-Atka-Adak_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Alaska-St-Matthew_4326-84-hd-corrected.tiff
+("Alaska-St-Matthew_4326-84-hd@1" = 0) * 44 + ("Alaska-St-Matthew_4326-84-hd@1" != 0) * "Alaska-St-Matthew_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Alaska-Unalaska_4326-84-hd-corrected.tiff
+("Alaska-Unalaska_4326-84-hd@1" = 0) * 44 + ("Alaska-Unalaska_4326-84-hd@1" != 0) * "Alaska-Unalaska_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Alaska-St-Lawrence_4326-84-hd-corrected.tiff
+("Alaska-St-Lawrence_4326-84-hd@1" = 0) * 44 + ("Alaska-St-Lawrence_4326-84-hd@1" != 0) * "Alaska-St-Lawrence_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Alaska-St-Paul-George_4326-84-hd-corrected.tiff
+("Alaska-St-Paul-George_4326-84-hd@1" = 0) * 44 + ("Alaska-St-Paul-George_4326-84-hd@1" != 0) * "Alaska-St-Paul-George_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Alaska-Nunivak_4326-84-hd-corrected.tiff
+("Alaska-Nunivak_4326-84-hd@1" = 0) * 44 + ("Alaska-Nunivak_4326-84-hd@1" != 0) * "Alaska-Nunivak_4326-84-hd@1"
+Reclass index 0 to 44, leave the rest the same = Alaska-Atka-Adak_4326-84-hd-corrected.tiff
+("Alaska-Atka-Adak_4326-84-hd@1" = 0) * 44 + ("Alaska-Atka-Adak_4326-84-hd@1" != 0) * "Alaska-Atka-Adak_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Alaska-St-Matthew_4326-84-hd-nowater.tiff
+Alaska-St-Matthew_4326-84-hd-corrected@1 * (Alaska-St-Matthew_4326-84-hd-corrected@1 != 41) + 26 * (Alaska-St-Matthew_4326-84-hd-corrected@1 = 41)
+Reclass water to grass = Alaska_4326-84-hd-nowater.tiff
+Alaska_4326-84-hd-corrected@1 * (Alaska_4326-84-hd-corrected@1 != 41) + 26 * (Alaska_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Alaska-St-Matthew_water_4326-84.gpkg.
+Obtain and load vector layer = Alaska_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Alaska-St-Matthew_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Alaska-St-Matthew_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Alaska-St-Matthew_4326-84-hd-water@1" and "Alaska-St-Matthew_4326-84-hd-nowater@1" = Alaska-St-Matthew_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Alaska-St-Matthew_4326-84-hd-nowater@1" and Alaska-St-Matthew_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Alaska-St-Matthew_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

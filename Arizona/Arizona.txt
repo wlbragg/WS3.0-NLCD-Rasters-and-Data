@@ -32,6 +32,11 @@ osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W114.hgt -b -114 34 -113 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n34/ws_w114n34.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W114.hgt -b -114 35 -113 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n35/ws_w114n35.osgb
 osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W114.hgt -b -114 36 -113 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w114n36/ws_w114n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N32W115.hgt -b -115 32 -114 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n32/ws_w115n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N33W115.hgt -b -115 33 -114 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n33/ws_w115n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N34W115.hgt -b -115 34 -114 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n34/ws_w115n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N35W115.hgt -b -115 35 -114 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n35/ws_w115n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Arizona_4326-84-hd-corrected.tiff -d ./SRTM-3/N36W115.hgt -b -115 36 -114 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w120n30/w115n36/ws_w115n36.osgb
 
 (Paths above in "docker run" requires having srtm in the local Arizona data folder)
 Entire block
@@ -69,11 +74,16 @@ Single 1X bucket
 ./scripts/genroads.py ./output/Terrain -114 34 -113 35
 ./scripts/genroads.py ./output/Terrain -114 35 -113 36
 ./scripts/genroads.py ./output/Terrain -114 36 -113 37
+./scripts/genroads.py ./output/Terrain -115 32 -114 33
+./scripts/genroads.py ./output/Terrain -115 33 -114 34
+./scripts/genroads.py ./output/Terrain -115 34 -114 35
+./scripts/genroads.py ./output/Terrain -115 35 -114 36
+./scripts/genroads.py ./output/Terrain -115 36 -114 37
 
 Make Decidious Layer EPSG:5070 - NAD83 = Arizona_deciduous.tiff
-("NLCD_2016_Tree_Canopy_Arizona@1" != 0) * 41
+("NLCD_2021_Tree_Canopy_Arizona@1" != 0) * 43
 
-Warp NLCD_2019_Land_Cover_Arizona.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_4326-84.tiff
+Warp NLCD_2021_Land_Cover_Arizona.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_4326-84.tiff
 Warp Arizona_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Arizona_deciduous_4326-84.tiff
 Raster -> Projection - > Warp
 Target CRS = EPSG:4326 - WGS 84
@@ -81,7 +91,7 @@ Resampling method to use = Nearest Neighbour
 Output data type = byte
 
 Combine "Arizona_deciduous_4326-84@1" + "Arizona_4326-84@1" = Arizona_adjusted.tiff
-("Arizona_deciduous_4326-84@1" < 1) * "Arizona_4326-84@1" + ("Arizona_deciduous_4326-84@1" != 0) * "Arizona_deciduous_4326-84@1"
+(("Arizona_4326-84@1" > 0 AND "Arizona_4326-84@1" != 41 AND "Arizona_4326-84@1" != 42 AND "Arizona_4326-84@1" != 43) AND "Arizona_deciduous_4326-84@1" > 0) * "Arizona_deciduous_4326-84@1" + ("Arizona_4326-84@1" = 41 OR "Arizona_4326-84@1" = 42 OR "Arizona_4326-84@1" = 43 OR "Arizona_deciduous_4326-84@1" <= 0) * "Arizona_4326-84@1"
 
 Re-class urban 21, 22, 23, 24 = grass 26 = Arizona_reclass-grass.tiff
 ("Arizona_adjusted@1" = 11) * 41 + ("Arizona_adjusted@1" = 12) * 34 + ("Arizona_adjusted@1" = 21) * 26 + ("Arizona_adjusted@1" = 22) * 26 + ("Arizona_adjusted@1" = 23) * 26 + ("Arizona_adjusted@1" = 24) * 26 + ("Arizona_adjusted@1" = 31) * 27 + ("Arizona_adjusted@1" = 41) * 23 + ("Arizona_adjusted@1" = 42) * 24 + ("Arizona_adjusted@1" = 43) * 25 + ("Arizona_adjusted@1" = 51) * 30 + ("Arizona_adjusted@1" = 52) * 29 + ("Arizona_adjusted@1" = 71) * 26 + ("Arizona_adjusted@1" = 72) * 32 + ("Arizona_adjusted@1" = 73) * 31 + ("Arizona_adjusted@1" = 74) * 31 + ("Arizona_adjusted@1" = 75) * 32 + ("Arizona_adjusted@1" = 81) * 18 + ("Arizona_adjusted@1" = 82) * 19 + ("Arizona_adjusted@1" = 90) * 25 + ("Arizona_adjusted@1" = 95) * 35
@@ -92,10 +102,10 @@ Make Urban layer = Arizona_urban.tiff
 Remove Arizona_urban.tiff road clutter = Arizona_urban-only.tiff
 r.neighbor, "median", size=7
 
-Combine "Arizona_reclass-urban@1" + "Arizona_reclass-grass@1" = Arizona_adjusted-combined.tiff
+Combine "Arizona_urban-only@1" + "Arizona_reclass-grass@1" = Arizona_adjusted-combined.tiff
 ("Arizona_urban-only@1" < 1) * "Arizona_reclass-grass@1" + ("Arizona_urban-only@1" != 0) * "Arizona_urban-only@1"
 
-Up sample = Arizona_final-prep-4x.tiff
+Up sample Arizona_adjusted-combined.tiff = Arizona_final-prep-4x.tiff
 Up sample 4x resolution 0.00008309125
 
 Simplify Arizona_final-prep-4x.tiff = Arizona_4326-84-hd.tiff
@@ -124,6 +134,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Arizona_4326-84-hd-water@1" and "Arizona_4326-84-hd-nowater@1" = Arizona_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Arizona_4326-84-hd-nowater@1" and Arizona_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Arizona_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.
