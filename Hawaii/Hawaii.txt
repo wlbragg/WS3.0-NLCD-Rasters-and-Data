@@ -1,0 +1,108 @@
+Hawaii
+
+SRTM-1
+docker run --rm --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/SRTM-1,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/output,target=/home/flightgear/output" --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+SRTM-3
+docker run --rm --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/output,target=/home/flightgear/output" --mount "type=bind,source=g:/Scenery/ws3.0/Hawaii/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N18W156.hgt -b -156 18 -155 19 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n10/w156n18/ws_w156n18.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N19W155.hgt -b -155 19 -154 20 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n10/w155n19/ws_w155n19.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N19W156.hgt -b -156 19 -155 20 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n10/w156n19/ws_w156n19.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N19W157.hgt -b -157 19 -156 20 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n10/w157n19/ws_w157n19.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N20W156.hgt -b -156 20 -155 21 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w156n20/ws_w156n20.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N20W157.hgt -b -157 20 -156 21 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w157n20/ws_w157n20.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N20W158.hgt -b -158 20 -157 21 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w158n20/ws_w158n20.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N21W157.hgt -b -157 21 -156 22 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w157n21/ws_w157n21.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N21W158.hgt -b -158 21 -157 22 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w158n21/ws_w158n21.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N21W159.hgt -b -159 21 -158 22 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w159n21/ws_w159n21.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N21W160.hgt -b -160 21 -159 22 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w160n21/ws_w160n21.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N21W161.hgt -b -161 21 -160 22 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w161n21/ws_w161n21.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/Hawaii_4326-84-hd-corrected.tiff -d ./SRTM-3/N22W160.hgt -b -160 22 -159 23 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w160n20/w160n22/ws_w160n22.osgb
+
+(Paths above in "docker run" requires having srtm in the local Hawaii data folder)
+Entire block
+./scripts/genVPB.py -160 22 -155 19 ./data/Hawaii_4326-84-hd-corrected.tiff 
+Single 1X bucket
+./scripts/genVPB.py -160 22 -159 23 ./data/Hawaii_4326-84-hd-corrected.tiff
+
+./scripts/genroads.py ./output/Terrain -160 22 -159 23
+./scripts/genroads.py ./output/Terrain -161 21 -160 22
+./scripts/genroads.py ./output/Terrain -160 21 -159 22
+./scripts/genroads.py ./output/Terrain -159 21 -158 22
+./scripts/genroads.py ./output/Terrain -158 21 -157 22
+./scripts/genroads.py ./output/Terrain -157 21 -156 22
+./scripts/genroads.py ./output/Terrain -158 20 -157 21
+./scripts/genroads.py ./output/Terrain -157 20 -156 21
+./scripts/genroads.py ./output/Terrain -156 20 -155 21
+./scripts/genroads.py ./output/Terrain -157 19 -156 20
+./scripts/genroads.py ./output/Terrain -156 19 -155 20
+./scripts/genroads.py ./output/Terrain -155 19 -154 20
+./scripts/genroads.py ./output/Terrain -156 18 -155 19
+
+Optional coast smoothing.
+gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
+gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Hawaii\data\lines -cl multipolygons <input> <output>
+
+Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Hawaii_coast-clipped.tiff
+GIMP NLCD_2001_Land_Cover_Hawaii.tiff = Hawaii_coast-clipped.tiff
+
+Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Hawaii_deciduous-coast-clipped.tiff
+("NLCD_2016_Tree_Canopy_Hawaii@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Hawaii@1" != 255) * "NLCD_2016_Tree_Canopy_Hawaii@1"
+
+Make Decidious Layer EPSG:5070 - NAD83 = Hawaii_deciduous.tiff
+("Hawaii_deciduous-coast-clipped@1" != 0) * 43
+
+Warp Hawaii_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Hawaii_4326-84.tiff
+Warp Hawaii_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Hawaii_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Hawaii_deciduous_4326-84@1" + "Hawaii_4326-84@1" = Hawaii_adjusted.tiff
+(("Hawaii_4326-84@1" > 0 AND "Hawaii_4326-84@1" != 41 AND "Hawaii_4326-84@1" != 42 AND "Hawaii_4326-84@1" != 43) AND "Hawaii_deciduous_4326-84@1" > 0) * "Hawaii_deciduous_4326-84@1" + ("Hawaii_4326-84@1" = 41 OR "Hawaii_4326-84@1" = 42 OR "Hawaii_4326-84@1" = 43 OR "Hawaii_deciduous_4326-84@1" <= 0) * "Hawaii_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Hawaii_reclass-grass.tiff
+("Hawaii_adjusted@1" = 11) * 41 + ("Hawaii_adjusted@1" = 12) * 34 + ("Hawaii_adjusted@1" = 21) * 26 + ("Hawaii_adjusted@1" = 22) * 26 + ("Hawaii_adjusted@1" = 23) * 26 + ("Hawaii_adjusted@1" = 24) * 26 + ("Hawaii_adjusted@1" = 31) * 27 + ("Hawaii_adjusted@1" = 41) * 23 + ("Hawaii_adjusted@1" = 42) * 24 + ("Hawaii_adjusted@1" = 43) * 25 + ("Hawaii_adjusted@1" = 51) * 30 + ("Hawaii_adjusted@1" = 52) * 29 + ("Hawaii_adjusted@1" = 71) * 26 + ("Hawaii_adjusted@1" = 72) * 32 + ("Hawaii_adjusted@1" = 73) * 31 + ("Hawaii_adjusted@1" = 74) * 31 + ("Hawaii_adjusted@1" = 75) * 32 + ("Hawaii_adjusted@1" = 81) * 18 + ("Hawaii_adjusted@1" = 82) * 19 + ("Hawaii_adjusted@1" = 90) * 25 + ("Hawaii_adjusted@1" = 95) * 35
+
+Make Urban layer = Hawaii_urban.tiff
+("Hawaii_adjusted@1" = 21) * 10 + ("Hawaii_adjusted@1" = 22) * 1 + ("Hawaii_adjusted@1" = 23) * 1 + ("Hawaii_adjusted@1" = 24) * 2
+
+Remove Hawaii_urban.tiff road clutter = Hawaii_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Hawaii_urban-only@1" + "Hawaii_reclass-grass@1" = Hawaii_adjusted-combined.tiff
+("Hawaii_urban-only@1" < 1) * "Hawaii_reclass-grass@1" + ("Hawaii_urban-only@1" != 0) * "Hawaii_urban-only@1"
+
+Up sample = Hawaii_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Hawaii_final-prep-4x.tiff = Hawaii_4326-84-hd.tiff
+r.neighbor, "median", size=7 
+
+Reclass index 0 to 44, leave the rest the same = Hawaii_4326-84-hd-corrected.tiff
+("Hawaii_4326-84-hd@1" = 0) * 44 + ("Hawaii_4326-84-hd@1" != 0) * "Hawaii_4326-84-hd@1"
+	
+HD Water Option 
+Reclass water to grass = Hawaii_4326-84-hd-nowater.tiff
+Hawaii_4326-84-hd-corrected@1 * (Hawaii_4326-84-hd-corrected@1 != 41) + 26 * (Hawaii_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Hawaii_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Hawaii_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Hawaii_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Hawaii_4326-84-hd-water@1" and "Hawaii_4326-84-hd-nowater@1" = Hawaii_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Hawaii_4326-84-hd-nowater@1" and Hawaii_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Hawaii_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

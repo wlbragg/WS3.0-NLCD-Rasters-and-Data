@@ -63,13 +63,13 @@ gdal_fillnodata.py -md 10 -b 1 -of GTiff <original_file> <new_file>
 gdalwarp -overwrite -of GTiff -tr 0.00015600000000000002 -9.000000000000003e-05 -tap -cutline G:\Scenery\ws3.0\Washington\data\lines -cl multipolygons <input> <output>
 
 Make Clipped Ocean Frontage EPSG:5070 - NAD83 = Washington_coast-clipped.tiff
-GIMP NLCD_2019_Land_Cover_Washington.tiff = Washington_coast-clipped.tiff
+GIMP NLCD_2021_Land_Cover_Washington.tiff = Washington_coast-clipped.tiff
 
 Make Deciduous Layer 255 to 0 EPSG:5070 - NAD83 = Washington_deciduous-coast-clipped.tiff
-("NLCD_2016_Tree_Canopy_Washington@1" = 255) * 0 + ("NLCD_2016_Tree_Canopy_Washington@1" != 255) * "NLCD_2016_Tree_Canopy_Washington@1"
+("NLCD_2021_Tree_Canopy_Washington@1" = 255) * 0 + ("NLCD_2021_Tree_Canopy_Washington@1" != 255) * "NLCD_2021_Tree_Canopy_Washington@1"
 
 Make Decidious Layer EPSG:5070 - NAD83 = Washington_deciduous.tiff
-("Washington_deciduous-coast-clipped@1" != 0) * 42
+("Washington_deciduous-coast-clipped@1" != 0) * 43
 
 Warp Washington_coast-clipped.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Washington_4326-84.tiff
 Warp Washington_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Washington_deciduous_4326-84.tiff
@@ -79,7 +79,7 @@ Resampling method to use = Nearest Neighbour
 Output data type = byte
 
 Combine "Washington_deciduous_4326-84@1" + "Washington_4326-84@1" = Washington_adjusted.tiff
-("Washington_deciduous_4326-84@1" < 1) * "Washington_4326-84@1" + ("Washington_deciduous_4326-84@1" != 0) * "Washington_deciduous_4326-84@1"
+(("Washington_4326-84@1" > 0 AND "Washington_4326-84@1" != 41 AND "Washington_4326-84@1" != 42 AND "Washington_4326-84@1" != 43) AND "Washington_deciduous_4326-84@1" > 0) * "Washington_deciduous_4326-84@1" + ("Washington_4326-84@1" = 41 OR "Washington_4326-84@1" = 42 OR "Washington_4326-84@1" = 43 OR "Washington_deciduous_4326-84@1" <= 0) * "Washington_4326-84@1"
 
 Re-class urban 21, 22, 23, 24 = grass 26 = Washington_reclass-grass.tiff
 ("Washington_adjusted@1" = 11) * 41 + ("Washington_adjusted@1" = 12) * 34 + ("Washington_adjusted@1" = 21) * 26 + ("Washington_adjusted@1" = 22) * 26 + ("Washington_adjusted@1" = 23) * 26 + ("Washington_adjusted@1" = 24) * 26 + ("Washington_adjusted@1" = 31) * 27 + ("Washington_adjusted@1" = 41) * 23 + ("Washington_adjusted@1" = 42) * 24 + ("Washington_adjusted@1" = 43) * 25 + ("Washington_adjusted@1" = 51) * 30 + ("Washington_adjusted@1" = 52) * 29 + ("Washington_adjusted@1" = 71) * 26 + ("Washington_adjusted@1" = 72) * 32 + ("Washington_adjusted@1" = 73) * 31 + ("Washington_adjusted@1" = 74) * 31 + ("Washington_adjusted@1" = 75) * 32 + ("Washington_adjusted@1" = 81) * 18 + ("Washington_adjusted@1" = 82) * 19 + ("Washington_adjusted@1" = 90) * 25 + ("Washington_adjusted@1" = 95) * 35
@@ -90,7 +90,7 @@ Make Urban layer = Washington_urban.tiff
 Remove Washington_urban.tiff road clutter = Washington_urban-only.tiff
 r.neighbor, "median", size=7 
 
-Combine "Washington_reclass-urban@1" + "Washington_reclass-grass@1" = Washington_adjusted-combined.tiff
+Combine "Washington_urban-only@1" + "Washington_reclass-grass@1" = Washington_adjusted-combined.tiff
 ("Washington_urban-only@1" < 1) * "Washington_reclass-grass@1" + ("Washington_urban-only@1" != 0) * "Washington_urban-only@1"
 
 Up sample = Washington_final-prep-4x.tiff
@@ -122,6 +122,6 @@ The resulting raster layer will have the same extent and resolution as the origi
 Combine "Washington_4326-84-hd-water@1" and "Washington_4326-84-hd-nowater@1" = Washington_4326-84-hdwater.tiff
 Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
 Input layers = Select "Washington_4326-84-hd-nowater@1" and Washington_4326-84-hd-water.tiff
-Output data type = "Float32"
+Output data type = "byte"
 Merged = Washington_4326-84-hdwater.tiff
 Click "Run" to generate the new merged raster layer.
