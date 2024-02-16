@@ -1,0 +1,106 @@
+Louisiana
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Louisiana/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Louisiana/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Louisiana/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N32W094.hgt -b -94 32 -93 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n32/ws_w094n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N32W093.hgt -b -93 32 -92 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n32/ws_w093n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N32W092.hgt -b -92 32 -91 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n32/ws_w092n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N32W091.hgt -b -91 32 -90 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n32/ws_w091n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N31W094.hgt -b -94 31 -93 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n31/ws_w094n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N31W093.hgt -b -93 31 -92 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n31/ws_w093n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N31W092.hgt -b -92 31 -91 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n31/ws_w092n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W094.hgt -b -94 30 -93 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n30/ws_w094n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W093.hgt -b -93 30 -92 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n30/ws_w093n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W092.hgt -b -92 30 -91 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n30/ws_w092n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W091.hgt -b -91 30 -90 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n30/ws_w091n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W090.hgt -b -90 30 -89 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n30/ws_w090n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N30W089.hgt -b -89 30 -88 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n30/ws_w089n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W094.hgt -b -94 29 -93 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w094n29/ws_w094n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W093.hgt -b -93 29 -92 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w093n29/ws_w093n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W092.hgt -b -92 29 -91 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w092n29/ws_w092n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W091.hgt -b -91 29 -90 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n20/w091n29/ws_w091n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W090.hgt -b -90 29 -89 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n20/w090n29/ws_w090n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N29W089.hgt -b -89 29 -88 30 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n20/w089n29/ws_w089n29.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Louisiana_Final-HD_4326.tiff -d ./SRTM-3/N28W090.hgt -b -90 28 -89 29 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n20/w090n28/ws_w090n28.osgb
+
+./scripts/genVPB.py -94 29 -91 33 ./data/NLCD_2021_NLCD_2021_Louisiana_Final-HD_4326.tiff
+./scripts/genVPB.py -90 28 -88 31 ./data/NLCD_2021_NLCD_2021_Louisiana_Final-HD_4326.tiff
+
+./scripts/genroads.py ./output/Terrain -89 29 -88 30
+./scripts/genroads.py ./output/Terrain -89 30 -88 31
+./scripts/genroads.py ./output/Terrain -90 28 -89 29
+./scripts/genroads.py ./output/Terrain -90 29 -89 30
+./scripts/genroads.py ./output/Terrain -90 30 -89 31
+./scripts/genroads.py ./output/Terrain -91 29 -90 30
+./scripts/genroads.py ./output/Terrain -91 30 -90 31
+./scripts/genroads.py ./output/Terrain -91 32 -90 33
+./scripts/genroads.py ./output/Terrain -92 29 -91 30
+./scripts/genroads.py ./output/Terrain -92 30 -91 31
+./scripts/genroads.py ./output/Terrain -92 31 -91 32
+./scripts/genroads.py ./output/Terrain -92 32 -91 33
+./scripts/genroads.py ./output/Terrain -93 29 -92 30
+./scripts/genroads.py ./output/Terrain -93 30 -92 31
+./scripts/genroads.py ./output/Terrain -93 31 -92 32
+./scripts/genroads.py ./output/Terrain -93 32 -92 33
+./scripts/genroads.py ./output/Terrain -94 29 -93 30
+./scripts/genroads.py ./output/Terrain -94 30 -93 31
+./scripts/genroads.py ./output/Terrain -94 31 -93 32
+./scripts/genroads.py ./output/Terrain -94 32 -93 33
+
+Make Decidious Layer EPSG:5070 - NAD83 = Louisiana_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Louisiana@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Louisiana.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Louisiana_4326-84.tiff
+Warp Louisiana_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Louisiana_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Louisiana_deciduous_4326-84.@1" + "Louisiana_4326-84@1" = Louisiana_adjusted.tiff
+(("Louisiana_4326-84@1" > 0 AND "Louisiana_4326-84@1" != 41 AND "Louisiana_4326-84@1" != 42 AND "Louisiana_4326-84@1" != 43) AND "Louisiana_deciduous_4326-84@1" > 0) * "Louisiana_deciduous_4326-84@1" + ("Louisiana_4326-84@1" = 41 OR "Louisiana_4326-84@1" = 42 OR "Louisiana_4326-84@1" = 43 OR "Louisiana_deciduous_4326-84@1" <= 0) * "Louisiana_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Louisiana_reclass-grass.tiff
+("Louisiana_adjusted@1" = 11) * 41 + ("Louisiana_adjusted@1" = 12) * 34 + ("Louisiana_adjusted@1" = 21) * 26 + ("Louisiana_adjusted@1" = 22) * 26 + ("Louisiana_adjusted@1" = 23) * 23 + ("Louisiana_adjusted@1" = 24) * 26 + ("Louisiana_adjusted@1" = 31) * 27 + ("Louisiana_adjusted@1" = 41) * 23 + ("Louisiana_adjusted@1" = 42) * 24 + ("Louisiana_adjusted@1" = 43) * 25 + ("Louisiana_adjusted@1" = 51) * 30 + ("Louisiana_adjusted@1" = 52) * 29 + ("Louisiana_adjusted@1" = 71) * 26 + ("Louisiana_adjusted@1" = 72) * 32 + ("Louisiana_adjusted@1" = 73) * 31 + ("Louisiana_adjusted@1" = 74) * 31 + ("Louisiana_adjusted@1" = 75) * 32 + ("Louisiana_adjusted@1" = 81) * 18 + ("Louisiana_adjusted@1" = 82) * 19 + ("Louisiana_adjusted@1" = 90) * 25 + ("Louisiana_adjusted@1" = 95) * 35
+
+Make Urban layer = Louisiana_urban.tiff
+("Louisiana_adjusted@1" = 21) * 10 + ("Louisiana_adjusted@1" = 22) * 1 + ("Louisiana_adjusted@1" = 23) * 1 + ("Louisiana_adjusted@1" = 24) * 2
+
+Remove Louisiana_urban.tiff road clutter = Louisiana_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Louisiana_urban-only@1" + "Louisiana_reclass-grass@1" = Louisiana_adjusted-combined.tiff
+("Louisiana_urban-only@1" < 1) * "Louisiana_reclass-grass@1" + ("Louisiana_urban-only@1" != 0) * "Louisiana_urban-only@1"
+
+Up sample Louisiana_adjusted-combined.tiff = Louisiana_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Louisiana_final-prep-4x.tiff = Louisiana_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Louisiana_4326-84-hd-corrected.tiff
+("Louisiana_4326-84-hd@1" = 0) * 44 + ("Louisiana_4326-84-hd@1" != 0) * "Louisiana_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Louisiana_4326-84-hd-nowater.tiff
+Louisiana_4326-84-hd-corrected@1 * (Louisiana_4326-84-hd-corrected@1 != 41) + 26 * (Louisiana_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Louisiana-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Louisiana-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Louisiana-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Louisiana-Northern_4326-84-hd-water@1" and "Louisiana-Northern_4326-84-hd-nowater@1" = Louisiana-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Louisiana-Northern_4326-84-hd-nowater@1" and Louisiana-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Louisiana-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

@@ -1,0 +1,104 @@
+Missouri
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Missouri/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Missouri/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Missouri/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N40W096.hgt -b -96 40 -95 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n40/ws_w096n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N40W095.hgt -b -95 40 -94 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n40/ws_w095n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N40W094.hgt -b -94 40 -93 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n40/ws_w094n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N40W093.hgt -b -93 40 -92 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n40/ws_w093n40osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N40W092.hgt -b -92 40 -91 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n40/ws_w092n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W096.hgt -b -96 39 -95 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w096n39/ws_w096n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W095.hgt -b -95 39 -94 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n39/ws_w095n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W094.hgt -b -94 39 -93 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n39/ws_w094n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W093.hgt -b -93 39 -92 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n39/ws_w093n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W092.hgt -b -92 39 -91 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n39/ws_w092n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N39W091.hgt -b -91 39 -90 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n39/ws_w091n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N38W095.hgt -b -95 38 -94 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n38/ws_w095n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N38W094.hgt -b -94 38 -93 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n38/ws_w094n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N38W093.hgt -b -93 38 -92 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n38/ws_w093n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N38W092.hgt -b -92 38 -91 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n38/ws_w092n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N38W091.hgt -b -91 38 -90 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n38/ws_w091n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W095.hgt -b -95 37 -94 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n37/ws_w095n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W094.hgt -b -94 37 -93 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n37/ws_w094n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W093.hgt -b -93 37 -92 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n37/ws_w093n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W092.hgt -b -92 37 -91 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n37/ws_w092n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W091.hgt -b -91 37 -90 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n37/ws_w091n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N37W090.hgt -b -90 37 -89 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n37/ws_w090n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W095.hgt -b -95 36 -94 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n36/ws_w095n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W094.hgt -b -94 36 -93 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n36/ws_w094n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W093.hgt -b -93 36 -92 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n36/ws_w093n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W092.hgt -b -92 36 -91 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n36/ws_w092n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W091.hgt -b -91 36 -90 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n36/ws_w091n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Missouri_Final-HD_4326.tiff -d ./SRTM-3/N36W090.hgt -b -90 36 -89 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n36/ws_w090n36.osgb
+
+
+./scripts/genroads.py ./output/Terrain -90 36 -89 37
+./scripts/genroads.py ./output/Terrain -90 37 -89 38
+./scripts/genroads.py ./output/Terrain -91 36 -90 37
+./scripts/genroads.py ./output/Terrain -91 37 -90 38
+./scripts/genroads.py ./output/Terrain -91 38 -90 39
+./scripts/genroads.py ./output/Terrain -91 39 -90 40
+./scripts/genroads.py ./output/Terrain -92 36 -81 37
+./scripts/genroads.py ./output/Terrain -92 37 -81 38
+./scripts/genroads.py ./output/Terrain -92 38 -91 39
+./scripts/genroads.py ./output/Terrain -92 39 -91 40
+./scripts/genroads.py ./output/Terrain -92 40 -91 41
+./scripts/genroads.py ./output/Terrain -93 36 -92 37
+./scripts/genroads.py ./output/Terrain -93 37 -92 38
+./scripts/genroads.py ./output/Terrain -93 38 -92 39
+./scripts/genroads.py ./output/Terrain -93 39 -92 40
+./scripts/genroads.py ./output/Terrain -93 40 -92 41
+./scripts/genroads.py ./output/Terrain -94 36 -93 37
+./scripts/genroads.py ./output/Terrain -94 37 -93 38
+./scripts/genroads.py ./output/Terrain -94 38 -93 39
+./scripts/genroads.py ./output/Terrain -94 39 -93 40
+./scripts/genroads.py ./output/Terrain -94 40 -93 41
+./scripts/genroads.py ./output/Terrain -95 36 -94 37
+./scripts/genroads.py ./output/Terrain -95 37 -94 38
+./scripts/genroads.py ./output/Terrain -95 38 -94 39
+./scripts/genroads.py ./output/Terrain -95 39 -94 40
+./scripts/genroads.py ./output/Terrain -95 40 -94 41
+./scripts/genroads.py ./output/Terrain -96 39 -95 40
+./scripts/genroads.py ./output/Terrain -96 40 -95 41
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Missouri_reclass-grass.tiff
+("Missouri_4326-84@1" = 11) * 41 + ("Missouri_4326-84@1" = 12) * 34 + ("Missouri_4326-84@1" = 21) * 26 + ("Missouri_4326-84@1" = 22) * 26 + ("Missouri_4326-84@1" = 23) * 26 + ("Missouri_4326-84@1" = 24) * 26 + ("Missouri_4326-84@1" = 31) * 27 + ("Missouri_4326-84@1" = 41) * 26 + ("Missouri_4326-84@1" = 42) * 24 + ("Missouri_4326-84@1" = 43) * 25 + ("Missouri_4326-84@1" = 51) * 30 + ("Missouri_4326-84@1" = 52) * 29 + ("Missouri_4326-84@1" = 71) * 26 + ("Missouri_4326-84@1" = 72) * 32 + ("Missouri_4326-84@1" = 73) * 31 + ("Missouri_4326-84@1" = 74) * 31 + ("Missouri_4326-84@1" = 75) * 32 + ("Missouri_4326-84@1" = 81) * 18 + ("Missouri_4326-84@1" = 82) * 19 + ("Missouri_4326-84@1" = 90) * 25 + ("Missouri_4326-84@1" = 95) * 35
+
+Make Urban layer = Missouri_urban.tiff
+("Missouri_4326-84@1" = 21) * 10 + ("Missouri_4326-84@1" = 22) * 10 + ("Missouri_4326-84@1" = 23) * 1 + ("Missouri_4326-84@1" = 24) * 1
+
+Remove the road clutter = Missouri_urban-only.tiff
+r.neighbor Missouri_urban.tiff "median", size=7
+
+Combine "Missouri_reclass-urban@1" + "Missouri_reclass-grass@1" = Missouri_adjusted-combined.tiff
+("Missouri_urban-only@1" < 1) * "Missouri_reclass-grass@1" + ("Missouri_urban-only@1" != 0) * "Missouri_urban-only@1"
+
+Up sample = Missouri_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Missouri_Final-HD_4326.tiff
+r.neighbor Missouri_final-prep-4x.tiff "median", size=7
+
+HD Water Option 
+Reclass water to grass = Missouri_Final-HD_4326-nowater.tiff
+Missouri_Final-HD_4326@1 * (Missouri_Final-HD_4326@1 != 41) + 26 * (Missouri_Final-HD_4326@1 = 41)
+
+Obtain and load vector layer = Missouri_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Missouri_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Missouri_Final-HD_4326-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Missouri_Final-HD_4326-water@1" and "Missouri_Final-HD_4326-nowater@1" = Missouri_Final-HD_4326water.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Missouri_Final-HD_4326-nowater@1" and Missouri_Final-HD_4326-water.tiff
+Output data type = "byte"
+Merged = Missouri_Final-HD_4326water.tiff
+Click "Run" to generate the new merged raster layer.

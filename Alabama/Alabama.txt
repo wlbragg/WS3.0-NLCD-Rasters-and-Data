@@ -1,0 +1,100 @@
+Alabama
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Alabama/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Alabama/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Alabama/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N34W089.hgt -b -89 34 -88 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n34/ws_w089n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N34W088.hgt -b -88 34 -87 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n34/ws_w088n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N34W087.hgt -b -87 34 -86 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w087n34/ws_w087n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N34W086.hgt -b -86 34 -85 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n34/ws_w086n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N33W089.hgt -b -89 33 -88 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n33/ws_w089n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N33W088.hgt -b -88 33 -87 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n33/ws_w088n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N33W087.hgt -b -87 33 -86 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w087n33/ws_w087n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N33W086.hgt -b -86 33 -85 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n33/ws_w086n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N32W089.hgt -b -89 32 -88 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n32/ws_w089n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N32W088.hgt -b -88 32 -87 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n32/ws_w088n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N32W087.hgt -b -87 32 -86 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w087n32/ws_w087n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N32W086.hgt -b -86 32 -85 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n32/ws_w086n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N32W085.hgt -b -85 32 -84 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n32/ws_w085n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N31W089.hgt -b -89 31 -88 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n31/ws_w089n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N31W088.hgt -b -88 31 -87 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n31/ws_w088n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N31W087.hgt -b -87 31 -86 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w087n31/ws_w087n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N31W086.hgt -b -86 31 -85 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n31/ws_w086n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N30W089.hgt -b -89 30 -88 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n30/ws_w089n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Alabama_Final-HD_4326.tiff -d ./SRTM-3/N30W088.hgt -b -88 30 -87 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n30/ws_w088n30.osgb
+
+./scripts/genroads.py ./output/Terrain -86 31 -85 32
+./scripts/genroads.py ./output/Terrain -86 32 -85 33
+./scripts/genroads.py ./output/Terrain -86 33 -85 34
+./scripts/genroads.py ./output/Terrain -86 34 -85 35
+./scripts/genroads.py ./output/Terrain -87 31 -86 32
+./scripts/genroads.py ./output/Terrain -87 32 -86 33
+./scripts/genroads.py ./output/Terrain -87 33 -86 34
+./scripts/genroads.py ./output/Terrain -87 34 -86 35
+./scripts/genroads.py ./output/Terrain -88 30 -87 31
+./scripts/genroads.py ./output/Terrain -88 31 -87 32
+./scripts/genroads.py ./output/Terrain -88 32 -87 33
+./scripts/genroads.py ./output/Terrain -88 33 -87 34
+./scripts/genroads.py ./output/Terrain -88 34 -87 35
+./scripts/genroads.py ./output/Terrain -89 30 -88 31
+./scripts/genroads.py ./output/Terrain -89 31 -88 32
+./scripts/genroads.py ./output/Terrain -89 32 -88 33
+./scripts/genroads.py ./output/Terrain -89 33 -88 34
+./scripts/genroads.py ./output/Terrain -89 34 -88 35
+
+Make Decidious Layer EPSG:5070 - NAD83 = Alabama_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Alabama@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Alabama.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alabama_4326-84.tiff
+Warp Alabama_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Alabama_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Alabama_deciduous_4326-84.@1" + "Alabama_4326-84@1" = Alabama_adjusted.tiff
+(("Alabama_4326-84@1" > 0 AND "Alabama_4326-84@1" != 41 AND "Alabama_4326-84@1" != 42 AND "Alabama_4326-84@1" != 43) AND "Alabama_deciduous_4326-84@1" > 0) * "Alabama_deciduous_4326-84@1" + ("Alabama_4326-84@1" = 41 OR "Alabama_4326-84@1" = 42 OR "Alabama_4326-84@1" = 43 OR "Alabama_deciduous_4326-84@1" <= 0) * "Alabama_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Alabama_reclass-grass.tiff
+("Alabama_adjusted@1" = 11) * 41 + ("Alabama_adjusted@1" = 12) * 34 + ("Alabama_adjusted@1" = 21) * 26 + ("Alabama_adjusted@1" = 22) * 26 + ("Alabama_adjusted@1" = 23) * 23 + ("Alabama_adjusted@1" = 24) * 26 + ("Alabama_adjusted@1" = 31) * 27 + ("Alabama_adjusted@1" = 41) * 23 + ("Alabama_adjusted@1" = 42) * 24 + ("Alabama_adjusted@1" = 43) * 25 + ("Alabama_adjusted@1" = 51) * 30 + ("Alabama_adjusted@1" = 52) * 29 + ("Alabama_adjusted@1" = 71) * 26 + ("Alabama_adjusted@1" = 72) * 32 + ("Alabama_adjusted@1" = 73) * 31 + ("Alabama_adjusted@1" = 74) * 31 + ("Alabama_adjusted@1" = 75) * 32 + ("Alabama_adjusted@1" = 81) * 18 + ("Alabama_adjusted@1" = 82) * 19 + ("Alabama_adjusted@1" = 90) * 25 + ("Alabama_adjusted@1" = 95) * 35
+
+Make Urban layer = Alabama_urban.tiff
+("Alabama_adjusted@1" = 21) * 10 + ("Alabama_adjusted@1" = 22) * 1 + ("Alabama_adjusted@1" = 23) * 1 + ("Alabama_adjusted@1" = 24) * 2
+
+Remove Alabama_urban.tiff road clutter = Alabama_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Alabama_urban-only@1" + "Alabama_reclass-grass@1" = Alabama_adjusted-combined.tiff
+("Alabama_urban-only@1" < 1) * "Alabama_reclass-grass@1" + ("Alabama_urban-only@1" != 0) * "Alabama_urban-only@1"
+
+Up sample Alabama_adjusted-combined.tiff = Alabama_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Alabama_final-prep-4x.tiff = Alabama_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Alabama_4326-84-hd-corrected.tiff
+("Alabama_4326-84-hd@1" = 0) * 44 + ("Alabama_4326-84-hd@1" != 0) * "Alabama_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Alabama_4326-84-hd-nowater.tiff
+Alabama_4326-84-hd-corrected@1 * (Alabama_4326-84-hd-corrected@1 != 41) + 26 * (Alabama_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Alabama-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Alabama-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Alabama-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Alabama-Northern_4326-84-hd-water@1" and "Alabama-Northern_4326-84-hd-nowater@1" = Alabama-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Alabama-Northern_4326-84-hd-nowater@1" and Alabama-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Alabama-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
