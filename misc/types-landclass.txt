@@ -1,0 +1,45 @@
+ 1 Urban 						111 - Continuous urban fabric
+ 2 SubUrban 					112 - Discontinuous urban fabric	
+ 3 Industrial 					121 - Industrial or commercial units
+ 4 Transport 					122 - Road and rail networks and associated land
+ 5 Port 						123 - Port areas
+ 6 Airport 						124 - Airports
+ 7 Gravel 						131 - Mineral extraction sites
+ 8 Gravel 						132 - Dump sites
+ 9 Construction 				133 - Construction sites
+10 Greenspace 					141 - Green urban areas
+11 Greenspace 					142 - Sport and leisure facilities
+12 MixedCrop 					211 - Non-irrigated arable land
+13 IrrCrop 						212 - Permanently irrigated land
+14 Rice 						213 - Rice fields
+15 Vineyard 					221 - Vineyards
+16 Orchard 						222 - Fruit trees and berry plantations
+17 Olives 						223 - Olive groves
+18 MixedCropPastureCover 		231 - Pastures
+19 MixedCrop 					241 - Annual crops associated with permanent crops
+20 ComplexCrop 					242 - Complex cultivation patterns
+21 NaturalCrop 					243 - Land principally occupied by agriculture with significant areas of natural vegetation
+22 AgroForest 					244 - Agro-forestry areas
+23 DeciduousBroadCover 			311 - Broad-leaved forest
+24 EvergreenForest 				312 - Coniferous forest
+25 MixedForest 					313 - Mixed forest
+26 Grassland 					321 - Natural grasslands
+27 Heath						322 - Moors and heathland
+28 Sclerophyllous 				323 - Sclerophyllous vegetation
+29 ShrubCover 					324 - Transitional woodland-shrub
+30 Sand 						331 - Beaches - dunes - sands
+31 BareTundraCover 				332 - Bare rocks
+32 HerbTundra 					333 - Sparsely vegetated areas
+33 Burnt 						334 - Burnt areas
+34 Glacier 						335 - Glaciers and perpetual snow
+35 Marsh 						411 - Inland marshes
+36 Bog 							412 - Peat bogs
+37 SaltMarsh 					421 - Salt marshes
+38 Saline 				true	422 - Salines
+39 Littoral 			true 	423 - Intertidal flats
+40 Watercourse 			true 	511 - Water courses
+41 Lake 				true 	512 - Water bodies
+42 Lagoon 				true 	521 - Coastal lagoons
+43 Estuary 				true 	522 - Estuaries
+44 Ocean 				true 	523 - Sea and ocean
+48 Ocean 				true 	999 - NODATA

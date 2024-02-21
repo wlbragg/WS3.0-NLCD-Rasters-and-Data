@@ -1,0 +1,113 @@
+Georgia
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Georgia/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Georgia/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Georgia/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N34W086.hgt -b -86 34 -85 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n34/ws_w086n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N34W085.hgt -b -85 34 -84 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n34/ws_w085n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N34W084.hgt -b -84 34 -83 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n34/ws_w084n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N34W083.hgt -b -83 34 -82 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n34/ws_w083n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N33W086.hgt -b -86 33 -85 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n33/ws_w086n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N33W085.hgt -b -85 33 -84 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n33/ws_w085n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N33W084.hgt -b -84 33 -83 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n33/ws_w084n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N33W083.hgt -b -83 33 -82 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n33/ws_w083n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N33W082.hgt -b -82 33 -81 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n33/ws_w082n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W086.hgt -b -86 32 -85 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n32/ws_w086n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W085.hgt -b -85 32 -84 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n32/ws_w085n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W084.hgt -b -84 32 -83 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n32/ws_w084n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W083.hgt -b -83 32 -82 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n32/ws_w083n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W082.hgt -b -82 32 -81 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n32/ws_w082n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N32W081.hgt -b -81 32 -80 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w081n32/ws_w081n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W086.hgt -b -86 31 -85 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w086n31/ws_w086n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W085.hgt -b -85 31 -84 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n31/ws_w085n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W084.hgt -b -84 31 -83 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n31/ws_w084n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W083.hgt -b -83 31 -82 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n31/ws_w083n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W082.hgt -b -82 31 -81 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n31/ws_w082n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N31W081.hgt -b -81 31 -80 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w081n31/ws_w081n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N30W085.hgt -b -85 30 -84 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n30/ws_w085n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N30W084.hgt -b -84 30 -83 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n30/ws_w084n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N30W083.hgt -b -83 30 -82 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n30/ws_w083n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Georgia_Final-HD_4326.tiff -d ./SRTM-3/N30W082.hgt -b -82 30 -81 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n30/ws_w082n30.osgb
+
+./scripts/genroads.py ./output/Terrain -81 31 -80 32
+./scripts/genroads.py ./output/Terrain -81 32 -80 33
+./scripts/genroads.py ./output/Terrain -82 30 -81 31
+./scripts/genroads.py ./output/Terrain -82 31 -81 32
+./scripts/genroads.py ./output/Terrain -82 32 -81 33
+./scripts/genroads.py ./output/Terrain -82 33 -81 34
+./scripts/genroads.py ./output/Terrain -83 30 -82 31
+./scripts/genroads.py ./output/Terrain -83 31 -82 32
+./scripts/genroads.py ./output/Terrain -83 32 -82 33
+./scripts/genroads.py ./output/Terrain -83 33 -82 34
+./scripts/genroads.py ./output/Terrain -83 34 -82 35
+./scripts/genroads.py ./output/Terrain -84 30 -83 31
+./scripts/genroads.py ./output/Terrain -84 31 -83 32
+./scripts/genroads.py ./output/Terrain -84 32 -83 33
+./scripts/genroads.py ./output/Terrain -84 33 -83 34
+./scripts/genroads.py ./output/Terrain -84 34 -83 35
+./scripts/genroads.py ./output/Terrain -85 30 -84 31
+./scripts/genroads.py ./output/Terrain -85 31 -84 32
+./scripts/genroads.py ./output/Terrain -85 32 -84 33
+./scripts/genroads.py ./output/Terrain -85 33 -84 34
+./scripts/genroads.py ./output/Terrain -85 34 -84 35
+./scripts/genroads.py ./output/Terrain -86 31 -85 32
+./scripts/genroads.py ./output/Terrain -86 32 -85 33
+./scripts/genroads.py ./output/Terrain -86 33 -85 34
+./scripts/genroads.py ./output/Terrain -86 34 -85 35
+
+Make Decidious Layer EPSG:5070 - NAD83 = Georgia_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Georgia@1" > 0) * 41 NO LONGER WORKING
+
+Warp NLCD_2021_Land_Cover_Georgia.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Georgia_4326-84.tiff
+Warp Georgia_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Georgia_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Georgia_deciduous_4326-84@1" + "Georgia_4326-84@1" = Georgia_adjusted.tiff
+(("Georgia_4326-84@1" > 0 AND "Georgia_4326-84@1" != 41 AND "Georgia_4326-84@1" != 42 AND "Georgia_4326-84@1" != 43) AND "Georgia_deciduous_4326-84@1" > 0) * "Georgia_deciduous_4326-84@1" + ("Georgia_4326-84@1" = 41 OR "Georgia_4326-84@1" = 42 OR "Georgia_4326-84@1" = 43 OR "Georgia_deciduous_4326-84@1" <= 0) * "Georgia_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Georgia_reclass-grass.tiff
+("Georgia_adjusted@1" = 11) * 41 + ("Georgia_adjusted@1" = 12) * 34 + ("Georgia_adjusted@1" = 21) * 26 + ("Georgia_adjusted@1" = 22) * 26 + ("Georgia_adjusted@1" = 23) * 26 + ("Georgia_adjusted@1" = 24) * 26 + ("Georgia_adjusted@1" = 31) * 27 + ("Georgia_adjusted@1" = 41) * 23 + ("Georgia_adjusted@1" = 42) * 24 + ("Georgia_adjusted@1" = 43) * 25 + ("Georgia_adjusted@1" = 51) * 30 + ("Georgia_adjusted@1" = 52) * 29 + ("Georgia_adjusted@1" = 71) * 26 + ("Georgia_adjusted@1" = 72) * 32 + ("Georgia_adjusted@1" = 73) * 31 + ("Georgia_adjusted@1" = 74) * 31 + ("Georgia_adjusted@1" = 75) * 32 + ("Georgia_adjusted@1" = 81) * 18 + ("Georgia_adjusted@1" = 82) * 19 + ("Georgia_adjusted@1" = 90) * 25 + ("Georgia_adjusted@1" = 95) * 35
+
+Make Urban layer = Georgia_urban.tiff
+("Georgia_adjusted@1" = 21) * 10 + ("Georgia_adjusted@1" = 22) * 1 + ("Georgia_adjusted@1" = 23) * 1 + ("Georgia_adjusted@1" = 24) * 2
+
+Remove Georgia_urban.tiff road clutter = Georgia_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Georgia_urban-only@1" + "Georgia_reclass-grass@1" = Georgia_adjusted-combined.tiff
+("Georgia_urban-only@1" < 1) * "Georgia_reclass-grass@1" + ("Georgia_urban-only@1" != 0) * "Georgia_urban-only@1"
+
+Up sample Georgia_adjusted-combined.tiff = Georgia_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Georgia_final-prep-4x.tiff = Georgia_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Georgia_4326-84-hd-corrected.tiff
+("Georgia_4326-84-hd@1" = 0) * 44 + ("Georgia_4326-84-hd@1" != 0) * "Georgia_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = Kansas_4326-84-hd-nowater.tiff
+Kansas_4326-84-hd@1 * (Kansas_4326-84-hd@1 != 41) + 26 * (Kansas_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = Georgia_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Kansas_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = Kansas_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Kansas_4326-84-hd-water@1" and "Kansas_4326-84-hd-nowater@1" = Kansas_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Kansas_4326-84-hd-nowater@1" and Kansas_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Kansas_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

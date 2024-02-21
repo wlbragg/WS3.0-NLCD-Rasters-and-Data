@@ -1,0 +1,218 @@
+Usage: osgdem [options] filename ...
+Options:
+  --BuildOverlays [True/False]
+                    Switch on/off the building of overlay within the source
+                    imagery. Overlays can help reduce texture aliasing
+                    artificats.
+  --GenerateTiles [True/False]
+                    Switch on/off the generation of the output database tiles.
+  --HEIGHT_FIELD    Create a height field database.
+  --LOD             Create a LOD'd database.
+  --POLYGONAL       Create a height field database.
+  --PagedLOD        Create a PagedLOD'd database.
+  --RGB-16          Use 16bit RGB destination imagery.
+  --RGB-24          Use 24bit RGB destination imagery.
+  --RGB32F          Use 3 channel, 32bit per channel destination imagery.
+  --RGBA            Use 32bit RGBA destination imagery.
+  --RGBA-16         Use 16bit RGBA destination imagery.
+  --RGBA-compressed Use OpenGL compression on RGBA destination imagery.
+  --RGBA32F         Use 4 channel, 32bit per channel destination imagery.
+  --ReprojectSources [True/False]
+                    Switch on/off the reprojection of any source imagery that
+                    aren't in the correct projection for the database build.
+  --TERRAIN         Create a osgTerrain::Terrain database.
+  --abort-run-on-error
+                    Hint to vpbmaster to abort the run when any errors
+                    occur/tasks fail.
+  --abort-task-on-error
+                    Hint to osgdem to abort the build when any errors occur
+                    (default).
+  --blending-policy <policy>
+                    Set the blending policy to use on TerrainTiles.  <policy>
+                    can be INHERIT, DO_NOT_SET_BLENDING, ENABLE_BLENDING or
+                    ENABLE_BLENDING_WHEN_ALPHA_PRESENT.
+  --bluemarble-east Set the coordinates system for next texture or dem to
+                    represent the eastern hemisphere of the earth.
+  --bluemarble-west Set the coordinates system for next texture or dem to
+                    represent the western hemisphere of the earth.
+  --build-options <string>
+                    Set build options string.
+  --building <filename>
+                    Specify building outlines using shapefiles.
+  --cache <filename>
+                    Read the cache file to use a look up for locally cached
+                    files.
+  --comment         Added a comment/description string to the top most node in
+                    the dataset.
+  --compressed      Use OpenGL compression on RGB destination imagery.
+  --compressed-dxt1 Use S3TC DXT1 compression on destination imagery.
+  --compressed-dxt1a
+                    Use S3TC DXT1 compression with 1 bit alpha on destination
+                    imagery.
+  --compressed-dxt3 Use S3TC DXT3 compression on destination imagery.
+  --compressed-dxt5 Use S3TC DXT5 compression on destination imagery.
+  --compression-quality-fastest
+                    Uses the 'fastest' quality setting when using NVVT to
+                    compress textures.
+  --compression-quality-highest
+                    Uses the 'highest' quality setting when using NVVT to
+                    compress textures.
+  --compression-quality-normal
+                    Uses the 'normal' quality setting when using NVVT to
+                    compress textures.
+  --compression-quality-production
+                    Uses the 'production' quality setting when using NVVT to
+                    compress textures.
+  --compressor-gl-driver
+                    Use the OpenGL driver to compress output imagery.
+  --compressor-nvtt Use NVTT to compress output imagery, using CUDA if possible.
+  --compressor-nvtt-nocuda
+                    Use NVTT to compress output imagery, disabling CUDA.
+  --cs <coordinates system string>
+                    Set the coordinates system of source imagery, DEM or
+                    destination database. The string may be any of the usual
+                    GDAL/OGR forms, complete WKT, PROJ.4, EPS.
+  --default-color <r,g,b,a>
+                    Sets the default color of the terrain.
+  --disable-error-diffusion
+                    Disable error diffusion during quantization.
+  --enable-error-diffusion
+                    Enable error diffusion during quantization.
+  --forest <filename>
+                    Specify forest outlines using shapefiles.
+  --formats         List the supported source imagery and DEM formats.
+  --geocentric      Build a database in geocentric (i.e. whole earth) database.
+  --height          Set the height to use for asscociated shapefiles.
+  --height-attribute
+                    Set the attribute name for height attributes used in
+                    shapefile/dbase files.
+  --ibn <buildname> Specify the intermediate build file name.
+  --image-ext <ext> Specify the Image format to output to via its plugin name,
+                    i.e. rgb, dds, jp2, jpeg.
+  --interpolate-imagery
+                    Enable the use of interpolation when sampling data from
+                    source imagery.
+  --interpolate-terrain
+                    Enable the use of interpolation when sampling data from
+                    source DEMs.
+  --layer <layer_num>
+                    Specify the layer that the next source Texture will
+                    contribute to.
+  --layer-inheritance [Lowest/Nearest/No]
+                    Set the layer inheritance.
+  --levels <begin_level> <end_level>
+                    Specify the range of lavels that the next source Texture or
+                    DEM will contribute to.
+  --mask            Set the mask to assign indivual shapefile/model.
+  --max-anisotropy  Max anisotropy level to use when texturing, defaults to 1.0.
+  --max-visible-distance-of-top-level
+                    Set the maximum visible distance that the top most tile can
+                    be viewed at.
+  --mip-mapping-hardware
+                    Use mip mapped textures, and generate the mipmaps in
+                    hardware when available.
+  --mip-mapping-imagery
+                    Use mip mapped textures, and generate the mipmaps in
+                    imagery.
+  --no-abort-run-on-error
+                    Hint to vpbmaster to disable abort of the run when any
+                    errors occur (default).
+  --no-abort-task-on-error
+                    Hint to osgdem to disable abort of the build when any errors
+                    occur.
+  --no-interpolate-imagery
+                    Disable the use of interpolation when sampling data from
+                    source imagery.
+  --no-interpolate-terrain
+                    Disable the use of interpolation when sampling data from
+                    source DEMs.
+  --no-mip-mapping  Disable mip mapping of textures.
+  --no-terrain-simplification
+                    Switch off terrain simplification.
+  --notify-level    Set the notify level when logging messages.
+  --npot            Permit use of non power of two imagery when generating
+                    output tiles.
+  --optional-elevation-layout [inline/external-set-dir/external-local-dir]
+                    Sets the layout to be used for optional elevation layers.
+  --optional-image-layout [inline/external-set-dir/external-local-dir]
+                    Sets the layout to be used for optional image layers.
+  --optional-set <setname>
+                    Add setname to the list of optional layers.
+  --pot             Use power of two imagery when generating output tiles.
+  --quantize <bits> Quantize imagery to reduce precision to specified number of
+                    bits.
+  --radius-equator  Set the polar radius of the ellipsoid model when building a
+                    geocentric database.
+  --radius-polar    Set the polar radius of the ellipsoid model when building a
+                    geocentric database.
+  --radius-to-max-visible-distance-ratio
+                    Set the maximum visible distance ratio for all tiles apart
+                    from the top most tile. The maximum visuble distance is
+                    computed from the ratio * tile radius.
+  --range
+  --raster          Interpret input as a raster data set (default).
+  --read-threads-ratio <ratio>
+                    Set the ratio number of read threads relative to number of
+                    cores to use.
+  --record-subtile-on-leaf-tiles
+                    Enable the setting of the subtile file name of the leaf
+                    tiles.
+  --remove-optional-set <setname>
+                    Remove setname to the list of optional layers.
+  --run-path        Set the path that the build should be run from.
+  --set <setname>   Assign the set name of imagery/dem data.
+  --skirt-ratio <float>
+                    Set the ratio of skirt height to tile size.
+  --spherical       Set the polar and equator radius both to the average of the
+                    two.
+  --split           Set the distributed build split level.
+  --splits          Set the distributed build primary and secondary split
+                    levels.
+  --subtile <LOD> <X> <Y>
+                    Set the subtile to begin the build from.
+  --terrain-mask    Set the overall mask to assign terrain.
+  --tile-image-size Set the tile maximum image size.
+  --tile-terrain-size
+                    Set the tile maximum terrain size.
+  --type-attribute  Set the type name which specify how the shapes should be
+                    interpreted in shapefile/dbase files.
+  --vector          Interpret input as a vector data set
+  --version         Print out version.
+  --version-number  Print out version number only.
+  --whole-globe     Set the coordinates system for next texture or dem to
+                    represent the whole hemisphere of the earth.
+  --wkt <WKT string>
+                    Set the coordinates system of source imagery, DEM or
+                    destination database in WellKnownText form.
+  --wkt-file <WKT file>
+                    Set the coordinates system of source imagery, DEM or
+                    destination database by as file containing WellKownText
+                    definition.
+  --write-threads-ratio <ratio>
+                    Set the ratio number of write threads relative to number of
+                    cores to use.
+  --xt
+  --xx
+  --yt
+  --yy
+  --zt
+  --zz
+  -O                string option to pass to write plugins, use " " for multiple
+                    options.
+  -a <archivename>  Specify the archive to place the generated database.
+  -b <xa> <ya> <xb> <yb>
+                    Bounds (similar to extents) of the model to generate.
+                    Max/Min order is not important.
+  -d <filename>     Specify the digital elevation map input file to process.
+  -e <x> <y> <w> <h>
+                    Extents of the model to generate.
+  -gb <xa> <ya> <xb> <yb>
+                    Geographic Bounds (similar to extents) of the model to
+                    generate. Max/Min order is not important.
+  -ge <x> <y> <w> <h>
+                    Geographic (Lat/Lon) Extents of the model to generate.
+  -h or --help      Display this information
+  -l <numOfLevels>  Specify the number of PagedLOD levels to generate.
+  -o <outputfile>   Specify the output master file to generate.
+  -t <filename>     Specify the texture map input file to process.
+  -v                Set the vertical multiplier.
