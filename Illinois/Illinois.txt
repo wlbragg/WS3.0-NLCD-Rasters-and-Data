@@ -1,0 +1,115 @@
+Illinois
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Illinois/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Illinois/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Illinois/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N42W091.hgt -b -91 42 -90 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w091n42/ws_w091n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N42W090.hgt -b -90 42 -89 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w090n42/ws_w090n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N42W089.hgt -b -89 42 -88 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w089n42/ws_w089n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N42W088.hgt -b -88 42 -87 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w088n42/ws_w088n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N41W092.hgt -b -92 41 -91 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n41/ws_w092n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N41W091.hgt -b -91 41 -90 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w091n41/ws_w091n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N41W090.hgt -b -90 41 -89 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w090n41/ws_w090n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N41W089.hgt -b -89 41 -88 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w089n41/ws_w089n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N41W088.hgt -b -88 41 -87 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w088n41/ws_w088n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N40W092.hgt -b -92 40 -91 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n40/ws_w092n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N40W091.hgt -b -91 40 -90 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w091n40/ws_w091n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N40W090.hgt -b -90 40 -89 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w090n40/ws_w090n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N40W089.hgt -b -89 40 -88 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w089n40/ws_w089n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N40W088.hgt -b -88 40 -87 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w088n40/ws_w088n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N39W092.hgt -b -92 39 -91 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n39/ws_w092n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N39W091.hgt -b -91 39 -90 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n39/ws_w091n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N39W090.hgt -b -90 39 -89 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n39/ws_w090n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N39W089.hgt -b -89 39 -88 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n39/ws_w089n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N39W088.hgt -b -88 39 -87 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n39/ws_w088n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N38W091.hgt -b -91 38 -90 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n38/ws_w091n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N38W090.hgt -b -90 38 -89 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n38/ws_w090n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N38W089.hgt -b -89 38 -88 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n38/ws_w089n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N38W088.hgt -b -88 38 -87 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w088n38/ws_w088n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N37W091.hgt -b -91 37 -90 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n37/ws_w091n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N37W090.hgt -b -90 37 -89 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n37/ws_w090n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Illinois_Final-HD_4326.tiff -d ./SRTM-3/N37W089.hgt -b -89 37 -88 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n37/ws_w089n37.osgb
+
+./scripts/genroads.py ./output/Terrain -91 42 -90 43
+./scripts/genroads.py ./output/Terrain -90 42 -89 43
+./scripts/genroads.py ./output/Terrain -89 42 -88 43
+./scripts/genroads.py ./output/Terrain -88 42 -87 40
+./scripts/genroads.py ./output/Terrain -92 41 -91 42
+./scripts/genroads.py ./output/Terrain -91 41 -90 42
+./scripts/genroads.py ./output/Terrain -90 41 -89 42
+./scripts/genroads.py ./output/Terrain -89 41 -88 42
+./scripts/genroads.py ./output/Terrain -88 41 -87 39
+./scripts/genroads.py ./output/Terrain -92 40 -91 41
+./scripts/genroads.py ./output/Terrain -91 40 -90 41
+./scripts/genroads.py ./output/Terrain -90 40 -89 41
+./scripts/genroads.py ./output/Terrain -89 40 -88 41
+./scripts/genroads.py ./output/Terrain -88 40 -87 38
+./scripts/genroads.py ./output/Terrain -92 39 -91 40
+./scripts/genroads.py ./output/Terrain -91 39 -90 40
+./scripts/genroads.py ./output/Terrain -90 39 -89 40
+./scripts/genroads.py ./output/Terrain -89 39 -88 40
+./scripts/genroads.py ./output/Terrain -88 39 -87 40
+./scripts/genroads.py ./output/Terrain -91 38 -90 39
+./scripts/genroads.py ./output/Terrain -90 38 -89 39
+./scripts/genroads.py ./output/Terrain -89 38 -88 39
+./scripts/genroads.py ./output/Terrain -88 38 -87 39
+./scripts/genroads.py ./output/Terrain -91 37 -90 38
+./scripts/genroads.py ./output/Terrain -90 37 -89 38
+./scripts/genroads.py ./output/Terrain -89 37 -88 38
+
+Make Decidious Layer EPSG:5070 - NAD83 = Illinois_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Illinois@1" > 0) * 41 NO LONGER WORKING
+
+Warp NLCD_2021_Land_Cover_Illinois.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Illinois_4326-84.tiff
+Warp Illinois_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Illinois_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Illinois_deciduous_4326-84@1" + "Illinois_4326-84@1" = Illinois_adjusted.tiff
+(("Illinois_4326-84@1" > 0 AND "Illinois_4326-84@1" != 41 AND "Illinois_4326-84@1" != 42 AND "Illinois_4326-84@1" != 43) AND "Illinois_deciduous_4326-84@1" > 0) * "Illinois_deciduous_4326-84@1" + ("Illinois_4326-84@1" = 41 OR "Illinois_4326-84@1" = 42 OR "Illinois_4326-84@1" = 43 OR "Illinois_deciduous_4326-84@1" <= 0) * "Illinois_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Illinois_reclass-grass.tiff
+("Illinois_adjusted@1" = 11) * 41 + ("Illinois_adjusted@1" = 12) * 34 + ("Illinois_adjusted@1" = 21) * 26 + ("Illinois_adjusted@1" = 22) * 26 + ("Illinois_adjusted@1" = 23) * 26 + ("Illinois_adjusted@1" = 24) * 26 + ("Illinois_adjusted@1" = 31) * 27 + ("Illinois_adjusted@1" = 41) * 23 + ("Illinois_adjusted@1" = 42) * 24 + ("Illinois_adjusted@1" = 43) * 25 + ("Illinois_adjusted@1" = 51) * 30 + ("Illinois_adjusted@1" = 52) * 29 + ("Illinois_adjusted@1" = 71) * 26 + ("Illinois_adjusted@1" = 72) * 32 + ("Illinois_adjusted@1" = 73) * 31 + ("Illinois_adjusted@1" = 74) * 31 + ("Illinois_adjusted@1" = 75) * 32 + ("Illinois_adjusted@1" = 81) * 18 + ("Illinois_adjusted@1" = 82) * 19 + ("Illinois_adjusted@1" = 90) * 25 + ("Illinois_adjusted@1" = 95) * 35
+
+Make Urban layer = Illinois_urban.tiff
+("Illinois_adjusted@1" = 21) * 10 + ("Illinois_adjusted@1" = 22) * 1 + ("Illinois_adjusted@1" = 23) * 1 + ("Illinois_adjusted@1" = 24) * 2
+
+Remove Illinois_urban.tiff road clutter = Illinois_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Illinois_urban-only@1" + "Illinois_reclass-grass@1" = Illinois_adjusted-combined.tiff
+("Illinois_urban-only@1" < 1) * "Illinois_reclass-grass@1" + ("Illinois_urban-only@1" != 0) * "Illinois_urban-only@1"
+
+Up sample Illinois_adjusted-combined.tiff = Illinois_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Illinois_final-prep-4x.tiff = Illinois_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Illinois_4326-84-hd-corrected.tiff
+("Illinois_4326-84-hd@1" = 0) * 44 + ("Illinois_4326-84-hd@1" != 0) * "Illinois_4326-84-hd@1"
+
+HD Water Option
+Reclass water to grass = Kansas_4326-84-hd-nowater.tiff
+Kansas_4326-84-hd@1 * (Kansas_4326-84-hd@1 != 41) + 26 * (Kansas_4326-84-hd@1 = 41)
+
+Obtain and load vector layer = Illinois_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Kansas_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Rasterized to save to = Kansas_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Kansas_4326-84-hd-water@1" and "Kansas_4326-84-hd-nowater@1" = Kansas_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Kansas_4326-84-hd-nowater@1" and Kansas_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Kansas_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

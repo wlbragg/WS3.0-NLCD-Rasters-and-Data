@@ -1,0 +1,97 @@
+Mississippi
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Mississippi/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Mississippi/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Mississippi/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N34W091.hgt -b -91 34 -90 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n34/ws_w091n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N34W090.hgt -b -90 34 -89 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n34/ws_w090n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N34W089.hgt -b -89 34 -88 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n34/ws_w089n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N33W092.hgt -b -92 33 -91 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n33/ws_w092n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N33W091.hgt -b -91 33 -90 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n33/ws_w091n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N33W090.hgt -b -90 33 -89 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n33/ws_w090n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N33W089.hgt -b -89 33 -88 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n33/ws_w089n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N32W092.hgt -b -92 32 -91 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n32/ws_w092n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N32W091.hgt -b -91 32 -90 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n32/ws_w091n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N32W090.hgt -b -90 32 -89 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n32/ws_w090n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N32W089.hgt -b -89 32 -88 33 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n32/ws_w089n32.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N31W092.hgt -b -92 31 -91 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n31/ws_w092n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N31W091.hgt -b -91 31 -90 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n31/ws_w091n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N31W090.hgt -b -90 31 -89 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n31/ws_w090n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N31W089.hgt -b -89 31 -88 32 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n31/ws_w089n31.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N30W090.hgt -b -90 30 -89 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n30/ws_w090n30.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Mississippi_Final-HD_4326.tiff -d ./SRTM-3/N30W089.hgt -b -89 30 -88 31 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w089n30/ws_w089n30.osgb
+
+./scripts/genroads.py ./output/Terrain -92 31 -91 32
+./scripts/genroads.py ./output/Terrain -92 32 -91 33
+./scripts/genroads.py ./output/Terrain -92 33 -91 34
+./scripts/genroads.py ./output/Terrain -91 31 -90 35
+./scripts/genroads.py ./output/Terrain -91 32 -90 33
+./scripts/genroads.py ./output/Terrain -91 33 -90 34
+./scripts/genroads.py ./output/Terrain -91 34 -90 35
+./scripts/genroads.py ./output/Terrain -90 30 -89 31
+./scripts/genroads.py ./output/Terrain -90 31 -89 32
+./scripts/genroads.py ./output/Terrain -90 32 -89 33
+./scripts/genroads.py ./output/Terrain -90 33 -89 34
+./scripts/genroads.py ./output/Terrain -90 34 -89 35
+./scripts/genroads.py ./output/Terrain -89 30 -88 31
+./scripts/genroads.py ./output/Terrain -89 31 -88 32
+./scripts/genroads.py ./output/Terrain -89 32 -88 33
+./scripts/genroads.py ./output/Terrain -89 33 -88 34
+./scripts/genroads.py ./output/Terrain -89 34 -88 35
+
+Make Decidious Layer EPSG:5070 - NAD83 = Mississippi_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Mississippi@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Mississippi.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Mississippi_4326-84.tiff
+Warp Mississippi_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Mississippi_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Mississippi_deciduous_4326-84.@1" + "Mississippi_4326-84@1" = Mississippi_adjusted.tiff
+(("Mississippi_4326-84@1" > 0 AND "Mississippi_4326-84@1" != 41 AND "Mississippi_4326-84@1" != 42 AND "Mississippi_4326-84@1" != 43) AND "Mississippi_deciduous_4326-84@1" > 0) * "Mississippi_deciduous_4326-84@1" + ("Mississippi_4326-84@1" = 41 OR "Mississippi_4326-84@1" = 42 OR "Mississippi_4326-84@1" = 43 OR "Mississippi_deciduous_4326-84@1" <= 0) * "Mississippi_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Mississippi_reclass-grass.tiff
+("Mississippi_adjusted@1" = 11) * 41 + ("Mississippi_adjusted@1" = 12) * 34 + ("Mississippi_adjusted@1" = 21) * 26 + ("Mississippi_adjusted@1" = 22) * 26 + ("Mississippi_adjusted@1" = 23) * 23 + ("Mississippi_adjusted@1" = 24) * 26 + ("Mississippi_adjusted@1" = 31) * 27 + ("Mississippi_adjusted@1" = 41) * 23 + ("Mississippi_adjusted@1" = 42) * 24 + ("Mississippi_adjusted@1" = 43) * 25 + ("Mississippi_adjusted@1" = 51) * 30 + ("Mississippi_adjusted@1" = 52) * 29 + ("Mississippi_adjusted@1" = 71) * 26 + ("Mississippi_adjusted@1" = 72) * 32 + ("Mississippi_adjusted@1" = 73) * 31 + ("Mississippi_adjusted@1" = 74) * 31 + ("Mississippi_adjusted@1" = 75) * 32 + ("Mississippi_adjusted@1" = 81) * 18 + ("Mississippi_adjusted@1" = 82) * 19 + ("Mississippi_adjusted@1" = 90) * 25 + ("Mississippi_adjusted@1" = 95) * 35
+
+Make Urban layer = Mississippi_urban.tiff
+("Mississippi_adjusted@1" = 21) * 10 + ("Mississippi_adjusted@1" = 22) * 1 + ("Mississippi_adjusted@1" = 23) * 1 + ("Mississippi_adjusted@1" = 24) * 2
+
+Remove Mississippi_urban.tiff road clutter = Mississippi_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Mississippi_urban-only@1" + "Mississippi_reclass-grass@1" = Mississippi_adjusted-combined.tiff
+("Mississippi_urban-only@1" < 1) * "Mississippi_reclass-grass@1" + ("Mississippi_urban-only@1" != 0) * "Mississippi_urban-only@1"
+
+Up sample Mississippi_adjusted-combined.tiff = Mississippi_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Mississippi_final-prep-4x.tiff = Mississippi_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Mississippi_4326-84-hd-corrected.tiff
+("Mississippi_4326-84-hd@1" = 0) * 44 + ("Mississippi_4326-84-hd@1" != 0) * "Mississippi_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Mississippi_4326-84-hd-nowater.tiff
+Mississippi_4326-84-hd-corrected@1 * (Mississippi_4326-84-hd-corrected@1 != 41) + 26 * (Mississippi_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Mississippi-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Mississippi-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Mississippi-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Mississippi-Northern_4326-84-hd-water@1" and "Mississippi-Northern_4326-84-hd-nowater@1" = Mississippi-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Mississippi-Northern_4326-84-hd-nowater@1" and Mississippi-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Mississippi-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

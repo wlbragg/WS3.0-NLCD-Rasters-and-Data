@@ -1,0 +1,89 @@
+Arkansas
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Arkansas/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Arkansas/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Arkansas/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W090.hgt -b -90 35 -89 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w090n35/ws_w090n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N33W091.hgt -b -91 33 -90 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n33/ws_w091n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N34W091.hgt -b -91 34 -90 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n34/ws_w091n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W091.hgt -b -91 35 -90 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n35/ws_w091n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N36W091.hgt -b -91 36 -90 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w091n36/ws_w091n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N33W092.hgt -b -92 33 -91 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n33/ws_w092n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N34W092.hgt -b -92 34 -91 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n34/ws_w092n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W092.hgt -b -92 35 -91 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n35/ws_w092n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N36W092.hgt -b -92 36 -91 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w092n36/ws_w092n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N33W093.hgt -b -93 33 -92 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n33/ws_w093n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N34W093.hgt -b -93 34 -92 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n34/ws_w093n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W093.hgt -b -93 35 -92 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n35/ws_w093n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N36W093.hgt -b -93 36 -92 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w093n36/ws_w093n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N33W094.hgt -b -94 33 -93 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n33/ws_w094n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N34W094.hgt -b -94 34 -93 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n34/ws_w094n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W094.hgt -b -94 35 -93 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n35/ws_w094n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N36W094.hgt -b -94 36 -93 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w094n36/ws_w094n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N33W095.hgt -b -95 33 -94 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n33/ws_w095n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N34W095.hgt -b -95 34 -94 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n34/ws_w095n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N35W095.hgt -b -95 35 -94 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n35/ws_w095n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Arkansas_Final-HD_4326.tiff -d ./SRTM-3/N36W095.hgt -b -95 36 -94 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n30/w095n36/ws_w095n36.osgb
+
+./scripts/genroads.py ./output/Terrain -90 35 -89 36
+./scripts/genroads.py ./output/Terrain -91 33 -90 34
+./scripts/genroads.py ./output/Terrain -91 34 -90 35
+./scripts/genroads.py ./output/Terrain -91 35 -90 36
+./scripts/genroads.py ./output/Terrain -91 36 -90 37
+./scripts/genroads.py ./output/Terrain -92 33 -91 34
+./scripts/genroads.py ./output/Terrain -92 34 -91 35
+./scripts/genroads.py ./output/Terrain -92 35 -91 36
+./scripts/genroads.py ./output/Terrain -92 36 -91 37
+./scripts/genroads.py ./output/Terrain -93 33 -92 34
+./scripts/genroads.py ./output/Terrain -93 34 -92 35
+./scripts/genroads.py ./output/Terrain -93 35 -92 36
+./scripts/genroads.py ./output/Terrain -93 36 -92 37
+./scripts/genroads.py ./output/Terrain -94 33 -93 34
+./scripts/genroads.py ./output/Terrain -94 34 -93 35
+./scripts/genroads.py ./output/Terrain -94 35 -93 36
+./scripts/genroads.py ./output/Terrain -94 36 -93 37
+./scripts/genroads.py ./output/Terrain -95 33 -94 34
+./scripts/genroads.py ./output/Terrain -95 34 -94 35
+./scripts/genroads.py ./output/Terrain -95 35 -94 36
+./scripts/genroads.py ./output/Terrain -95 36 -94 37
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Arkansas_reclass-grass.tiff
+("Arkansas_4326-84@1" = 11) * 41 + ("Arkansas_4326-84@1" = 12) * 34 + ("Arkansas_4326-84@1" = 21) * 26 + ("Arkansas_4326-84@1" = 22) * 26 + ("Arkansas_4326-84@1" = 23) * 26 + ("Arkansas_4326-84@1" = 24) * 26 + ("Arkansas_4326-84@1" = 31) * 27 + ("Arkansas_4326-84@1" = 41) * 26 + ("Arkansas_4326-84@1" = 42) * 24 + ("Arkansas_4326-84@1" = 43) * 25 + ("Arkansas_4326-84@1" = 51) * 30 + ("Arkansas_4326-84@1" = 52) * 29 + ("Arkansas_4326-84@1" = 71) * 26 + ("Arkansas_4326-84@1" = 72) * 32 + ("Arkansas_4326-84@1" = 73) * 31 + ("Arkansas_4326-84@1" = 74) * 31 + ("Arkansas_4326-84@1" = 75) * 32 + ("Arkansas_4326-84@1" = 81) * 18 + ("Arkansas_4326-84@1" = 82) * 19 + ("Arkansas_4326-84@1" = 90) * 25 + ("Arkansas_4326-84@1" = 95) * 35
+
+Make Urban layer = Arkansas_urban.tiff
+("Arkansas_4326-84@1" = 21) * 10 + ("Arkansas_4326-84@1" = 22) * 10 + ("Arkansas_4326-84@1" = 23) * 1 + ("Arkansas_4326-84@1" = 24) * 1
+
+Remove the road clutter = Arkansas_urban-only.tiff
+r.neighbor Arkansas_urban.tiff "median", size=7
+
+Combine "Arkansas_reclass-urban@1" + "Arkansas_reclass-grass@1" = Arkansas_adjusted-combined.tiff
+("Arkansas_urban-only@1" < 1) * "Arkansas_reclass-grass@1" + ("Arkansas_urban-only@1" != 0) * "Arkansas_urban-only@1"
+
+Up sample = Arkansas_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify NLCD_2021_Arkansas_Final-HD_4326.tiff
+r.neighbor Arkansas_final-prep-4x.tiff "median", size=7
+
+HD Water Option 
+Reclass water to grass = NLCD_2021_Arkansas_Final-HD_4326-nowater.tiff
+NLCD_2021_Arkansas_Final-HD_4326@1 * (NLCD_2021_Arkansas_Final-HD_4326@1 != 41) + 26 * (NLCD_2021_Arkansas_Final-HD_4326@1 = 41)
+
+Obtain and load vector layer = Arkansas_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Arkansas_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = NLCD_2021_Arkansas_Final-HD_4326-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "NLCD_2021_Arkansas_Final-HD_4326-water@1" and "NLCD_2021_Arkansas_Final-HD_4326-nowater@1" = NLCD_2021_Arkansas_Final-HD_4326water.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "NLCD_2021_Arkansas_Final-HD_4326-nowater@1" and NLCD_2021_Arkansas_Final-HD_4326-water.tiff
+Output data type = "byte"
+Merged = NLCD_2021_Arkansas_Final-HD_4326water.tiff
+Click "Run" to generate the new merged raster layer.

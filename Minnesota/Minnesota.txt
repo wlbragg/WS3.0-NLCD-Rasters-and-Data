@@ -1,0 +1,153 @@
+Minnesota
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Minnesota/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Minnesota/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Minnesota/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N49W096.hgt -b -96 49 -95 50 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n50/w096n49/ws_w096n49.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N49W095.hgt -b -95 49 -94 50 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n50/w095n49/ws_w095n49.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W098.hgt -b -98 48 -97 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n48/ws_w098n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W097.hgt -b -97 48 -96 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n48/ws_w097n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W096.hgt -b -96 48 -95 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n48/ws_w096n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W095.hgt -b -95 48 -94 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n48/ws_w095n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W094.hgt -b -94 48 -93 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n48/ws_w094n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W093.hgt -b -93 48 -92 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n48/ws_w093n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W092.hgt -b -92 48 -91 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n48/ws_w092n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N48W091.hgt -b -91 48 -90 49 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w091n48/ws_w091n48.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W098.hgt -b -98 47 -97 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w098n47/ws_w098n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W097.hgt -b -97 47 -96 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n47/ws_w097n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W096.hgt -b -96 47 -95 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n47/ws_w096n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W095.hgt -b -95 47 -94 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n47/ws_w095n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W094.hgt -b -94 47 -93 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n47/ws_w094n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W093.hgt -b -93 47 -92 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n47/ws_w093n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W092.hgt -b -92 47 -91 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n47/ws_w092n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W091.hgt -b -91 47 -90 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w091n47/ws_w091n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N47W090.hgt -b -90 47 -89 48 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n40/w090n47/ws_w090n47.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W097.hgt -b -97 46 -96 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n46/ws_w097n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W096.hgt -b -96 46 -95 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n46/ws_w096n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W095.hgt -b -95 46 -94 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n46/ws_w095n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W094.hgt -b -94 46 -93 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n46/ws_w094n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W093.hgt -b -93 46 -92 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n46/ws_w093n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-North_Final-HD_4326.tiff -d ./SRTM-3/N46W092.hgt -b -92 46 -91 47 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n46/ws_w092n46.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N45W097.hgt -b -97 45 -96 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n45/ws_w097n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N45W096.hgt -b -96 45 -95 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n45/ws_w096n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N45W095.hgt -b -95 45 -94 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n45/ws_w095n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N45W094.hgt -b -94 45 -93 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n45/ws_w094n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N45W093.hgt -b -93 45 -92 46 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n45/ws_w093n45.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W097.hgt -b -97 44 -96 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n44/ws_w097n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W096.hgt -b -96 44 -95 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n44/ws_w096n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W095.hgt -b -95 44 -94 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n44/ws_w095n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W094.hgt -b -94 44 -93 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n44/ws_w094n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W093.hgt -b -93 44 -92 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n44/ws_w093n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N44W092.hgt -b -92 44 -91 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n44/ws_w092n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W097.hgt -b -97 43 -96 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w097n43/ws_w097n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W096.hgt -b -96 43 -95 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w096n43/ws_w096n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W095.hgt -b -95 43 -94 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w095n43/ws_w095n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W094.hgt -b -94 43 -93 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w094n43/ws_w094n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W093.hgt -b -93 43 -92 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w093n43/ws_w093n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Minnesota-South_Final-HD_4326.tiff -d ./SRTM-3/N43W092.hgt -b -92 43 -91 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w100n40/w092n43/ws_w092n43.osgb
+
+./scripts/genroads.py ./output/Terrain -92 43 -91 44
+./scripts/genroads.py ./output/Terrain -92 44 -91 45
+./scripts/genroads.py ./output/Terrain -93 43 -92 44
+./scripts/genroads.py ./output/Terrain -93 44 -92 45
+./scripts/genroads.py ./output/Terrain -93 45 -92 46
+./scripts/genroads.py ./output/Terrain -94 43 -93 44
+./scripts/genroads.py ./output/Terrain -94 44 -93 45
+./scripts/genroads.py ./output/Terrain -94 45 -93 46
+./scripts/genroads.py ./output/Terrain -95 43 -94 44
+./scripts/genroads.py ./output/Terrain -95 44 -94 45
+./scripts/genroads.py ./output/Terrain -95 45 -94 46
+./scripts/genroads.py ./output/Terrain -96 43 -95 44
+./scripts/genroads.py ./output/Terrain -96 44 -95 45
+./scripts/genroads.py ./output/Terrain -96 45 -95 46
+./scripts/genroads.py ./output/Terrain -97 43 -96 44
+./scripts/genroads.py ./output/Terrain -97 44 -96 45
+./scripts/genroads.py ./output/Terrain -97 45 -96 46
+
+./scripts/genroads.py ./output/Terrain -90 47 -89 48
+./scripts/genroads.py ./output/Terrain -90 48 -89 49
+./scripts/genroads.py ./output/Terrain -91 47 -90 48
+./scripts/genroads.py ./output/Terrain -91 48 -90 49
+./scripts/genroads.py ./output/Terrain -92 46 -91 47
+./scripts/genroads.py ./output/Terrain -92 47 -91 48
+./scripts/genroads.py ./output/Terrain -92 48 -91 49
+./scripts/genroads.py ./output/Terrain -93 46 -92 47
+./scripts/genroads.py ./output/Terrain -93 47 -92 48
+./scripts/genroads.py ./output/Terrain -93 48 -92 49
+./scripts/genroads.py ./output/Terrain -94 46 -93 47
+./scripts/genroads.py ./output/Terrain -94 47 -93 48
+./scripts/genroads.py ./output/Terrain -94 48 -93 49
+./scripts/genroads.py ./output/Terrain -95 46 -94 47
+./scripts/genroads.py ./output/Terrain -95 47 -94 48
+./scripts/genroads.py ./output/Terrain -95 48 -94 49
+./scripts/genroads.py ./output/Terrain -95 49 -94 50
+./scripts/genroads.py ./output/Terrain -96 46 -95 47
+./scripts/genroads.py ./output/Terrain -96 47 -95 48
+./scripts/genroads.py ./output/Terrain -96 48 -95 49
+./scripts/genroads.py ./output/Terrain -96 49 -95 50
+./scripts/genroads.py ./output/Terrain -97 46 -96 47
+./scripts/genroads.py ./output/Terrain -97 47 -96 48
+./scripts/genroads.py ./output/Terrain -97 48 -96 49
+./scripts/genroads.py ./output/Terrain -98 47 -97 48
+./scripts/genroads.py ./output/Terrain -98 48 -97 49
+
+Make Decidious Layer EPSG:5070 - NAD83 = Minnesota_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Minnesota@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Minnesota.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Minnesota_4326-84.tiff
+Warp Minnesota_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Minnesota_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Minnesota_deciduous_4326-84.@1" + "Minnesota_4326-84@1" = Minnesota_adjusted.tiff
+(("Minnesota_4326-84@1" > 0 AND "Minnesota_4326-84@1" != 41 AND "Minnesota_4326-84@1" != 42 AND "Minnesota_4326-84@1" != 43) AND "Minnesota_deciduous_4326-84@1" > 0) * "Minnesota_deciduous_4326-84@1" + ("Minnesota_4326-84@1" = 41 OR "Minnesota_4326-84@1" = 42 OR "Minnesota_4326-84@1" = 43 OR "Minnesota_deciduous_4326-84@1" <= 0) * "Minnesota_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Minnesota_reclass-grass.tiff
+("Minnesota_adjusted@1" = 11) * 41 + ("Minnesota_adjusted@1" = 12) * 34 + ("Minnesota_adjusted@1" = 21) * 26 + ("Minnesota_adjusted@1" = 22) * 26 + ("Minnesota_adjusted@1" = 23) * 23 + ("Minnesota_adjusted@1" = 24) * 26 + ("Minnesota_adjusted@1" = 31) * 27 + ("Minnesota_adjusted@1" = 41) * 23 + ("Minnesota_adjusted@1" = 42) * 24 + ("Minnesota_adjusted@1" = 43) * 25 + ("Minnesota_adjusted@1" = 51) * 30 + ("Minnesota_adjusted@1" = 52) * 29 + ("Minnesota_adjusted@1" = 71) * 26 + ("Minnesota_adjusted@1" = 72) * 32 + ("Minnesota_adjusted@1" = 73) * 31 + ("Minnesota_adjusted@1" = 74) * 31 + ("Minnesota_adjusted@1" = 75) * 32 + ("Minnesota_adjusted@1" = 81) * 18 + ("Minnesota_adjusted@1" = 82) * 19 + ("Minnesota_adjusted@1" = 90) * 25 + ("Minnesota_adjusted@1" = 95) * 35
+
+Make Urban layer = Minnesota_urban.tiff
+("Minnesota_adjusted@1" = 21) * 10 + ("Minnesota_adjusted@1" = 22) * 1 + ("Minnesota_adjusted@1" = 23) * 1 + ("Minnesota_adjusted@1" = 24) * 2
+
+Remove Minnesota_urban.tiff road clutter = Minnesota_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Minnesota_urban-only@1" + "Minnesota_reclass-grass@1" = Minnesota_adjusted-combined.tiff
+("Minnesota_urban-only@1" < 1) * "Minnesota_reclass-grass@1" + ("Minnesota_urban-only@1" != 0) * "Minnesota_urban-only@1"
+
+Up sample Minnesota_adjusted-combined.tiff = Minnesota_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Minnesota_final-prep-4x.tiff = Minnesota_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Minnesota_4326-84-hd-corrected.tiff
+("Minnesota_4326-84-hd@1" = 0) * 44 + ("Minnesota_4326-84-hd@1" != 0) * "Minnesota_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Minnesota_4326-84-hd-nowater.tiff
+Minnesota_4326-84-hd-corrected@1 * (Minnesota_4326-84-hd-corrected@1 != 41) + 26 * (Minnesota_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Minnesota-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Minnesota-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Minnesota-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Minnesota-Northern_4326-84-hd-water@1" and "Minnesota-Northern_4326-84-hd-nowater@1" = Minnesota-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Minnesota-Northern_4326-84-hd-nowater@1" and Minnesota-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Minnesota-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
+
+
+
+
