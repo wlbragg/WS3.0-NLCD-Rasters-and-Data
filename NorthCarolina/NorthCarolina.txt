@@ -1,0 +1,114 @@
+NorthCarolina
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/NorthCarolina/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/NorthCarolina/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/NorthCarolina/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W083.hgt -b -83 36 -82 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n36/ws_w083n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W082.hgt -b -82 36 -81 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n36/ws_w082n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W081.hgt -b -81 36 -80 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w081n36/ws_w081n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W080.hgt -b -80 36 -79 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n36/ws_w080n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W079.hgt -b -79 36 -78 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n36/ws_w079n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W078.hgt -b -78 36 -77 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n36/ws_w078n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W077.hgt -b -77 36 -76 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n36/ws_w077n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N36W076.hgt -b -76 36 -75 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n36/ws_w076n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W085.hgt -b -85 35 -84 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w085n35/ws_w085n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W084.hgt -b -84 35 -83 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w084n35/ws_w084n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W083.hgt -b -83 35 -82 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w083n35/ws_w083n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W082.hgt -b -82 35 -81 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w082n35/ws_w082n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W081.hgt -b -81 35 -80 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w081n35/ws_w081n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W080.hgt -b -80 35 -79 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n35/ws_w080n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W079.hgt -b -79 35 -78 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n35/ws_w079n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W078.hgt -b -78 35 -77 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n35/ws_w078n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W077.hgt -b -77 35 -76 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n35/ws_w077n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N35W076.hgt -b -76 35 -75 36 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n35/ws_w076n35.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N34W081.hgt -b -81 34 -80 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w090n30/w081n34/ws_w081n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N34W080.hgt -b -80 34 -79 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n34/ws_w080n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N34W079.hgt -b -79 34 -78 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n34/ws_w079n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N34W078.hgt -b -78 34 -77 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n34/ws_w078n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N34W077.hgt -b -77 34 -76 35 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n34/ws_w077n34.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N33W079.hgt -b -79 33 -78 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n33/ws_w079n33.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_NorthCarolina_Final-HD_4326.tiff -d ./SRTM-3/N33W078.hgt -b -78 33 -77 34 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n33/ws_w078n33.osgb
+
+
+./scripts/genroads.py ./output/Terrain -83 36 -82 37
+./scripts/genroads.py ./output/Terrain -82 36 -81 37
+./scripts/genroads.py ./output/Terrain -81 36 -80 37
+./scripts/genroads.py ./output/Terrain -80 36 -79 37
+./scripts/genroads.py ./output/Terrain -79 36 -78 37
+./scripts/genroads.py ./output/Terrain -78 36 -77 37
+./scripts/genroads.py ./output/Terrain -77 36 -76 37
+./scripts/genroads.py ./output/Terrain -76 36 -75 37
+./scripts/genroads.py ./output/Terrain -85 35 -84 36
+./scripts/genroads.py ./output/Terrain -84 35 -83 36
+./scripts/genroads.py ./output/Terrain -83 35 -82 36
+./scripts/genroads.py ./output/Terrain -82 35 -81 36
+./scripts/genroads.py ./output/Terrain -81 35 -80 36
+./scripts/genroads.py ./output/Terrain -80 35 -79 36
+./scripts/genroads.py ./output/Terrain -79 35 -78 36
+./scripts/genroads.py ./output/Terrain -78 35 -77 36
+./scripts/genroads.py ./output/Terrain -77 35 -76 36
+./scripts/genroads.py ./output/Terrain -76 35 -75 36
+./scripts/genroads.py ./output/Terrain -81 34 -80 35
+./scripts/genroads.py ./output/Terrain -80 34 -79 35
+./scripts/genroads.py ./output/Terrain -79 34 -78 35
+./scripts/genroads.py ./output/Terrain -78 34 -77 35
+./scripts/genroads.py ./output/Terrain -77 34 -76 35
+./scripts/genroads.py ./output/Terrain -79 33 -78 34
+./scripts/genroads.py ./output/Terrain -78 33 -77 34
+
+Make Decidious Layer EPSG:5070 - NAD83 = NorthCarolina_deciduous.tiff
+("NLCD_2021_Tree_Canopy_NorthCarolina@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_NorthCarolina.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NorthCarolina_4326-84.tiff
+Warp NorthCarolina_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = NorthCarolina_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "NorthCarolina_deciduous_4326-84.@1" + "NorthCarolina_4326-84@1" = NorthCarolina_adjusted.tiff
+(("NorthCarolina_4326-84@1" > 0 AND "NorthCarolina_4326-84@1" != 41 AND "NorthCarolina_4326-84@1" != 42 AND "NorthCarolina_4326-84@1" != 43) AND "NorthCarolina_deciduous_4326-84@1" > 0) * "NorthCarolina_deciduous_4326-84@1" + ("NorthCarolina_4326-84@1" = 41 OR "NorthCarolina_4326-84@1" = 42 OR "NorthCarolina_4326-84@1" = 43 OR "NorthCarolina_deciduous_4326-84@1" <= 0) * "NorthCarolina_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = NorthCarolina_reclass-grass.tiff
+("NorthCarolina_adjusted@1" = 11) * 41 + ("NorthCarolina_adjusted@1" = 12) * 34 + ("NorthCarolina_adjusted@1" = 21) * 26 + ("NorthCarolina_adjusted@1" = 22) * 26 + ("NorthCarolina_adjusted@1" = 23) * 23 + ("NorthCarolina_adjusted@1" = 24) * 26 + ("NorthCarolina_adjusted@1" = 31) * 27 + ("NorthCarolina_adjusted@1" = 41) * 23 + ("NorthCarolina_adjusted@1" = 42) * 24 + ("NorthCarolina_adjusted@1" = 43) * 25 + ("NorthCarolina_adjusted@1" = 51) * 30 + ("NorthCarolina_adjusted@1" = 52) * 29 + ("NorthCarolina_adjusted@1" = 71) * 26 + ("NorthCarolina_adjusted@1" = 72) * 32 + ("NorthCarolina_adjusted@1" = 73) * 31 + ("NorthCarolina_adjusted@1" = 74) * 31 + ("NorthCarolina_adjusted@1" = 75) * 32 + ("NorthCarolina_adjusted@1" = 81) * 18 + ("NorthCarolina_adjusted@1" = 82) * 19 + ("NorthCarolina_adjusted@1" = 90) * 25 + ("NorthCarolina_adjusted@1" = 95) * 35
+
+Make Urban layer = NorthCarolina_urban.tiff
+("NorthCarolina_adjusted@1" = 21) * 10 + ("NorthCarolina_adjusted@1" = 22) * 1 + ("NorthCarolina_adjusted@1" = 23) * 1 + ("NorthCarolina_adjusted@1" = 24) * 2
+
+Remove NorthCarolina_urban.tiff road clutter = NorthCarolina_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "NorthCarolina_urban-only@1" + "NorthCarolina_reclass-grass@1" = NorthCarolina_adjusted-combined.tiff
+("NorthCarolina_urban-only@1" < 1) * "NorthCarolina_reclass-grass@1" + ("NorthCarolina_urban-only@1" != 0) * "NorthCarolina_urban-only@1"
+
+Up sample NorthCarolina_adjusted-combined.tiff = NorthCarolina_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify NorthCarolina_final-prep-4x.tiff = NorthCarolina_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = NorthCarolina_4326-84-hd-corrected.tiff
+("NorthCarolina_4326-84-hd@1" = 0) * 44 + ("NorthCarolina_4326-84-hd@1" != 0) * "NorthCarolina_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = NorthCarolina_4326-84-hd-nowater.tiff
+NorthCarolina_4326-84-hd-corrected@1 * (NorthCarolina_4326-84-hd-corrected@1 != 41) + 26 * (NorthCarolina_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = NorthCarolina-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = NorthCarolina-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = NorthCarolina-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "NorthCarolina-Northern_4326-84-hd-water@1" and "NorthCarolina-Northern_4326-84-hd-nowater@1" = NorthCarolina-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "NorthCarolina-Northern_4326-84-hd-nowater@1" and NorthCarolina-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = NorthCarolina-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

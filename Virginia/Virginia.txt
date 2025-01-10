@@ -1,0 +1,109 @@
+Virginia
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Virginia/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Virginia/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Virginia/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N39W079.hgt -b -79 39 -78 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n39/ws_w079n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N39W078.hgt -b -78 39 -77 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n39/ws_w078n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N38W080.hgt -b -80 38 -79 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n38/ws_w080n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N38W079.hgt -b -79 38 -78 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n38/ws_w079n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N38W078.hgt -b -78 38 -77 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n38/ws_w078n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N38W077.hgt -b -77 38 -76 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n38/ws_w077n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W083.hgt -b -83 37 -82 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w083n37/ws_w083n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W082.hgt -b -82 37 -81 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w082n37/ws_w082n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W081.hgt -b -81 37 -80 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w081n37/ws_w081n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W080.hgt -b -80 37 -79 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n37/ws_w080n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W079.hgt -b -79 37 -78 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n37/ws_w079n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W078.hgt -b -78 37 -77 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n37/ws_w078n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W077.hgt -b -77 37 -76 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n37/ws_w077n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N37W076.hgt -b -76 37 -75 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n37/ws_w076n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W084.hgt -b -84 36 -83 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w084n36/ws_w084n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W083.hgt -b -83 36 -82 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w083n36/ws_w083n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W082.hgt -b -82 36 -81 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w082n36/ws_w082n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W081.hgt -b -81 36 -80 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w081n36/ws_w081n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W080.hgt -b -80 36 -79 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n36/ws_w080n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W079.hgt -b -79 36 -78 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n36/ws_w079n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W078.hgt -b -78 36 -77 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n36/ws_w078n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W077.hgt -b -77 36 -76 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n36/ws_w077n36.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Virginia_Final-HD_4326.tiff -d ./SRTM-3/N36W076.hgt -b -76 36 -75 37 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n36/ws_w076n36.osgb
+
+./scripts/genroads.py ./output/Terrain -79 39 -78 40
+./scripts/genroads.py ./output/Terrain -78 39 -77 40
+./scripts/genroads.py ./output/Terrain -80 38 -79 39
+./scripts/genroads.py ./output/Terrain -79 38 -78 39
+./scripts/genroads.py ./output/Terrain -78 38 -77 39
+./scripts/genroads.py ./output/Terrain -77 38 -76 39
+./scripts/genroads.py ./output/Terrain -83 37 -82 38
+./scripts/genroads.py ./output/Terrain -82 37 -81 38
+./scripts/genroads.py ./output/Terrain -81 37 -80 38
+./scripts/genroads.py ./output/Terrain -80 37 -79 38
+./scripts/genroads.py ./output/Terrain -79 37 -78 38
+./scripts/genroads.py ./output/Terrain -78 37 -77 38
+./scripts/genroads.py ./output/Terrain -77 37 -76 38
+./scripts/genroads.py ./output/Terrain -76 37 -75 38
+./scripts/genroads.py ./output/Terrain -84 36 -83 37
+./scripts/genroads.py ./output/Terrain -83 36 -82 37
+./scripts/genroads.py ./output/Terrain -82 36 -81 37
+./scripts/genroads.py ./output/Terrain -81 36 -80 37
+./scripts/genroads.py ./output/Terrain -80 36 -79 37
+./scripts/genroads.py ./output/Terrain -79 36 -78 37
+./scripts/genroads.py ./output/Terrain -78 36 -77 37
+./scripts/genroads.py ./output/Terrain -77 36 -76 37
+./scripts/genroads.py ./output/Terrain -76 36 -75 37
+
+Make Decidious Layer EPSG:5070 - NAD83 = Virginia_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Virginia@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Virginia.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Virginia_4326-84.tiff
+Warp Virginia_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Virginia_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Virginia_deciduous_4326-84.@1" + "Virginia_4326-84@1" = Virginia_adjusted.tiff
+(("Virginia_4326-84@1" > 0 AND "Virginia_4326-84@1" != 41 AND "Virginia_4326-84@1" != 42 AND "Virginia_4326-84@1" != 43) AND "Virginia_deciduous_4326-84@1" > 0) * "Virginia_deciduous_4326-84@1" + ("Virginia_4326-84@1" = 41 OR "Virginia_4326-84@1" = 42 OR "Virginia_4326-84@1" = 43 OR "Virginia_deciduous_4326-84@1" <= 0) * "Virginia_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Virginia_reclass-grass.tiff
+("Virginia_adjusted@1" = 11) * 41 + ("Virginia_adjusted@1" = 12) * 34 + ("Virginia_adjusted@1" = 21) * 26 + ("Virginia_adjusted@1" = 22) * 26 + ("Virginia_adjusted@1" = 23) * 23 + ("Virginia_adjusted@1" = 24) * 26 + ("Virginia_adjusted@1" = 31) * 27 + ("Virginia_adjusted@1" = 41) * 23 + ("Virginia_adjusted@1" = 42) * 24 + ("Virginia_adjusted@1" = 43) * 25 + ("Virginia_adjusted@1" = 51) * 30 + ("Virginia_adjusted@1" = 52) * 29 + ("Virginia_adjusted@1" = 71) * 26 + ("Virginia_adjusted@1" = 72) * 32 + ("Virginia_adjusted@1" = 73) * 31 + ("Virginia_adjusted@1" = 74) * 31 + ("Virginia_adjusted@1" = 75) * 32 + ("Virginia_adjusted@1" = 81) * 18 + ("Virginia_adjusted@1" = 82) * 19 + ("Virginia_adjusted@1" = 90) * 25 + ("Virginia_adjusted@1" = 95) * 35
+
+Make Urban layer = Virginia_urban.tiff
+("Virginia_adjusted@1" = 21) * 10 + ("Virginia_adjusted@1" = 22) * 1 + ("Virginia_adjusted@1" = 23) * 1 + ("Virginia_adjusted@1" = 24) * 2
+
+Remove Virginia_urban.tiff road clutter = Virginia_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Virginia_urban-only@1" + "Virginia_reclass-grass@1" = Virginia_adjusted-combined.tiff
+("Virginia_urban-only@1" < 1) * "Virginia_reclass-grass@1" + ("Virginia_urban-only@1" != 0) * "Virginia_urban-only@1"
+
+Up sample Virginia_adjusted-combined.tiff = Virginia_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Virginia_final-prep-4x.tiff = Virginia_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Virginia_4326-84-hd-corrected.tiff
+("Virginia_4326-84-hd@1" = 0) * 44 + ("Virginia_4326-84-hd@1" != 0) * "Virginia_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Virginia_4326-84-hd-nowater.tiff
+Virginia_4326-84-hd-corrected@1 * (Virginia_4326-84-hd-corrected@1 != 41) + 26 * (Virginia_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Virginia-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Virginia-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Virginia-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Virginia-Northern_4326-84-hd-water@1" and "Virginia-Northern_4326-84-hd-nowater@1" = Virginia-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Virginia-Northern_4326-84-hd-nowater@1" and Virginia-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Virginia-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
