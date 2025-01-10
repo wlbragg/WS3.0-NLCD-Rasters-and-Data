@@ -1,0 +1,83 @@
+Maryland-Delaware
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Maryland-Delaware/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Maryland-Delaware/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Maryland-Delaware/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N39W080.hgt -b -80 39 -79 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w080n39/ws_w080n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N39W079.hgt -b -79 39 -78 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w079n39/ws_w079n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N39W078.hgt -b -78 39 -77 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n39/ws_w078n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N39W077.hgt -b -77 39 -76 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n39/ws_w077n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N39W076.hgt -b -76 39 -75 40 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n39/ws_w076n39.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N38W078.hgt -b -78 38 -77 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w078n38/ws_w078n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N38W077.hgt -b -77 38 -76 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n38/ws_w077n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N38W076.hgt -b -76 38 -75 39 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n38/ws_w076n38.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N37W077.hgt -b -77 37 -76 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w077n37/ws_w077n37.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Maryland-Delaware_Final-HD_4326.tiff -d ./SRTM-3/N37W076.hgt -b -76 37 -75 38 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n30/w076n37/ws_w076n37.osgb
+
+./scripts/genroads.py ./output/Terrain -80 39 -79 40
+./scripts/genroads.py ./output/Terrain -79 39 -78 40
+./scripts/genroads.py ./output/Terrain -78 39 -77 40
+./scripts/genroads.py ./output/Terrain -77 39 -76 40
+./scripts/genroads.py ./output/Terrain -76 39 -75 40
+./scripts/genroads.py ./output/Terrain -78 38 -77 39
+./scripts/genroads.py ./output/Terrain -77 38 -76 39
+./scripts/genroads.py ./output/Terrain -76 38 -75 39
+./scripts/genroads.py ./output/Terrain -77 37 -76 38
+./scripts/genroads.py ./output/Terrain -76 37 -75 38
+
+Make Decidious Layer EPSG:5070 - NAD83 = Maryland-Delaware_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Maryland-Delaware@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Maryland-Delaware.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Maryland-Delaware_4326-84.tiff
+Warp Maryland-Delaware_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Maryland-Delaware_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Maryland-Delaware_deciduous_4326-84.@1" + "Maryland-Delaware_4326-84@1" = Maryland-Delaware_adjusted.tiff
+(("Maryland-Delaware_4326-84@1" > 0 AND "Maryland-Delaware_4326-84@1" != 41 AND "Maryland-Delaware_4326-84@1" != 42 AND "Maryland-Delaware_4326-84@1" != 43) AND "Maryland-Delaware_deciduous_4326-84@1" > 0) * "Maryland-Delaware_deciduous_4326-84@1" + ("Maryland-Delaware_4326-84@1" = 41 OR "Maryland-Delaware_4326-84@1" = 42 OR "Maryland-Delaware_4326-84@1" = 43 OR "Maryland-Delaware_deciduous_4326-84@1" <= 0) * "Maryland-Delaware_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Maryland-Delaware_reclass-grass.tiff
+("Maryland-Delaware_adjusted@1" = 11) * 41 + ("Maryland-Delaware_adjusted@1" = 12) * 34 + ("Maryland-Delaware_adjusted@1" = 21) * 26 + ("Maryland-Delaware_adjusted@1" = 22) * 26 + ("Maryland-Delaware_adjusted@1" = 23) * 23 + ("Maryland-Delaware_adjusted@1" = 24) * 26 + ("Maryland-Delaware_adjusted@1" = 31) * 27 + ("Maryland-Delaware_adjusted@1" = 41) * 23 + ("Maryland-Delaware_adjusted@1" = 42) * 24 + ("Maryland-Delaware_adjusted@1" = 43) * 25 + ("Maryland-Delaware_adjusted@1" = 51) * 30 + ("Maryland-Delaware_adjusted@1" = 52) * 29 + ("Maryland-Delaware_adjusted@1" = 71) * 26 + ("Maryland-Delaware_adjusted@1" = 72) * 32 + ("Maryland-Delaware_adjusted@1" = 73) * 31 + ("Maryland-Delaware_adjusted@1" = 74) * 31 + ("Maryland-Delaware_adjusted@1" = 75) * 32 + ("Maryland-Delaware_adjusted@1" = 81) * 18 + ("Maryland-Delaware_adjusted@1" = 82) * 19 + ("Maryland-Delaware_adjusted@1" = 90) * 25 + ("Maryland-Delaware_adjusted@1" = 95) * 35
+
+Make Urban layer = Maryland-Delaware_urban.tiff
+("Maryland-Delaware_adjusted@1" = 21) * 10 + ("Maryland-Delaware_adjusted@1" = 22) * 1 + ("Maryland-Delaware_adjusted@1" = 23) * 1 + ("Maryland-Delaware_adjusted@1" = 24) * 2
+
+Remove Maryland-Delaware_urban.tiff road clutter = Maryland-Delaware_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Maryland-Delaware_urban-only@1" + "Maryland-Delaware_reclass-grass@1" = Maryland-Delaware_adjusted-combined.tiff
+("Maryland-Delaware_urban-only@1" < 1) * "Maryland-Delaware_reclass-grass@1" + ("Maryland-Delaware_urban-only@1" != 0) * "Maryland-Delaware_urban-only@1"
+
+Up sample Maryland-Delaware_adjusted-combined.tiff = Maryland-Delaware_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Maryland-Delaware_final-prep-4x.tiff = Maryland-Delaware_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Maryland-Delaware_4326-84-hd-corrected.tiff
+("Maryland-Delaware_4326-84-hd@1" = 0) * 44 + ("Maryland-Delaware_4326-84-hd@1" != 0) * "Maryland-Delaware_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Maryland-Delaware_4326-84-hd-nowater.tiff
+Maryland-Delaware_4326-84-hd-corrected@1 * (Maryland-Delaware_4326-84-hd-corrected@1 != 41) + 26 * (Maryland-Delaware_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Maryland-Delaware-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Maryland-Delaware-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Maryland-Delaware-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Maryland-Delaware-Northern_4326-84-hd-water@1" and "Maryland-Delaware-Northern_4326-84-hd-nowater@1" = Maryland-Delaware-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Maryland-Delaware-Northern_4326-84-hd-nowater@1" and Maryland-Delaware-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Maryland-Delaware-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.

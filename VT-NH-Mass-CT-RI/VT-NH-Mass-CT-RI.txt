@@ -1,0 +1,55 @@
+VT-NH-Mass-CT-RI
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/VT-NH-Mass-CT-RI/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/VT-NH-Mass-CT-RI/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/VT-NH-Mass-CT-RI/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N44W074.hgt -b -74 44 -73 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n44/ws_w074n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N44W073.hgt -b -73 44 -72 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n44/ws_w073n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N44W072.hgt -b -72 44 -71 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w072n44/ws_w072n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N43W074.hgt -b -74 43 -73 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n43/ws_w074n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N43W073.hgt -b -73 43 -72 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n43/ws_w073n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N43W072.hgt -b -72 43 -71 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w072n43/ws_w072n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N43W071.hgt -b -71 43 -70 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w071n43/ws_w071n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N42W074.hgt -b -74 42 -73 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n42/ws_w074n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N42W073.hgt -b -73 42 -72 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n42/ws_w073n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N42W072.hgt -b -72 42 -71 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w072n42/ws_w072n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N42W071.hgt -b -71 42 -70 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w071n42/ws_w071n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N41W074.hgt -b -74 41 -73 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n41/ws_w074n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N41W073.hgt -b -73 41 -72 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n41/ws_w073n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N41W072.hgt -b -72 41 -71 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w072n41/ws_w072n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N41W071.hgt -b -71 41 -70 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w071n41/ws_w071n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff -d ./SRTM-3/N41W070.hgt -b -70 41 -69 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w070n40/w070n41/ws_w070n41.osgb
+
+./scripts/genroads.py ./output/Terrain -74 44 -73 45
+./scripts/genroads.py ./output/Terrain -73 44 -72 45
+./scripts/genroads.py ./output/Terrain -72 44 -71 45
+./scripts/genroads.py ./output/Terrain -74 43 -73 44
+./scripts/genroads.py ./output/Terrain -73 43 -72 44
+./scripts/genroads.py ./output/Terrain -72 43 -71 44
+./scripts/genroads.py ./output/Terrain -71 43 -70 44
+./scripts/genroads.py ./output/Terrain -74 42 -73 43
+./scripts/genroads.py ./output/Terrain -73 42 -72 43
+./scripts/genroads.py ./output/Terrain -72 42 -71 43
+./scripts/genroads.py ./output/Terrain -71 42 -70 43
+./scripts/genroads.py ./output/Terrain -74 41 -73 42
+./scripts/genroads.py ./output/Terrain -73 41 -72 42
+./scripts/genroads.py ./output/Terrain -72 41 -71 42
+./scripts/genroads.py ./output/Terrain -71 41 -70 42
+./scripts/genroads.py ./output/Terrain -70 41 -69 42
+
+Re-class urban 21, 22, 23, 24 = grass 26 = VT-NH-Mass-CT-RI_reclass-grass.tiff
+("VT-NH-Mass-CT-RI_4326-84@1" = 11) * 41 + ("VT-NH-Mass-CT-RI_4326-84@1" = 12) * 34 + ("VT-NH-Mass-CT-RI_4326-84@1" = 21) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 22) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 23) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 24) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 31) * 27 + ("VT-NH-Mass-CT-RI_4326-84@1" = 41) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 42) * 24 + ("VT-NH-Mass-CT-RI_4326-84@1" = 43) * 25 + ("VT-NH-Mass-CT-RI_4326-84@1" = 51) * 30 + ("VT-NH-Mass-CT-RI_4326-84@1" = 52) * 29 + ("VT-NH-Mass-CT-RI_4326-84@1" = 71) * 26 + ("VT-NH-Mass-CT-RI_4326-84@1" = 72) * 32 + ("VT-NH-Mass-CT-RI_4326-84@1" = 73) * 31 + ("VT-NH-Mass-CT-RI_4326-84@1" = 74) * 31 + ("VT-NH-Mass-CT-RI_4326-84@1" = 75) * 32 + ("VT-NH-Mass-CT-RI_4326-84@1" = 81) * 18 + ("VT-NH-Mass-CT-RI_4326-84@1" = 82) * 19 + ("VT-NH-Mass-CT-RI_4326-84@1" = 90) * 25 + ("VT-NH-Mass-CT-RI_4326-84@1" = 95) * 35
+
+Make Urban layer = VT-NH-Mass-CT-RI_urban.tiff
+("VT-NH-Mass-CT-RI_4326-84@1" = 21) * 10 + ("VT-NH-Mass-CT-RI_4326-84@1" = 22) * 10 + ("VT-NH-Mass-CT-RI_4326-84@1" = 23) * 1 + ("VT-NH-Mass-CT-RI_4326-84@1" = 24) * 1
+
+Remove the road clutter = VT-NH-Mass-CT-RI_urban-only.tiff
+r.neighbor VT-NH-Mass-CT-RI_urban.tiff "median", size=7
+
+Combine "VT-NH-Mass-CT-RI_reclass-urban@1" + "VT-NH-Mass-CT-RI_reclass-grass@1" = VT-NH-Mass-CT-RI_adjusted-combined.tiff
+("VT-NH-Mass-CT-RI_urban-only@1" < 1) * "VT-NH-Mass-CT-RI_reclass-grass@1" + ("VT-NH-Mass-CT-RI_urban-only@1" != 0) * "VT-NH-Mass-CT-RI_urban-only@1"
+
+Up sample = VT-NH-Mass-CT-RI_final-prep-4x.tiff
+Up sample 4x resolution 0.000075623
+
+Simplify NLCD_2021_VT-NH-Mass-CT-RI_Final-HD_4326.tiff
+r.neighbor VT-NH-Mass-CT-RI_final-prep-4x.tiff "median", size=7

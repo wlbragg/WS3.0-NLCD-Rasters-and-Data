@@ -1,0 +1,116 @@
+Pennsylvania
+
+docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/Pennsylvania/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/SRTM-3,target=/home/flightgear/SRTM-3,readonly" --mount "type=bind,source=G:/Scenery/ws3.0/Pennsylvania/output,target=/home/flightgear/output" --mount "type=bind,source=G:/Scenery/ws3.0/Pennsylvania/output/vpb,target=/home/flightgear/output/vpb" -it flightgear/ws30-vbp-generator:latest /bin/bash
+
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N44W077.hgt -b -77 44 -76 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w076n44/ws_w077n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N44W076.hgt -b -76 44 -75 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w076n44/ws_w076n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N44W075.hgt -b -75 44 -74 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w075n44/ws_w075n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N44W074.hgt -b -74 44 -73 45 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n44/ws_w074n44.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W080.hgt -b -80 43 -79 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w080n43/ws_w080n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W079.hgt -b -79 43 -78 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w079n43/ws_w079n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W078.hgt -b -78 43 -77 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w078n43/ws_w078n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W077.hgt -b -77 43 -76 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w077n43/ws_w077n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W076.hgt -b -76 43 -75 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w076n43/ws_w076n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W075.hgt -b -75 43 -74 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w075n43/ws_w075n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W074.hgt -b -74 43 -73 44 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n43/ws_w074n43.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W080.hgt -b -80 42 -79 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w080n42/ws_w080n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W079.hgt -b -79 42 -78 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w079n42/ws_w079n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W078.hgt -b -78 42 -77 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w078n42/ws_w078n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W077.hgt -b -77 42 -76 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w077n42/ws_w077n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W076.hgt -b -76 42 -75 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w076n42/ws_w076n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W075.hgt -b -75 42 -74 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w075n42/ws_w075n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N43W074.hgt -b -74 42 -73 43 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n42/ws_w074n42.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N41W076.hgt -b -76 41 -75 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w076n41/ws_w076n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N41W075.hgt -b -75 41 -74 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w075n41/ws_w075n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N41W074.hgt -b -74 41 -73 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n41/ws_w074n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N41W073.hgt -b -73 41 -72 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n41/ws_w073n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N41W072.hgt -b -72 41 -71 42 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w072n41/ws_w072n41.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N40W075.hgt -b -75 40 -74 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w075n40/ws_w075n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N40W074.hgt -b -74 40 -73 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w074n40/ws_w074n40.osgb
+osgdem --TERRAIN --image-ext png --RGBA --no-interpolate-imagery --disable-error-diffusion --geocentric --no-mip-mapping -t ./data/NLCD_2021_Pennsylvania_Final-HD_4326.tiff -d ./SRTM-3/N40W073.hgt -b -73 40 -72 41 --PagedLOD -l 7 --radius-to-max-visible-distance-ratio 3 -o ./output/vpb/w080n40/w073n40/ws_w073n40.osgb
+
+
+./scripts/genroads.py ./output/Terrain -77 44 -76 45
+./scripts/genroads.py ./output/Terrain -76 44 -75 45
+./scripts/genroads.py ./output/Terrain -75 44 -74 45
+./scripts/genroads.py ./output/Terrain -74 44 -73 45
+./scripts/genroads.py ./output/Terrain -80 43 -79 44
+./scripts/genroads.py ./output/Terrain -79 43 -78 44
+./scripts/genroads.py ./output/Terrain -78 43 -77 44
+./scripts/genroads.py ./output/Terrain -77 43 -76 44
+./scripts/genroads.py ./output/Terrain -76 43 -75 44
+./scripts/genroads.py ./output/Terrain -75 43 -74 44
+./scripts/genroads.py ./output/Terrain -74 43 -73 44
+./scripts/genroads.py ./output/Terrain -80 42 -79 43
+./scripts/genroads.py ./output/Terrain -79 42 -78 43
+./scripts/genroads.py ./output/Terrain -78 42 -77 43
+./scripts/genroads.py ./output/Terrain -77 42 -76 43
+./scripts/genroads.py ./output/Terrain -76 42 -75 43
+./scripts/genroads.py ./output/Terrain -75 42 -74 43
+./scripts/genroads.py ./output/Terrain -74 42 -73 43
+./scripts/genroads.py ./output/Terrain -76 41 -75 42
+./scripts/genroads.py ./output/Terrain -75 41 -74 42
+./scripts/genroads.py ./output/Terrain -74 41 -73 42
+./scripts/genroads.py ./output/Terrain -73 41 -72 42
+./scripts/genroads.py ./output/Terrain -72 41 -71 42
+./scripts/genroads.py ./output/Terrain -75 40 -74 41
+./scripts/genroads.py ./output/Terrain -74 40 -73 41
+./scripts/genroads.py ./output/Terrain -73 40 -72 41
+
+Make Decidious Layer EPSG:5070 - NAD83 = Pennsylvania_deciduous.tiff
+("NLCD_2021_Tree_Canopy_Pennsylvania@1" != 0) * 43
+
+Warp NLCD_2021_Land_Cover_Pennsylvania.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Pennsylvania_4326-84.tiff
+Warp Pennsylvania_deciduous.tiff EPSG:5070 - NAD83 / Conus Albers NLCD to Project CRS: EPSG:4326 - WGS 84 = Pennsylvania_deciduous_4326-84.tiff
+Raster -> Projection - > Warp
+Target CRS = EPSG:4326 - WGS 84
+Resampling method to use = Nearest Neighbour
+Output data type = byte
+
+Combine "Pennsylvania_deciduous_4326-84.@1" + "Pennsylvania_4326-84@1" = Pennsylvania_adjusted.tiff
+(("Pennsylvania_4326-84@1" > 0 AND "Pennsylvania_4326-84@1" != 41 AND "Pennsylvania_4326-84@1" != 42 AND "Pennsylvania_4326-84@1" != 43) AND "Pennsylvania_deciduous_4326-84@1" > 0) * "Pennsylvania_deciduous_4326-84@1" + ("Pennsylvania_4326-84@1" = 41 OR "Pennsylvania_4326-84@1" = 42 OR "Pennsylvania_4326-84@1" = 43 OR "Pennsylvania_deciduous_4326-84@1" <= 0) * "Pennsylvania_4326-84@1"
+
+Re-class urban 21, 22, 23, 24 = grass 26 = Pennsylvania_reclass-grass.tiff
+("Pennsylvania_adjusted@1" = 11) * 41 + ("Pennsylvania_adjusted@1" = 12) * 34 + ("Pennsylvania_adjusted@1" = 21) * 26 + ("Pennsylvania_adjusted@1" = 22) * 26 + ("Pennsylvania_adjusted@1" = 23) * 23 + ("Pennsylvania_adjusted@1" = 24) * 26 + ("Pennsylvania_adjusted@1" = 31) * 27 + ("Pennsylvania_adjusted@1" = 41) * 23 + ("Pennsylvania_adjusted@1" = 42) * 24 + ("Pennsylvania_adjusted@1" = 43) * 25 + ("Pennsylvania_adjusted@1" = 51) * 30 + ("Pennsylvania_adjusted@1" = 52) * 29 + ("Pennsylvania_adjusted@1" = 71) * 26 + ("Pennsylvania_adjusted@1" = 72) * 32 + ("Pennsylvania_adjusted@1" = 73) * 31 + ("Pennsylvania_adjusted@1" = 74) * 31 + ("Pennsylvania_adjusted@1" = 75) * 32 + ("Pennsylvania_adjusted@1" = 81) * 18 + ("Pennsylvania_adjusted@1" = 82) * 19 + ("Pennsylvania_adjusted@1" = 90) * 25 + ("Pennsylvania_adjusted@1" = 95) * 35
+
+Make Urban layer = Pennsylvania_urban.tiff
+("Pennsylvania_adjusted@1" = 21) * 10 + ("Pennsylvania_adjusted@1" = 22) * 1 + ("Pennsylvania_adjusted@1" = 23) * 1 + ("Pennsylvania_adjusted@1" = 24) * 2
+
+Remove Pennsylvania_urban.tiff road clutter = Pennsylvania_urban-only.tiff
+r.neighbor, "median", size=7
+
+Combine "Pennsylvania_urban-only@1" + "Pennsylvania_reclass-grass@1" = Pennsylvania_adjusted-combined.tiff
+("Pennsylvania_urban-only@1" < 1) * "Pennsylvania_reclass-grass@1" + ("Pennsylvania_urban-only@1" != 0) * "Pennsylvania_urban-only@1"
+
+Up sample Pennsylvania_adjusted-combined.tiff = Pennsylvania_final-prep-4x.tiff
+Up sample 4x resolution 0.00008309125
+
+Simplify Pennsylvania_final-prep-4x.tiff = Pennsylvania_4326-84-hd.tiff
+r.neighbor, "median", size=7
+
+Reclass index 0 to 44, leave the rest the same = Pennsylvania_4326-84-hd-corrected.tiff
+("Pennsylvania_4326-84-hd@1" = 0) * 44 + ("Pennsylvania_4326-84-hd@1" != 0) * "Pennsylvania_4326-84-hd@1"
+
+HD Water Option 
+Reclass water to grass = Pennsylvania_4326-84-hd-nowater.tiff
+Pennsylvania_4326-84-hd-corrected@1 * (Pennsylvania_4326-84-hd-corrected@1 != 41) + 26 * (Pennsylvania_4326-84-hd-corrected@1 = 41)
+
+Obtain and load vector layer = Pennsylvania-Northern_water_4326-84.gpkg.
+Make sure that the vector layer and the raster layer you will eventually merge to have the same projection. ** Extent can be different if you use the option below.
+Use Top Menu: "Raster" -> "Conversion" -> "Rasterize (vector to raster)" or Processing Toolbax: GDAL -> "Vector conversion" -> "Rasterize (vector to raster)"
+Input layer = Pennsylvania-Northern_water_4326-84
+Fixed value to burn = 41 (water)
+Output raster size units = "Georeferenced units"
+Width/Horizontal resolution = 0.00008309125 (4x the base NLCD resolution ) 
+Height/Vertical resolution = 0.00008309125 (4x the base NLCD resolution)
+** Output extent = Select the raster layer you will ecentually merge with as the "Output extent".
+Filename to save to = Pennsylvania-Northern_4326-84-hd-water.tiff
+Click "Run" to generate the cut raster layer.
+The resulting raster layer will have the same extent and resolution as the original raster layer, but with the value of the cut pixels assigned based on the specified attribute field.
+
+Combine "Pennsylvania-Northern_4326-84-hd-water@1" and "Pennsylvania-Northern_4326-84-hd-nowater@1" = Pennsylvania-Northern_4326-84-hdwater.tiff
+Use Top Menu: "Raster" -> "Miscellaneous" -> "Merge" or GDAL or Processing Toolbax: GDAL -> Raster Miscellaneous -> Merge
+Input layers = Select "Pennsylvania-Northern_4326-84-hd-nowater@1" and Pennsylvania-Northern_4326-84-hd-water.tiff
+Output data type = "byte"
+Merged = Pennsylvania-Northern_4326-84-hdwater.tiff
+Click "Run" to generate the new merged raster layer.
