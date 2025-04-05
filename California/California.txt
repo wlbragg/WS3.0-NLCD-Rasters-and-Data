@@ -7,7 +7,6 @@ docker run --rm --mount "type=bind,source=G:/Scenery/ws3.0/California/data,targe
 
 LINUX SRTM-1
 sudo docker run --rm --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/ws3.0/California/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/WS3.0-extra/SRTM-1,target=/home/flightgear/SRTM-3" --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/ws3.0/California/output,target=/home/flightgear/output" -it flightgear/ws30-vpb-generator:latest /bin/bash
-
 LINUX Panoramas3
 sudo docker run --rm --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/ws3.0/California/data,target=/home/flightgear/data,readonly" --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/WS3.0-extra/Panoramas3,target=/home/flightgear/SRTM-3" --mount "type=bind,source=/media/wayne/TOSHIBA-EXT/Scenery/ws3.0/California/output,target=/home/flightgear/output" -it flightgear/ws30-vpb-generator:latest /bin/bash
 
